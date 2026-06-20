@@ -1,0 +1,2115 @@
+[
+    {
+        "id": "entamoeba-histolytica",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Entamoeba histolytica",
+        "commonName": "Ameba",
+        "disease": "Amebiasis (intestinal y extraintestinal)",
+        "transmission": "Fecal-oral (ingestión de agua o alimentos contaminados con quistes).",
+        "infectiveStage": "Quiste maduro (tetranucleado).",
+        "diagnosticStage": "Quistes y trofozoítos en heces.",
+        "epidemiology": "Distribución mundial. Endémica en áreas tropicales con saneamiento ambiental deficiente.",
+        "lifecycleSummary": "El huésped ingiere quistes. Tras el desencistamiento, los trofozoítos colonizan el intestino grueso, multiplicándose y pudiendo invadir la mucosa.",
+        "lifecycleDiagram": "assets/img/ciclos/entamoeba-histolytica-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "15-60 µm, un solo núcleo con cariosoma central puntiforme. Citoplasma granular con eritrocitos fagocitados (patognomónico).",
+                "image": "assets/img/morfologia/entamoeba-histolytica-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "10-20 µm, esférico, 1 a 4 núcleos según la madurez. Cuerpos cromatoidales con extremos romos.",
+                "image": "assets/img/morfologia/entamoeba-histolytica-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/entamoeba-histolytica-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "eh_struct_1",
+                        "name": "Cariosoma central",
+                        "relX": 0.45,
+                        "relY": 0.52
+                    },
+                    {
+                        "id": "eh_struct_2",
+                        "name": "Eritrocito fagocitado",
+                        "relX": 0.7,
+                        "relY": 0.65
+                    },
+                    {
+                        "id": "eh_struct_3",
+                        "name": "Ectoplasma",
+                        "relX": 0.85,
+                        "relY": 0.2
+                    },
+                    {
+                        "id": "eh_struct_4",
+                        "name": "Núcleo",
+                        "relX": 0.42,
+                        "relY": 0.48
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes maduros tetranucleados a través de vehículos contaminados.",
+            "2. Exquistación en el tracto gastrointestinal inferior (íleon terminal/ciego).",
+            "3. Liberación de trofozoítos que colonizan el colon por fisión binaria."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico (CPS) directo o por concentración para búsqueda de quistes/trofozoítos. Serología o detección de antígenos en heces para diferenciar de E. dispar. Ecografía/TAC para absceso hepático.",
+        "treatment": "Amebiasis invasiva: Metronidazol o Tinidazol. Seguido siempre de un agente luminal (Paromomicina o Iodoquinol) para erradicar quistes."
+    },
+    {
+        "id": "entamoeba-dispar",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Entamoeba dispar",
+        "commonName": "E. dispar (Comensal)",
+        "disease": "Ninguna (Comensal intestinal no patógeno).",
+        "transmission": "Fecal-oral (ingestión de agua o alimentos contaminados con quistes).",
+        "infectiveStage": "Quiste maduro (tetranucleado).",
+        "diagnosticStage": "Quistes y trofozoítos en heces.",
+        "epidemiology": "Distribución mundial. Es entre 3 y 10 veces más frecuente que E. histolytica a nivel global. A menudo se diagnostica erróneamente, llevando a tratamientos amebicidas innecesarios.",
+        "lifecycleSummary": "Ciclo biológico idéntico al de E. histolytica. Se establece en la luz del colon donde se alimenta de bacterias y restos celulares, pero carece de la maquinaria enzimática para invadir la mucosa intestinal.",
+        "lifecycleDiagram": "assets/img/ciclos/entamoeba-dispar-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "15-60 µm. Indistinguible por microscopía óptica de E. histolytica. Un núcleo con cariosoma central. La única diferencia morfológica clave es que E. dispar NUNCA presenta eritrocitos fagocitados en su citoplasma.",
+                "image": "assets/img/morfologia/entamoeba-dispar-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "10-20 µm, esférico. Madura hasta poseer un máximo de 4 núcleos y presenta cuerpos cromatoidales con extremos romos. Es totalmente indistinguible del quiste de E. histolytica.",
+                "image": "assets/img/morfologia/entamoeba-dispar-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/entamoeba-dispar-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "ed_struct_1",
+                        "name": "Cariosoma central plano",
+                        "relX": 0.48,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "ed_struct_2",
+                        "name": "Citoplasma vacuolado libre de hematíes",
+                        "relX": 0.65,
+                        "relY": 0.35
+                    },
+                    {
+                        "id": "ed_struct_3",
+                        "name": "Cromatina periférica fina",
+                        "relX": 0.52,
+                        "relY": 0.42
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes maduros tetranucleados viables en agua o alimentos.",
+            "2. El pH y las enzimas desencadenan la exquistación en el íleon terminal/ciego.",
+            "3. Los trofozoítos colonizan la luz del colon de forma asintomática, multiplicándose por fisión binaria y volviendo a enquistarse para salir en las heces."
+        ],
+        "diagnosticMethod": "En el examen coproparasitoscópico (CPS) de rutina, todo hallazgo debe reportarse obligatoriamente como complejo 'Entamoeba histolytica/E. dispar'. Para confirmar E. dispar se requiere biología molecular (PCR) o detección de antígenos específicos en heces (ELISA).",
+        "treatment": "No requiere tratamiento farmacológico. Si se confirma mediante PCR o ELISA que se trata de E. dispar, la administración de metronidazol está contraindicada."
+    },
+    {
+        "id": "entamoeba-coli",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Entamoeba coli",
+        "commonName": "E. coli (Comensal)",
+        "disease": "Ninguna (Comensal no patógeno). Su presencia indica contaminación fecal-oral.",
+        "transmission": "Fecal-oral (ingestión de quistes maduros).",
+        "infectiveStage": "Quiste maduro (octanucleado).",
+        "diagnosticStage": "Quistes y trofozoítos en heces.",
+        "epidemiology": "Distribución mundial. Alta prevalencia en zonas con higiene deficiente.",
+        "lifecycleSummary": "Ciclo idéntico a E. histolytica pero estrictamente limitado a la luz del colon, alimentándose de bacterias y restos celulares sin invadir la mucosa.",
+        "lifecycleDiagram": "assets/img/ciclos/entamoeba-coli-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "15-50 µm, citoplasma muy vacuolado (suele contener bacterias, nunca eritrocitos). Movimiento perezoso sin seudópodos direccionales. Cariosoma excéntrico.",
+                "image": "assets/img/morfologia/entamoeba-coli-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "15-30 µm, esférico. Madura hasta tener 8 núcleos (diferencial clave). Cuerpos cromatoidales con extremos astillados o puntiagudos.",
+                "image": "assets/img/morfologia/entamoeba-coli-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/entamoeba-coli-quiste.webp",
+                "structures": [
+                    {
+                        "id": "eco_struct_1",
+                        "name": "Núcleos maduros (hasta 8)",
+                        "relX": 0.3,
+                        "relY": 0.35
+                    },
+                    {
+                        "id": "eco_struct_2",
+                        "name": "Cuerpo cromatoidal astillado",
+                        "relX": 0.55,
+                        "relY": 0.75
+                    },
+                    {
+                        "id": "eco_struct_3",
+                        "name": "Cariosoma excéntrico",
+                        "relX": 0.32,
+                        "relY": 0.31
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes octanucleados en agua o alimentos.",
+            "2. Exquistación en el intestino liberando trofozoítos.",
+            "3. Multiplicación y enquistamiento en la luz del colon para ser excretados."
+        ],
+        "diagnosticMethod": "Examen CPS directo o de concentración. Es crucial el diagnóstico diferencial microscópico con E. histolytica contando los núcleos del quiste (>4 = E. coli).",
+        "treatment": "No requiere tratamiento específico, pero el paciente debe ser orientado sobre medidas de higiene alimentaria y personal."
+    },
+    {
+        "id": "iodamoeba-butschlii",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Iodamoeba bütschlii",
+        "commonName": "Iodamoeba",
+        "disease": "Ninguna (Comensal intestinal no patógeno).",
+        "transmission": "Fecal-oral (ingestión de quistes).",
+        "infectiveStage": "Quiste maduro.",
+        "diagnosticStage": "Quistes y trofozoítos en heces.",
+        "epidemiology": "Distribución mundial. Relacionada con baja higiene. El cerdo es un reservorio importante.",
+        "lifecycleSummary": "Ameba comensal que habita la luz del intestino grueso, alimentándose de bacterias y restos intestinales sin causar daño a la mucosa.",
+        "lifecycleDiagram": "assets/img/ciclos/iodamoeba-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "8-20 µm, movimiento lento. Núcleo con un gran cariosoma central rodeado por gránulos acromáticos.",
+                "image": "assets/img/morfologia/iodamoeba-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "5-20 µm, uninucleado. Su característica patognomónica es una gran vacuole de glucógeno que se tiñe de color caoba oscuro/marrón con lugol.",
+                "image": "assets/img/morfologia/iodamoeba-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/iodamoeba-quiste.webp",
+                "structures": [
+                    {
+                        "id": "ib_struct_1",
+                        "name": "Vacuola de glucógeno prominente",
+                        "relX": 0.5,
+                        "relY": 0.55
+                    },
+                    {
+                        "id": "ib_struct_2",
+                        "name": "Núcleo único con cariosoma grande",
+                        "relX": 0.25,
+                        "relY": 0.3
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión del quiste uninucleado.",
+            "2. Exquistación en el colon, liberando el trofozoíto.",
+            "3. Multiplicación por fisión binaria y eventual enquistamiento (reteniendo la gran vacuola de glucógeno)."
+        ],
+        "diagnosticMethod": "Examen CPS directo con Lugol, donde la masa de glucógeno del quiste resalta intensamente. Tinciones permanentes (Tricrómica).",
+        "treatment": "No requiere tratamiento farmacológico."
+    },
+    {
+        "id": "chilomastix-mesnili",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Chilomastix mesnili",
+        "commonName": "Chilomastix",
+        "disease": "Ninguna (Flagelado comensal intestinal).",
+        "transmission": "Fecal-oral (ingestión de quistes).",
+        "infectiveStage": "Quiste maduro.",
+        "diagnosticStage": "Quistes y trofozoítos en heces.",
+        "epidemiology": "Cosmopolita. Su hallazgo es un marcador clínico de contaminación fecal en el agua o alimentos consumidos por el paciente.",
+        "lifecycleSummary": "Flagelado no patógeno que reside principalmente en el ciego y colon ascendente. Posee un ciclo directo de trofozoíto y quiste.",
+        "lifecycleDiagram": "assets/img/ciclos/chilomastix-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "10-20 µm, forma de pera (piriforme). Presenta un surco espiral distintivo, 3 flagelos anteriores libres y un citostoma (boca) prominente.",
+                "image": "assets/img/morfologia/chilomastix-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "6-10 µm, forma de limón con un pezón o prominencia hialina anterior. Contiene un solo núcleo y un citostoma curvado en forma de 'cayado de pastor'.",
+                "image": "assets/img/morfologia/chilomastix-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/chilomastix-quiste.webp",
+                "structures": [
+                    {
+                        "id": "cm_struct_1",
+                        "name": "Pezón hialino (forma de limón)",
+                        "relX": 0.5,
+                        "relY": 0.15
+                    },
+                    {
+                        "id": "cm_struct_2",
+                        "name": "Citostoma en 'cayado de pastor'",
+                        "relX": 0.48,
+                        "relY": 0.6
+                    },
+                    {
+                        "id": "cm_struct_3",
+                        "name": "Núcleo único",
+                        "relX": 0.35,
+                        "relY": 0.38
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes en agua contaminada.",
+            "2. Desencistamiento en el intestino grueso.",
+            "3. Enquistamiento junto con la deshidratación de las heces."
+        ],
+        "diagnosticMethod": "CPS directo (observación del movimiento espiral en 'sacacorchos' del trofozoíto) o técnica de concentración de Faust para observar los quistes con forma de limón.",
+        "treatment": "No requiere tratamiento, pero indica necesidad de mejorar prácticas higiénicas."
+    },
+    {
+        "id": "endolimax-nana",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Endolimax nana",
+        "commonName": "Endolimax",
+        "disease": "Ninguna (Comensal no patógeno intestinal).",
+        "transmission": "Fecal-oral (ingestión de quistes).",
+        "infectiveStage": "Quiste tetranucleado.",
+        "diagnosticStage": "Quistes (frecuentes) y trofozoítos en heces.",
+        "epidemiology": "Cosmopolita. Es una de las amebas intestinales más frecuentemente reportadas en estudios coprológicos.",
+        "lifecycleSummary": "Comensal de la luz del intestino grueso. Su ciclo de vida incluye la ingestión de quistes, exquistación a trofozoítos que se alimentan de bacterias, y formación de nuevos quistes.",
+        "lifecycleDiagram": "assets/img/ciclos/endolimax-nana-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "Muy pequeño (6-12 µm). Núcleo con cariosoma grande e irregular sin cromatina periférica visible. Movimiento lento.",
+                "image": "assets/img/morfologia/endolimax-nana-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "5-10 µm, de forma ovalada o elíptica. Contiene 4 núcleos diminutos, a menudo agrupados en los polos asemejando 'ojos de botón' o 'dados'.",
+                "image": "assets/img/morfologia/endolimax-nana-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/endolimax-nana-quiste.webp",
+                "structures": [
+                    {
+                        "id": "en_struct_1",
+                        "name": "4 núcleos filiformes puntiformes",
+                        "relX": 0.4,
+                        "relY": 0.3
+                    },
+                    {
+                        "id": "en_struct_2",
+                        "name": "Ausencia de cuerpos cromatoidales",
+                        "relX": 0.7,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes maduros viables en agua o alimentos contaminados.",
+            "2. Exquistación en el ciego, colonizando la luz del intestino grueso.",
+            "3. Enquistamiento progresivo conforme avanza el tránsito intestinal."
+        ],
+        "diagnosticMethod": "Coproparasitoscópico (CPS) de concentración (ej. Faust) y tinciones permanentes (Tricrómica de Gomori) para detallar su pequeño núcleo sin cromatina periférica.",
+        "treatment": "No requiere tratamiento farmacológico."
+    },
+    {
+        "id": "naegleria-fowleri",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Naegleria fowleri",
+        "commonName": "Ameba comecerebros",
+        "disease": "Meningoencefalitis Amebiana Primaria (MAP)",
+        "transmission": "Aspiración nasal de agua dulce contaminada (lagos, ríos, piscinas mal cloradas).",
+        "infectiveStage": "Trofozoíto.",
+        "diagnosticStage": "Trofozoítos móviles en el Líquido Cefalorraquídeo (LCR).",
+        "epidemiology": "Casos raros pero casi siempre fatales (>95% mortalidad). Asociado a actividades acuáticas en aguas cálidas durante el verano.",
+        "lifecycleSummary": "Ameba de vida libre que penetra la mucosa olfatoria, migrando a través de la placa cribiforme hacia el cerebro, causando necrosis hemorrágica masiva.",
+        "lifecycleDiagram": "assets/img/ciclos/naegleria-fowleri-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "10-25 µm, presenta lobopodios eruptivos (movimiento direccional rápido). Gran cariosoma central. Es la única forma presente en tejido humano.",
+                "image": "assets/img/morfologia/naegleria-fowleri-trofozoito.webp"
+            },
+            {
+                "stage": "Forma Flagelada",
+                "text": "Estadio transitorio biflagelado que adopta en ambientes desfavorables para buscar nutrientes. No se divide ni enquista.",
+                "image": "assets/img/morfologia/naegleria-fowleri-flagelado.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/naegleria-fowleri-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "nf_struct_1",
+                        "name": "Lobopodio eruptivo espacioso",
+                        "relX": 0.2,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "nf_struct_2",
+                        "name": "Gran cariosoma central nuclear",
+                        "relX": 0.55,
+                        "relY": 0.48
+                    },
+                    {
+                        "id": "nf_struct_3",
+                        "name": "Vacuola contráctil reguladora",
+                        "relX": 0.72,
+                        "relY": 0.7
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. El agua contaminada entra por las fosas nasales.",
+            "2. Los trofozoítos fagocitan el epitelio olfatorio y migran por el nervio olfatorio.",
+            "3. Alcanzan el espacio subaracnoideo y el cerebro, destruyendo el tejido nervioso mediante trogocitosis y enzimas proteolíticas."
+        ],
+        "diagnosticMethod": "Punción lumbar revelando LCR purulento sin bacterias. Observación microscópica directa en fresco del LCR (búsqueda de trofozoítos con movimiento activo). PCR para confirmación rápida.",
+        "treatment": "Urgencia médica absoluta. Terapia combinada agresiva: Anfotericina B (IV e intratecal), Miltefosina, Fluconazol, Rifampicina, Azitromicina y Dexametasona."
+    },
+    {
+        "id": "acanthamoeba",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Acanthamoeba spp.",
+        "commonName": "Ameba de vida libre",
+        "disease": "Queratitis amebiana / Encefalitis Amebiana Granulomatosa (EAG).",
+        "transmission": "Contacto de agua/suelo contaminado con lesiones oculares (lentes de contacto) o cutáneas. Inhalación.",
+        "infectiveStage": "Trofozoíto y Quiste.",
+        "diagnosticStage": "Trofozoítos y Quistes en tejido, LCR o raspado corneal.",
+        "epidemiology": "Cosmopolita. Queratitis asociada al mal uso de lentes de contacto. EAG ocurre principalmente en pacientes inmunocomprometidos.",
+        "lifecycleSummary": "Ameba anfizoica. Alterna entre trofozoíto y quiste en el ambiente. Entra al humano por microtraumas, diseminándose en inmunodeprimidos hacia el SNC por vía hematógena.",
+        "lifecycleDiagram": "assets/img/ciclos/acanthamoeba-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "15-45 µm, citoplasma con proyecciones finas como espinas llamadas acantopodios. Un núcleo con cariosoma central grande.",
+                "image": "assets/img/morfologia/acanthamoeba-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "10-25 µm, doble pared característica: externa arrugada (ectoquiste) e interna poligonal o estrellada (endoquiste). Altamente resistente.",
+                "image": "assets/img/morfologia/acanthamoeba-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/acanthamoeba-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "aca_struct_1",
+                        "name": "Acantopodios espinosos",
+                        "relX": 0.3,
+                        "relY": 0.22
+                    },
+                    {
+                        "id": "aca_struct_2",
+                        "name": "Núcleo con cariosoma denso",
+                        "relX": 0.5,
+                        "relY": 0.52
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Entrada por epitelio olfatorio, úlceras cutáneas o epitelio corneal.",
+            "2. En el ojo: lisis del epitelio corneal causando dolor severo y ceguera.",
+            "3. En inmunodeprimidos: diseminación sistémica formando granulomas en el cerebro (EAG subaguda/crónica)."
+        ],
+        "diagnosticMethod": "Raspado corneal, biopsia cutánea o cerebral. Cultivo en placas de agar no nutritivo sembradas con E. coli (las amebas dejan 'rastros' al comer las bacterias). PCR.",
+        "treatment": "Queratitis: Clorhexidina tópica y Polihexametilén biguanida (PHMB) por meses. EAG: Manejo complejo, combinación de Miltefosina, Fluconazol y Pentamidina (alta mortalidad)."
+    },
+    {
+        "id": "balamuthia-mandrillaris",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Balamuthia mandrillaris",
+        "commonName": "Ameba de vida libre",
+        "disease": "Encefalitis Amebiana Granulomatosa (EAG).",
+        "transmission": "Inhalación de polvo contaminado con quistes o entrada por lesiones cutáneas expuestas a tierra.",
+        "infectiveStage": "Trofozoíto y Quiste.",
+        "diagnosticStage": "Trofozoítos y Quistes en tejido cerebral o cutáneo.",
+        "epidemiology": "Infección rara pero con >90% de mortalidad. A diferencia de Acanthamoeba, ataca tanto a inmunocompetentes (niños, agricultores) como a inmunodeprimidos.",
+        "lifecycleSummary": "Ameba anfizoica presente en el suelo. Ingresa por tracto respiratorio o piel, formando una lesión cutánea primaria, y luego se disemina hematógenamente al cerebro causando necrosis y granulomas.",
+        "lifecycleDiagram": "assets/img/ciclos/balamuthia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "15-60 µm, pleomórfico, forma aracnoide (como araña). Un núcleo con múltiples nucleolos o un gran cariosoma. Movimiento como de 'caminata'.",
+                "image": "assets/img/morfologia/balamuthia-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "15-30 µm, esférico, pared de tres capas (externa delgada, media fibrilar amorfa e interna gruesa).",
+                "image": "assets/img/morfologia/balamuthia-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/balamuthia-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "bm_struct_1",
+                        "name": "Forma aracnoide ramificada",
+                        "relX": 0.4,
+                        "relY": 0.35
+                    },
+                    {
+                        "id": "bm_struct_2",
+                        "name": "Núcleo con nucleolos múltiples",
+                        "relX": 0.48,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Entrada de quistes/trofozoítos por inhalación o trauma en piel.",
+            "2. Establecimiento inicial (frecuentemente una placa cutánea centrofacial).",
+            "3. Diseminación linfohematógena cruzando la barrera hematoencefálica, desencadenando EAG subaguda/crónica."
+        ],
+        "diagnosticMethod": "Biopsia de lesión cutánea o cerebral. Inmunofluorescencia indirecta (IFI) en cortes de tejido. PCR multiplex. (No crece bien en placas de agar con E. coli, requiere cultivos celulares).",
+        "treatment": "Urgencia médica. Politerapia empírica: Miltefosina + Pentamidina + Fluconazol + Flucitosina + Azitromicina/Claritromicina."
+    },
+    {
+        "id": "balantidium-coli",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Balantidium coli",
+        "commonName": "Balantidium",
+        "disease": "Balantidiasis (Disentería balantidiana).",
+        "transmission": "Fecal-oral (ingestión de quistes provenientes principalmente de heces de cerdo).",
+        "infectiveStage": "Quiste maduro.",
+        "diagnosticStage": "Quistes y trofozoítos ciliados en heces.",
+        "epidemiology": "El cerdo es el reservorio principal. Zonas rurales con convivencia estrecha con cerdos y saneamiento deficiente.",
+        "lifecycleSummary": "El único ciliado que parasita al humano y el protozoario patógeno más grande. En el colon puede causar lisis tisular mediada por hialuronidasa, produciendo úlceras profundas.",
+        "lifecycleDiagram": "assets/img/ciclos/balantidium-coli-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "Muy grande (50-200 µm). Ovalado, cubierto de cilios. Presenta un citostoma (boca) anterior y un macronúcleo prominente en forma de riñón (arriñonado).",
+                "image": "assets/img/morfologia/balantidium-coli-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "50-70 µm, esférico, pared gruesa de doble capa. El macronúcleo arriñonado es visible en su interior.",
+                "image": "assets/img/morfologia/balantidium-coli-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/balantidium-coli-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "bc_struct_1",
+                        "name": "Macronúcleo arriñonado",
+                        "relX": 0.52,
+                        "relY": 0.45
+                    },
+                    {
+                        "id": "bc_struct_2",
+                        "name": "Citostoma anterior",
+                        "relX": 0.48,
+                        "relY": 0.15
+                    },
+                    {
+                        "id": "bc_struct_3",
+                        "name": "Revestimiento de cilios somáticos",
+                        "relX": 0.88,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes en agua o alimentos contaminados con heces porcinas.",
+            "2. Exquistación en intestino delgado; colonización del intestino grueso.",
+            "3. Invasión de la mucosa colónica formando úlceras de boca ancha y fondo necrótico. No se disemina extraintestinalmente de forma común."
+        ],
+        "diagnosticMethod": "Examen CPS directo en fresco (para ver los grandes trofozoítos nadando vigorosamente por sus cilios) o de concentración para quistes. Biopsia colónica por endoscopia.",
+        "treatment": "Tetraciclina (fármaco de elección) o Metronidazol. Iodoquinol como alternativa."
+    },
+    {
+        "id": "giardia-lamblia",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Giardia lamblia",
+        "commonName": "Giardia",
+        "disease": "Giardiasis",
+        "transmission": "Fecal-oral (agua contaminada es el vehículo más común).",
+        "infectiveStage": "Quiste maduro.",
+        "diagnosticStage": "Quistes (heces formadas) y trofozoítos (heces diarreicas).",
+        "epidemiology": "Mundial. Frecuente en guarderías y en zonas de alta montaña con fuentes de agua no filtradas.",
+        "lifecycleSummary": "Ingestión del quiste. Desencistamiento en el duodeno liberando trofozoítos que se adhieren a la mucosa causando malabsorción.",
+        "lifecycleDiagram": "assets/img/ciclos/giardia-lamblia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "10-20 µm, forma piriforme, 2 núcleos anteriores ('cara de anciano'), 4 pares de flagelos, y disco suctorio ventral.",
+                "image": "assets/img/morfologia/giardia-lamblia-trofozoito.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "8-19 µm, ovalado, de pared gruesa, contiene 4 núcleos en etapa madura y restos de axonemas.",
+                "image": "assets/img/morfologia/giardia-lamblia-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/giardia-lamblia-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "gl_struct_1",
+                        "name": "Núcleos gemelos anteriores",
+                        "relX": 0.38,
+                        "relY": 0.28
+                    },
+                    {
+                        "id": "gl_struct_2",
+                        "name": "Disco suctorio ventral",
+                        "relX": 0.5,
+                        "relY": 0.4
+                    },
+                    {
+                        "id": "gl_struct_3",
+                        "name": "Axonemas centrales",
+                        "relX": 0.5,
+                        "relY": 0.7
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes viables en agua o alimentos.",
+            "2. La acidez gástrica estimula la exquistación en el duodeno.",
+            "3. Los trofozoítos se adhieren al epitelio intestinal mediante su disco suctorio (malabsorción)."
+        ],
+        "diagnosticMethod": "Examen CPS seriado (mínimo 3 muestras). Detección de antígeno específico en heces (EIA) es altamente sensible. Aspirado duodenal o biopsia en casos refractarios.",
+        "treatment": "Metronidazol (primera línea), Tinidazol o Nitazoxanida."
+    },
+    {
+        "id": "trichomonas-vaginalis",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Trichomonas vaginalis",
+        "commonName": "Tricomona",
+        "disease": "Tricomoniasis (ITS)",
+        "transmission": "Contacto sexual directo.",
+        "infectiveStage": "Trofozoíto.",
+        "diagnosticStage": "Trofozoíto.",
+        "epidemiology": "Infección de transmisión sexual (ITS) no viral más común en el mundo. Prevalencia alta en mujeres en edad reproductiva.",
+        "lifecycleSummary": "No posee fase de quiste. El trofozoíto reside en el tracto urogenital femenino y masculino, dividiéndose por fisión binaria longitudinal y transmitiéndose por secreciones.",
+        "lifecycleDiagram": "assets/img/ciclos/trichomonas-vaginalis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto",
+                "text": "10-30 µm, forma piriforme u ovalada. Presenta 4 flagelos anteriores libres y un quinto bordeando una membrana ondulante corta. Axostilo prominente que sobresale en la parte posterior.",
+                "image": "assets/img/morfologia/trichomonas-vaginalis-trofozoito.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/trichomonas-vaginalis-trofozoito.webp",
+                "structures": [
+                    {
+                        "id": "tv_struct_1",
+                        "name": "Flagelos anteriores libres",
+                        "relX": 0.45,
+                        "relY": 0.1
+                    },
+                    {
+                        "id": "tv_struct_2",
+                        "name": "Membrana ondulante",
+                        "relX": 0.22,
+                        "relY": 0.45
+                    },
+                    {
+                        "id": "tv_struct_3",
+                        "name": "Axostilo posterior terminal",
+                        "relX": 0.52,
+                        "relY": 0.9
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Transmisión del trofozoíto a través de fluidos vaginales o prostáticos/uretrales durante el coito.",
+            "2. Adhesión al epitelio escamoso del tracto urogenital.",
+            "3. Multiplicación por fisión binaria, causando daño celular por contacto directo y enzimas citotóxicas (cuello uterino en 'fresa')."
+        ],
+        "diagnosticMethod": "Examen en fresco de exudado vaginal o secreción uretral observando trofozoítos móviles ('movimiento a tirones'). Cultivo (medio de Diamond) es el gold standard. Pruebas NAAT (PCR) son muy sensibles.",
+        "treatment": "Metronidazol o Tinidazol en dosis única o pauta de 7 días. Es mandatorio tratar simultáneamente a las parejas sexuales para evitar reinfección."
+    },
+    {
+        "id": "leishmania-mexicana",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Leishmania mexicana",
+        "commonName": "Leishmania (América)",
+        "disease": "Leishmaniasis cutánea localizada (Úlcera de los chicleros).",
+        "transmission": "Picadura de la mosca de arena hembra (género Lutzomyia).",
+        "infectiveStage": "Promastigote metacíclico.",
+        "diagnosticStage": "Amastigotes intracelulares en macrófagos de la lesión.",
+        "epidemiology": "Endémica en Centro y Sudamérica (áreas selváticas, endémica en trabajadores del chicle o madera en México y Guatemala).",
+        "lifecycleSummary": "El vector inyecta promastigotes en la piel. Son fagocitados por macrófagos donde se transforman en amastigotes, se multiplican y destruyen la célula, causando úlceras crónicas de bordes indurados.",
+        "lifecycleDiagram": "assets/img/ciclos/leishmania-mexicana-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Promastigote",
+                "text": "15-20 µm. Forma extracelular móvil en el intestino del vector. Cuerpo alargado con un flagelo libre anterior y cinetoplasto anterior al núcleo.",
+                "image": "assets/img/morfologia/leishmania-promastigote.webp"
+            },
+            {
+                "stage": "Amastigote",
+                "text": "2-4 µm. Intracelular (en macrófagos). Redondeado, sin flagelo libre. Presenta núcleo y un cuerpo cinetoplasto en forma de barra ('Cuerpos de Leishman-Donovan').",
+                "image": "assets/img/morfologia/leishmania-amastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/leishmania-promastigote.webp",
+                "structures": [
+                    {
+                        "id": "lm_struct_1",
+                        "name": "Flagelo libre anterior móvil",
+                        "relX": 0.5,
+                        "relY": 0.08
+                    },
+                    {
+                        "id": "lm_struct_2",
+                        "name": "Cinetoplasto condensado",
+                        "relX": 0.49,
+                        "relY": 0.32
+                    },
+                    {
+                        "id": "lm_struct_3",
+                        "name": "Núcleo vesicular central",
+                        "relX": 0.51,
+                        "relY": 0.6
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Lutzomyia pica e inyecta promastigotes metacíclicos en la piel.",
+            "2. Fagocitosis por macrófagos, inhibición del estallido respiratorio lisosomal y transformación a amastigotes.",
+            "3. Lisis de macrófagos liberando amastigotes que infectan células vecinas, generando la úlcera cutánea indolora (frecuente en pabellón auricular)."
+        ],
+        "diagnosticMethod": "Frotis por impronta de los bordes activos de la úlcera (tinción Giemsa) para observar amastigotes. Cultivo in vitro en medio NNN (Novy-MacNeal-Nicolle). Intradermorreacción de Montenegro (epidemiológica).",
+        "treatment": "Antimoniales pentavalentes sistémicos o intralesionales (Antimoniato de meglumina o Estibogluconato de sodio). Miltefosina oral."
+    },
+    {
+        "id": "leishmania-donovani",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Leishmania donovani",
+        "commonName": "Leishmania visceral",
+        "disease": "Leishmaniasis Visceral (Kala-azar / Fiebre negra).",
+        "transmission": "Picadura de la mosca de arena hembra (género Phlebotomus en Viejo Mundo).",
+        "infectiveStage": "Promastigote metacíclico.",
+        "diagnosticStage": "Amastigotes intracelulares en macrófagos de médula ósea, bazo o hígado.",
+        "epidemiology": "Subcontinente Indio y Este de África. Es antroponótica (humano-mosquito-humano). Infección oportunista grave en VIH.",
+        "lifecycleSummary": "A diferencia de las cepas cutáneas, L. donovani resiste la temperatura de los órganos internos. Los amastigotes se diseminan por todo el sistema reticuloendotelial, causando hepatoesplenomegalia masiva y pancytopenia.",
+        "lifecycleDiagram": "assets/img/ciclos/leishmania-donovani-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Amastigote (Cuerpo de Leishman-Donovan)",
+                "text": "2-4 µm, forma redondeada sin flagelo. Visible dentro de los macrófagos del sistema fagocítico mononuclear. Cinetoplasto y núcleo patognomónicos.",
+                "image": "assets/img/morfologia/leishmania-amastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/leishmania-amastigote.webp",
+                "structures": [
+                    {
+                        "id": "ld_struct_1",
+                        "name": "Núcleo del amastigote",
+                        "relX": 0.42,
+                        "relY": 0.46
+                    },
+                    {
+                        "id": "ld_struct_2",
+                        "name": "Cinetoplasto baciliforme",
+                        "relX": 0.58,
+                        "relY": 0.54
+                    },
+                    {
+                        "id": "ld_struct_3",
+                        "name": "Membrana del macrófago hospedero",
+                        "relX": 0.85,
+                        "relY": 0.3
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Inoculación del promastigote por Phlebotomus.",
+            "2. Fagocitosis. Transformación a amastigotes y supervivencia en fagolisosomas.",
+            "3. Diseminación linfohematógena masiva hacia bazo, hígado y médula ósea."
+        ],
+        "diagnosticMethod": "Punción/Aspirado de médula ósea o esplénica (alta sensibilidad, pero riesgo de hemorragia). Observación de amastigotes con tinción Giemsa. Serología rápida (antígeno rK39).",
+        "treatment": "Anfotericina B Liposomal (fármaco de elección, muy eficaz y menos tóxico). Miltefosina oral o Antimoniales pentavalentes como alternativas según la geografía."
+    },
+    {
+        "id": "leishmania-tropica",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Leishmania tropica",
+        "commonName": "Leishmania del Viejo Mundo (Cutánea)",
+        "disease": "Leishmaniasis cutánea del Viejo Mundo (Botón de Oriente tipo 'seco' / Antroponótica).",
+        "transmission": "Picadura de mosca de arena (Phlebotomus sergenti).",
+        "infectiveStage": "Promastigote metacíclico.",
+        "diagnosticStage": "Amastigote en macrófagos de la úlcera.",
+        "epidemiology": "Medio Oriente, Asia, África del Norte. Principalmente antroponótica (humano a humano) en ambientes urbanos.",
+        "lifecycleSummary": "El vector inocula promastigotes que son fagocitados por los macrófagos dérmicos, transformándose en amastigotes. Genera una úlcera de progresión lenta, con costra central ('seca').",
+        "lifecycleDiagram": "assets/img/ciclos/leishmania-tropica-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Amastigote",
+                "text": "2-4 µm, intracelular (en macrófagos). Núcleo redondo y cinetoplasto en forma de barra. Idéntico a otras especies del género.",
+                "image": "assets/img/morfologia/leishmania-amastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/leishmania-amastigote.webp",
+                "structures": [
+                    {
+                        "id": "lt_struct_1",
+                        "name": "Núcleo de amastigote tisular",
+                        "relX": 0.4,
+                        "relY": 0.48
+                    },
+                    {
+                        "id": "lt_struct_2",
+                        "name": "Cinetoplasto en barra perpendicular",
+                        "relX": 0.55,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Inoculación del promastigote por Phlebotomus.",
+            "2. Engullido por macrófagos; transformación a amastigotes.",
+            "3. Lisis y destrucción local en la dermis. La lesión tarda meses en ulcerar y tiende a curar espontáneamente dejando una cicatriz deprimida."
+        ],
+        "diagnosticMethod": "Raspado del borde activo de la úlcera, frotis con tinción de Giemsa. Cultivo en NNN. PCR.",
+        "treatment": "Inyecciones intralesionales de antimoniato de meglumina. Crioterapia. Paramomicina tópica."
+    },
+    {
+        "id": "leishmania-major",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Leishmania major",
+        "commonName": "Leishmania del Viejo Mundo (Zoonótica)",
+        "disease": "Leishmaniasis cutánea del Viejo Mundo (Botón de Oriente tipo 'húmedo' / Zoonótica).",
+        "transmission": "Picadura de mosca de arena (Phlebotomus papatasi).",
+        "infectiveStage": "Promastigote metacíclico.",
+        "diagnosticStage": "Amastigote en macrófagos.",
+        "epidemiology": "Zonas rurales o desérticas del Medio Oriente, Asia Central y África. El reservorio principal son roedores salvajes (jerbos).",
+        "lifecycleSummary": "Similar a L. tropica, pero con una progresión patológica mucho más rápida. Produce lesiones exudativas ('húmedas'), agudas y altamente inflamatorias.",
+        "lifecycleDiagram": "assets/img/ciclos/leishmania-major-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Promastigote y Amastigote",
+                "text": "Morfológicamente idéntico a las demás especies de Leishmania bajo el microscopio óptico.",
+                "image": "assets/img/morfologia/leishmania-promastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/leishmania-promastigote.webp",
+                "structures": [
+                    {
+                        "id": "lmaj_struct_1",
+                        "name": "Cuerpo celular promastigote leptomónada",
+                        "relX": 0.52,
+                        "relY": 0.55
+                    },
+                    {
+                        "id": "lmaj_struct_2",
+                        "name": "Flagelo libre elongado",
+                        "relX": 0.48,
+                        "relY": 0.15
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Inoculación de promastigotes provenientes de roedores infectados.",
+            "2. Proliferación agresiva de amastigotes en macrófagos de la piel.",
+            "3. Ulceración temprana (semanas), con exudado purulento."
+        ],
+        "diagnosticMethod": "Frotis o impronta del borde interno de la úlcera. PCR para diferenciar la especie de L. tropica.",
+        "treatment": "Muchas curan espontáneamente. Casos severos: Antimoniales pentavalentes intralesionales o sistémicos, Miltefosina."
+    },
+    {
+        "id": "trypanosoma-cruzi",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Trypanosoma cruzi",
+        "commonName": "Tripanosoma",
+        "disease": "Enfermedad de Chagas (Tripanosomiasis americana)",
+        "transmission": "Vectorial (heces de chinches triatominos ingresan por herida o mucosas). Congénita, transfusional, u oral.",
+        "infectiveStage": "Tripomastigote metacíclico.",
+        "diagnosticStage": "Tripomastigote en sangre (fase aguda) / Amastigote en tejidos.",
+        "epidemiology": "Endémica en América Latina. La urbanización y migración han llevado la enfermedad a zonas no endémicas.",
+        "lifecycleSummary": "La chinche defeca al picar. Los tripomastigotes en las heces penetran al humano, invaden células y se transforman en amastigotes intracelulares, destruyendo tejidos (especialmente corazón y músculo liso).",
+        "lifecycleDiagram": "assets/img/ciclos/trypanosoma-cruzi-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Tripomastigote",
+                "text": "Aprox 20 µm. Forma extracelular en sangre. Tiene un cinetoplasto posterior grande, núcleo central y un flagelo que forma una membrana ondulante a lo largo del cuerpo.",
+                "image": "assets/img/morfologia/trypanosoma-cruzi-tripomastigote.webp"
+            },
+            {
+                "stage": "Amastigote",
+                "text": "2-4 µm, forma intracelular redondeada, sin flagelo libre. Se agrupa en 'nidos' dentro de macrófagos y células musculares cardíacas.",
+                "image": "assets/img/morfologia/trypanosoma-cruzi-amastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/trypanosoma-cruzi-tripomastigote.webp",
+                "structures": [
+                    {
+                        "id": "tc_struct_1",
+                        "name": "Cinetoplasto posterior voluminoso",
+                        "relX": 0.25,
+                        "relY": 0.78
+                    },
+                    {
+                        "id": "tc_struct_2",
+                        "name": "Núcleo vesiculoso central",
+                        "relX": 0.5,
+                        "relY": 0.45
+                    },
+                    {
+                        "id": "tc_struct_3",
+                        "name": "Membrana ondulante lateral",
+                        "relX": 0.42,
+                        "relY": 0.3
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. El triatomino infectado pica y defeca; el hospedero se rasca introduciendo los tripomastigotes metacíclicos.",
+            "2. Invaden células locales (macrófagos, fibroblastos) y se transforman en amastigotes, multiplicándose por fisión binaria.",
+            "3. Lisis celular, liberación de nuevos tripomastigotes a la sangre que diseminan la infección al corazón y ganglios."
+        ],
+        "diagnosticMethod": "Fase aguda: Gota gruesa, frotis sanguíneo o microhematocrito. PCR. Fase crónica: Serología (ELISA, IFI, HAI). Electrocardiograma y ecocardiograma para evaluar miocardiopatía chagásica.",
+        "treatment": "Fármacos antiparasitarios efectivos principalmente en fase aguda y niños: Benznidazol o Nifurtimox. Manejo sintomático en fase crónica (marcapasos para bloqueos cardíacos)."
+    },
+    {
+        "id": "trypanosoma-brucei-rhodesiense",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Trypanosoma brucei rhodesiense",
+        "commonName": "Tripanosoma africano oriental",
+        "disease": "Enfermedad del sueño (Tripanosomiasis humana africana oriental/aguda).",
+        "transmission": "Picadura de la mosca tsetsé (género Glossina).",
+        "infectiveStage": "Tripomastigote metacíclico.",
+        "diagnosticStage": "Tripomastigote en sangre o LCR.",
+        "epidemiology": "África Oriental y Sur. Principalmente una zoonosis (ganado, antílopes). La enfermedad es aguda, agresiva y letal en semanas o meses (mucho más rápida que T.b. gambiense).",
+        "lifecycleSummary": "Invasión rápida del torrente sanguíneo con altísima parasitemia. Evasión inmune por cambio de glicoproteínas (VSG). Atraviesa rápidamente la barrera hematoencefálica.",
+        "lifecycleDiagram": "assets/img/ciclos/trypanosoma-brucei-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Tripomastigote",
+                "text": "15-30 µm, pleomórfico (formas largas y cortas gruesas) en sangre periférica. Idéntico morfológicamente a T. b. gambiense.",
+                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp",
+                "structures": [
+                    {
+                        "id": "tbr_struct_1",
+                        "name": "Cinetoplasto puntiforme terminal",
+                        "relX": 0.18,
+                        "relY": 0.72
+                    },
+                    {
+                        "id": "tbr_struct_2",
+                        "name": "Membrana ondulante extendida",
+                        "relX": 0.45,
+                        "relY": 0.35
+                    },
+                    {
+                        "id": "tbr_struct_3",
+                        "name": "Flagelo libre anterior",
+                        "relX": 0.85,
+                        "relY": 0.15
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Inoculación por Glossina (fuerte chancro de inoculación doloroso).",
+            "2. Fase hemolinfática aguda con fiebre intermitente alta, linfadenopatía y miocarditis severa.",
+            "3. Invasión temprana del SNC causando meningoencefalitis desmielinizante rápida."
+        ],
+        "diagnosticMethod": "Examen en fresco o gota gruesa (parasitemia suele ser alta, fácil de encontrar). Análisis de LCR es obligatorio para determinar el tratamiento.",
+        "treatment": "Fase 1 (Hemolinfática): Suramina (no cruza la BHE). Fase 2 (Neurológica): Melarsoprol (arsenical altamente tóxico, riesgo de encefalopatía reactiva). Fexinidazol solo para casos específicos."
+    },
+    {
+        "id": "trypanosoma-brucei-gambiense",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Trypanosoma brucei gambiense",
+        "commonName": "Tripanosoma africano",
+        "disease": "Enfermedad del sueño (Tripanosomiasis humana africana occidental/crónica).",
+        "transmission": "Picadura de la mosca tsetsé (género Glossina).",
+        "infectiveStage": "Tripomastigote metacíclico.",
+        "diagnosticStage": "Tripomastigote en sangre, linfa o LCR.",
+        "epidemiology": "África Occidental y Central. Reservorio principalmente humano. Evolución clínica lenta (meses o años) comparada con T. b. rhodesiense.",
+        "lifecycleSummary": "El vector inocula los parásitos que se multiplican en sangre y linfa evadiendo el sistema inmune por variación de glicoproteínas de superficie (VSG), terminando por invadir el SNC.",
+        "lifecycleDiagram": "assets/img/ciclos/trypanosoma-brucei-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Tripomastigote sanguíneo",
+                "text": "15-30 µm. Forma extracelular. Presenta un cinetoplasto pequeño posterior, núcleo central y un flagelo que forma una membrana ondulante extensa. Varía en formas largas finas y cortas gruesas (pleomórfico).",
+                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp",
+                "structures": [
+                    {
+                        "id": "tbg_struct_1",
+                        "name": "Núcleo polimórfico central",
+                        "relX": 0.5,
+                        "relY": 0.48
+                    },
+                    {
+                        "id": "tbg_struct_2",
+                        "name": "Cinetoplasto post-nuclear",
+                        "relX": 0.15,
+                        "relY": 0.7
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Mosca tsetsé inyecta tripomastigotes metacíclicos en el tejido subcutáneo (chancro de inoculación).",
+            "2. Pasan a la linfa y torrente sanguíneo, reproduciéndose por fisión binaria longitudinal (Fase hemolinfática / Signo de Winterbottom).",
+            "3. Cruzan la barrera hematoencefálica causando meningoencefalitis severa, alteración del ciclo circadiano y coma (Fase neurológica)."
+        ],
+        "diagnosticMethod": "Examen de sangre (gota gruesa/fina), aspirado de ganglios linfáticos cervicales posteriores. Punción lumbar para estadificación (evaluar recuento de células y presencia de parásitos en LCR).",
+        "treatment": "Fase 1 (Hemolinfática): Pentamidina. Fase 2 (Neurológica): Eflornitina (a menudo combinada con Nifurtimox - NECT) o Fexinidazol oral (nuevo estándar)."
+    },
+    {
+        "id": "cryptosporidium",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Cryptosporidium spp.",
+        "commonName": "Criptosporidio",
+        "disease": "Criptosporidiosis",
+        "transmission": "Fecal-oral (ingestión de ooquistes en agua recreacional o de bebida). Resiste la cloración estándar.",
+        "infectiveStage": "Ooquiste de pared gruesa esporulado.",
+        "diagnosticStage": "Ooquiste en heces.",
+        "epidemiology": "Mundial. Causa brotes por agua contaminada en piscinas. Causa diarrea autolimitada en inmunocompetentes, pero diarrea colérica crónica y fatal en pacientes con SIDA.",
+        "lifecycleSummary": "Parásito intracelular pero extracitoplasmático (vive bajo la membrana celular del borde en cepillo intestinal). Tras la ingestión, libera esporozoítos, realiza esquizontes y gametos, expulsando ooquistes ya infectantes inmediatamente.",
+        "lifecycleDiagram": "assets/img/ciclos/cryptosporidium-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "Muy pequeño, 4-6 µm, redondo a ligeramente ovalado. Contiene 4 esporozoítos en su interior (no tiene esporoquistes). Ácido-alcohol resistente.",
+                "image": "assets/img/morfologia/cryptosporidium-ooquiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/cryptosporidium-ooquiste.webp",
+                "structures": [
+                    {
+                        "id": "cr_struct_1",
+                        "name": "Pared externa esporulada ácida",
+                        "relX": 0.75,
+                        "relY": 0.4
+                    },
+                    {
+                        "id": "cr_struct_2",
+                        "name": "Esporozoítos internos desprovistos de esporoquiste",
+                        "relX": 0.45,
+                        "relY": 0.55
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de ooquistes maduros; desenquistamiento en el intestino delgado.",
+            "2. Esporozoítos se adhieren al epitelio formando una vacuola parasitófora en la zona apical (microvellosidades).",
+            "3. Multiplicación asexual y sexual. Formación de ooquistes de pared gruesa (excretados) y pared fina (causan autoinfección masiva interna)."
+        ],
+        "diagnosticMethod": "Tinción de Ziehl-Neelsen modificada (Kinyoun) donde los ooquistes se ven de color rojo/magenta brillante sobre fondo verde/azul. Inmunofluorescencia directa (DFA) o EIA en heces.",
+        "treatment": "Inmunocompetentes: Nitazoxanida y rehidratación. Inmunodeprimidos: Terapia Antirretroviral (TARV) para reconstituir CD4+; la Nitazoxanida tiene eficacia muy limitada si hay inmunosupresión severa."
+    },
+    {
+        "id": "cyclospora-cayetanensis",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Cyclospora cayetanensis",
+        "commonName": "Ciclospora",
+        "disease": "Ciclosporiasis",
+        "transmission": "Fecal-oral (ingestión de agua o frutas/verduras frescas contaminadas, ej. frambuesas, albahaca).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Ooquiste no esporulado en heces.",
+        "epidemiology": "Zonas tropicales y subtropicales. Brotes epidémicos estacionales en países desarrollados ligados a la importación de productos agrícolas frescos.",
+        "lifecycleSummary": "Coccidio intestinal. A diferencia de Cryptosporidium, el ooquiste excretado es inmaduro y requiere días a semanas en el medio ambiente (tierra cálida y húmeda) para volverse infeccioso.",
+        "lifecycleDiagram": "assets/img/ciclos/cyclospora-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "8-10 µm (el doble de grande que Cryptosporidium), esférico. Al madurar contiene 2 esporoquistes, cada uno con 2 esporozoítos. Presenta autofluorescencia azul/verde bajo luz UV.",
+                "image": "assets/img/morfologia/cyclospora-ooquiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/cyclospora-ooquiste.webp",
+                "structures": [
+                    {
+                        "id": "cc_struct_1",
+                        "name": "Dos esporoquistes internos",
+                        "relX": 0.48,
+                        "relY": 0.42
+                    },
+                    {
+                        "id": "cc_struct_2",
+                        "name": "Glóbulos refractiles dobles",
+                        "relX": 0.52,
+                        "relY": 0.58
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión del ooquiste esporulado ambiental.",
+            "2. Exquistación liberando esporozoítos que invaden las células epiteliales del intestino delgado (yeyuno).",
+            "3. Ciclos asexual (esquizogonia) y sexual, culminando en la excreción de ooquistes inmaduros no infectantes."
+        ],
+        "diagnosticMethod": "CPS de concentración. Tinción ácido-alcohol resistente modificada (Kinyoun) con tinción variable (algunos oscuros, otros claros o 'fantasmas'). Microscopía de epifluorescencia UV.",
+        "treatment": "Trimetoprima-Sulfametoxazol (TMP-SMX) es el fármaco de elección. Ciprofloxacino en pacientes alérgicos a sulfas."
+    },
+    
+    {
+        "id": "cystoisospora-belli",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Cystoisospora belli",
+        "commonName": "Isospora",
+        "disease": "Cistoisosporiasis",
+        "transmission": "Fecal-oral (ingestión de ooquistes esporulados).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Ooquiste inmaduro o maduro en heces.",
+        "epidemiology": "Regiones tropicales/subtropicales. Produce diarrea acuosa severa, pérdida de peso y mala absorción, siendo una infección oportunista crítica en pacientes con VIH/SIDA.",
+        "lifecycleSummary": "Coccidio intestinal exclusivo del humano (monoxeno). Los ooquistes excretados requieren madurar en el ambiente. Destruye los enterocitos durante su reproducción intracelular.",
+        "lifecycleDiagram": "assets/img/ciclos/cystoisospora-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "Muy grande para un coccidio (20-30 µm), de forma elipsoidal u ovalada alargada. Al madurar contiene 2 esporoquistes, cada uno con 4 esporozoítos en su interior.",
+                "image": "assets/img/morfologia/cystoisospora-ooquiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/cystoisospora-ooquiste.webp",
+                "structures": [
+                    {
+                        "id": "cy_struct_1",
+                        "name": "Forma elipsoidal translúcida",
+                        "relX": 0.88,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "cy_struct_2",
+                        "name": "Dos esporoblastos circulares",
+                        "relX": 0.46,
+                        "relY": 0.45
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de ooquiste esporulado (con 8 esporozoítos).",
+            "2. Invasión de enterocitos en intestino delgado, realizando reproducción asexual (esquizogonia).",
+            "3. Ciclo sexual (gametogonia) que culmina en la excreción de ooquistes inmaduros con un solo esporoblasto."
+        ],
+        "diagnosticMethod": "Examen CPS en fresco (cristales de Charcot-Leyden suelen estar presentes por eosinofilia local). Tinción de Kinyoun (ácido-alcohol resistente). Autofluorescencia azul-verde bajo luz UV.",
+        "treatment": "Trimetoprima-Sulfametoxazol (TMP-SMX) de primera línea. En alérgicos: Ciprofloxacino o Pirimetamina."
+    },
+    {
+        "id": "blastocystis",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Blastocystis sp.",
+        "commonName": "Blastocystis (Estramenopilo)",
+        "disease": "Blastocistosis (patogenicidad debatida, asociado a Síndrome de Intestino Irritable).",
+        "transmission": "Fecal-oral.",
+        "infectiveStage": "Quiste de pared gruesa.",
+        "diagnosticStage": "Fase vacuolar, granular, ameboide o quística en heces.",
+        "epidemiology": "Organismo eucariota más frecuentemente aislado en heces humanas a nivel mundial. Taxonómicamente es un Estramenopilo (relacionado con algas pardas), no un protozoario verdadero.",
+        "lifecycleSummary": "Ciclo complex y no completamente dilucidado. Se transmite por quistes ambientales que en el intestino desarrollan diversas formas morfológicas de reproducción asexual.",
+        "lifecycleDiagram": "assets/img/ciclos/blastocystis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Fase Vacuolar",
+                "text": "5-40 µm. Es la forma más común en heces. Contiene una gran vacuola central que desplaza el citoplasma y los múltiples núcleos hacia la periferia (anillo).",
+                "image": "assets/img/morfologia/blastocystis-vacuolar.webp"
+            },
+            {
+                "stage": "Quiste",
+                "text": "3-5 µm. Forma de resistencia ambiental. Ovalado o esférico, pared multilaminar, 1 a 4 núcleos.",
+                "image": "assets/img/morfologia/blastocystis-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/blastocystis-vacuolar.webp",
+                "structures": [
+                    {
+                        "id": "bl_struct_1",
+                        "name": "Gran vacuola central",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "bl_struct_2",
+                        "name": "Núcleos periféricos marginados",
+                        "relX": 0.82,
+                        "relY": 0.42
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de quistes viables.",
+            "2. Transformación en el colon a formas vacuolares.",
+            "3. Replicación por fisión binaria y formación de quistes de pared fina (autoinfección) y pared gruesa (excretados)."
+        ],
+        "diagnosticMethod": "CPS directo con lugol y tinción Tricrómica. Su presencia se reporta en 'cruces' o recuento por campo. PCR para subtipificación (existen >17 subtipos, ST1 a ST4 son comunes en humanos).",
+        "treatment": "Controvertido. Solo se trata si hay síntomas (diarrea crónica, urticaria) y se han descartado otros patógenos. Metronidazol o Trimetoprima-Sulfametoxazol."
+    },
+    {
+        "id": "sarcocystis",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Sarcocystis spp.",
+        "commonName": "Sarcocystis",
+        "disease": "Sarcocistosis (Intestinal o Muscular).",
+        "transmission": "Intestinal: Comer carne cruda con quistes (S. hominis en res, S. suihominis en cerdo). Muscular: Ingestión de esporoquistes en heces de animales.",
+        "infectiveStage": "Sarcocisto (bradiozoítos) para infección intestinal; Esporoquiste para infección muscular.",
+        "diagnosticStage": "Esporoquistes en heces (fase intestinal) o Sarcocistos en biopsia (fase muscular).",
+        "epidemiology": "Zonas donde se consume carne cruda o poco cocida. En la forma muscular, el humano actúa accidentalmente como hospedero intermediario.",
+        "lifecycleSummary": "Coccidio heteroxeno (ciclo depredador-presa). El humano suele ser hospedero definitivo (infección intestinal leve). Si ingiere agua contaminada con heces de depredadores, se vuelve intermediario, desarrollando quistes intramusculares dolorosos.",
+        "lifecycleDiagram": "assets/img/ciclos/sarcocystis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Esporoquiste (en heces)",
+                "text": "10-15 µm, ovalado. Contiene 4 esporozoítos. Los ooquistes maduran in situ en la mucosa y se rompen, por lo que en heces se observan esporoquistes sueltos.",
+                "image": "assets/img/morfologia/sarcocystis-esporoquiste.webp"
+            },
+            {
+                "stage": "Sarcocisto (en músculo)",
+                "text": "Quiste tisular macroscópico o microscópico dentro de la fibra muscular, conteniendo miles de bradizoítos en forma de plátano.",
+                "image": "assets/img/morfologia/sarcocystis-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/sarcocystis-esporoquiste.webp",
+                "structures": [
+                    {
+                        "id": "sa_struct_1",
+                        "name": "4 esporozoítos alargados",
+                        "relX": 0.5,
+                        "relY": 0.52
+                    },
+                    {
+                        "id": "sa_struct_2",
+                        "name": "Residuo refractario esporocístico",
+                        "relX": 0.32,
+                        "relY": 0.48
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. INTESTINAL: Ingestión de carne con sarcocistos. Los bradizoítos maduran a gametos en la mucosa intestinal, produciendo ooquistes que se rompen liberando esporoquistes.",
+            "2. MUSCULAR: Ingestión accidental de esporoquistes (ej. heces de perro/serpiente). Los esporozoítos atraviesan el intestino.",
+            "3. Invasión de células endoteliales y luego de fibras musculares esqueléticas o cardíacas formando el Sarcocisto."
+        ],
+        "diagnosticMethod": "Intestinal: Detección de esporoquistes en heces (flotación con sulfato de zinc). Muscular: Biopsia de músculo revelando el Sarcocisto. Eosinofilia periférica marcada.",
+        "treatment": "Intestinal: Autolimitada, manejo sintomático. Muscular: No existe terapia específica probada; se usan corticosteroides para la miositis alérgica y albendazol en casos severos."
+    },
+    {
+        "id": "eimeria-tenella",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Eimeria tenella",
+        "commonName": "Coccidio cecal aviar",
+        "disease": "Coccidiosis cecal (Severa).",
+        "transmission": "Fecal-oral (ingestión de ooquistes esporulados del lecho avícola).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Ooquistes en heces o necropsia de ciegos.",
+        "epidemiology": "Una de las especies de Eimeria más patógenas y económicamente devastadoras en la industria avícola mundial.",
+        "lifecycleSummary": "Coccidio altamente específico de sitio. Invade profundamente la mucosa de los ciegos del pollo, causando hemorragia masiva, necrosis tisular y alta mortalidad en la parvada.",
+        "lifecycleDiagram": "assets/img/ciclos/eimeria-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "19-26 µm. Ovoidal, de pared lisa. Al esporular contiene 4 esporoquistes, cada uno con 2 esporozoítos (típico de Eimeria).",
+                "image": "assets/img/morfologia/eimeria-ooquiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/eimeria-ooquiste.webp",
+                "structures": [
+                    {
+                        "id": "et_struct_1",
+                        "name": "Cuatro esporoquistes bivalvos",
+                        "relX": 0.45,
+                        "relY": 0.4
+                    },
+                    {
+                        "id": "et_struct_2",
+                        "name": "Pared lisa oocística",
+                        "relX": 0.85,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión del ooquiste ambiental esporulado por el pollo.",
+            "2. Los esporozoítos invaden exclusivamente el epitelio de los ciegos.",
+            "3. Dos o tres generaciones de esquizogonia masiva que destruyen la mucosa, causando hemorragia, seguidas de gametogonia y excreción de ooquistes."
+        ],
+        "diagnosticMethod": "Necropsia aviar: Ciegos inflamados, dilatados y llenos de sangre coagulada (cores cecales). Flotación fecal en cama de aves (técnica de McMaster).",
+        "treatment": "Uso veterinario: Anticoccidianos en el agua de bebida (Amprolio, Toltrazuril, Sulfaquinoxalina). Prevención mediante vacunas vivas atenuadas o ionóforos en el alimento."
+    },
+    {
+        "id": "eimeria-maxima",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Eimeria maxima",
+        "commonName": "Coccidio del intestino medio aviar",
+        "disease": "Coccidiosis aviar (Intestino medio).",
+        "transmission": "Fecal-oral (ingestión de ooquistes esporulados).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Ooquistes en heces o hallazgos a la necropsia.",
+        "epidemiology": "Cosmopolita. Afecta el yeyuno e íleon. Aunque causa menor mortalidad que E. tenella, provoca severa pérdida de absorción de nutrientes, afectando la conversión alimenticia y pigmentación del pollo.",
+        "lifecycleSummary": "El parásito se localiza en la porción media del tracto intestinal. Es muy inmunogénica, generando fuerte protección tras la primera exposición.",
+        "lifecycleDiagram": "assets/img/ciclos/eimeria-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "Es la Eimeria aviar con el ooquiste más GRANDE (29-30 µm de largo). Pared amarillo-marrón, con una ligera protuberancia en un polo.",
+                "image": "assets/img/morfologia/eimeria-maxima.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/eimeria-maxima.webp",
+                "structures": [
+                    {
+                        "id": "emax_struct_1",
+                        "name": "Pared gruesa rugosa marrón",
+                        "relX": 0.78,
+                        "relY": 0.48
+                    },
+                    {
+                        "id": "emax_struct_2",
+                        "name": "Micrópilo polar hialino",
+                        "relX": 0.5,
+                        "relY": 0.12
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de ooquistes esporulados.",
+            "2. Los esporozoítos invaden las células del epitelio del yeyuno.",
+            "3. Reproducción asexual y sexual con formación de grandes gametos que causan exudado mucoide anaranjado en la luz intestinal."
+        ],
+        "diagnosticMethod": "Necropsia aviar: Intestino medio flácido con exudado mucoso, a menudo con petequias. Observación microscópica de raspado de mucosa para visualizar los ooquistes grandes.",
+        "treatment": "Uso veterinario: Amprolio o Toltrazuril. Control mediante programas de vacunación e higiene estricta de las camas."
+    },
+    {
+        "id": "eimeria-acervulina",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Eimeria acervulina",
+        "commonName": "Coccidio duodenal aviar",
+        "disease": "Coccidiosis aviar (Duodenal).",
+        "transmission": "Fecal-oral (ingestión de ooquistes).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Ooquistes en heces/raspos intestinales.",
+        "epidemiology": "La especie de Eimeria más frecuente a nivel mundial en la industria avícola. Se desarrolla muy rápidamente en el duodeno.",
+        "lifecycleSummary": "Invade la porción superior del intestino delgado (duodeno). Afecta la absorción, resultando en aves con bajo peso y pobre pigmentación (pérdida de xantofilas).",
+        "lifecycleDiagram": "assets/img/ciclos/eimeria-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Ooquiste",
+                "text": "18-20 µm, ovalado u ovoide. Relativamente pequeño en comparación con otras especies.",
+                "image": "assets/img/morfologia/eimeria-acervulina.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/eimeria-acervulina.webp",
+                "structures": [
+                    {
+                        "id": "eace_struct_1",
+                        "name": "Forma subesférica simétrica",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión masiva de ooquistes.",
+            "2. Liberación en el duodeno, colonizando preferentemente las vellosidades de la parte superior del intestino.",
+            "3. Desarrollo asexual superficial, excretando enormes cantidades de ooquistes al medio."
+        ],
+        "diagnosticMethod": "Necropsia aviar patognomónica: Presencia de lesiones en forma de 'estrías blancas transversales' (como escaleras) en la mucosa del duodeno, que corresponden a acúmulos de ooquistes.",
+        "treatment": "Uso veterinario: Anticoccidianos en el agua o pienso. Su alta frecuencia hace que desarrolle resistencia farmacológica rápidamente."
+    },
+    {
+        "id": "eimeria-necatrix",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Eimeria necatrix",
+        "commonName": "Coccidio letal aviar",
+        "disease": "Coccidiosis aviar (Altamente patógena).",
+        "transmission": "Fecal-oral (ingestión de ooquistes esporulados).",
+        "infectiveStage": "Ooquiste esporulado.",
+        "diagnosticStage": "Esquizontes profundos en yeyuno, o ooquistes en ciegos.",
+        "epidemiology": "Altamente patógena. Afecta aves más maduras (reproductoras o ponedoras) causando severa enteritis hemorrágica.",
+        "lifecycleSummary": "Tiene un ciclo particular: la fase asexual destructiva (esquizogonia) ocurre en la profundidad de las glándulas del intestino medio (yeyuno), pero la fase sexual (gametogonia) ocurre en los ciegos.",
+        "lifecycleDiagram": "assets/img/ciclos/eimeria-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Esquizonte de segunda generación",
+                "text": "Muy grandes, visibles macroscópicamente como puntos blancos profundos en la serosa del intestino. Contienen miles de merozoítos.",
+                "image": "assets/img/morfologia/eimeria-necatrix.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/eimeria-necatrix.webp",
+                "structures": [
+                    {
+                        "id": "enec_struct_1",
+                        "name": "Esquizonte gigante submucoso",
+                        "relX": 0.55,
+                        "relY": 0.45
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de ooquistes.",
+            "2. En el yeyuno, los esquizontes crecen desproporcionadamente en la capa submucosa, causando hemorragia intensa y necrosis ('intestino en globo').",
+            "3. Los merozoítos migran a los ciegos para finalizar la fase sexual sin causar lesiones significativas en ese lugar."
+        ],
+        "diagnosticMethod": "Necropsia: Intestino medio engrosado, oscuro, con manchas blancas (esquizontes) y hemorragias (apariencia de 'sal y pimienta' desde el exterior). Raspado profundo del yeyuno para ver colonias de esquizontes grandes.",
+        "treatment": "Uso veterinario: Toltrazuril, Amprolio o Sulfonamidas. Debido al daño profundo, frecuentemente es letal antes de que el tratamiento haga efecto."
+    },
+    {
+        "id": "toxoplasma-gondii",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Toxoplasma gondii",
+        "commonName": "Toxoplasma",
+        "disease": "Toxoplasmosis",
+        "transmission": "Fecal-oral (ooquistes en heces de gato), carnivorismo (quistes tisulares en carne cruda), transplacentaria.",
+        "infectiveStage": "Ooquiste esporulado, Bradizoíto (en tejido) o Taquizoíto.",
+        "diagnosticStage": "Taquizoítos (fase aguda) o Quistes tisulares con bradizoítos.",
+        "epidemiology": "Mundial. Alta seroprevalencia. Riesgo severo para inmunocomprometidos (SIDA) y fetos primoinfectados (Toxoplasmosis congénita).",
+        "lifecycleSummary": "El gato (hospedero definitivo) excreta ooquistes. Los humanos u otros animales los ingieren. Los parásitos se diseminan como taquizoítos de replicación rápida y luego forman quistes latentes (bradizoítos) en cerebro y músculo.",
+        "lifecycleDiagram": "assets/img/ciclos/toxoplasma-gondii-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Taquizoíto",
+                "text": "4-8 µm, forma de arco o media luna. Crecimiento rápido, responsable de la lisis celular y daño agudo de tejidos.",
+                "image": "assets/img/morfologia/toxoplasma-gondii-taquizoito.webp"
+            },
+            {
+                "stage": "Quiste Tisular",
+                "text": "Estructura intracelular que contiene de decenas a miles de bradizoítos de replicación lenta. Presentes de por vida en SNC y músculo esquelético.",
+                "image": "assets/img/morfologia/toxoplasma-gondii-quiste.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/toxoplasma-gondii-taquizoito.webp",
+                "structures": [
+                    {
+                        "id": "tg_struct_1",
+                        "name": "Forma conoide apical",
+                        "relX": 0.45,
+                        "relY": 0.15
+                    },
+                    {
+                        "id": "tg_struct_2",
+                        "name": "Núcleo vesicular inferior",
+                        "relX": 0.5,
+                        "relY": 0.65
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de carne mal cocida o verduras contaminadas con heces de felinos.",
+            "2. Liberación en el tracto gastrointestinal; penetran el epitelio intestinal diseminándose vía linfohematógena.",
+            "3. La respuesta inmune frena a los taquizoítos, forzándolos a transformarse en quistes tisulares latentes."
+        ],
+        "diagnosticMethod": "Serología: Detección de IgG e IgM específicas (Prueba de avidez para datar la infección en embarazadas). PCR de líquido amniótico. TAC/RM cerebral en pacientes con VIH muestra lesiones en 'anillo'.",
+        "treatment": "Individuos inmunocompetentes rara vez requieren tratamiento. Inmunocomprometidos y embarazadas: Pirimetamina + Sulfadiazina + Ácido folínico (para prevenir toxicidad medular)."
+    },
+    {
+        "id": "plasmodium-falciparum",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Plasmodium falciparum",
+        "commonName": "Plasmodium",
+        "disease": "Malaria (Paludismo) Falciparum (Terciana maligna)",
+        "transmission": "Vectorial (picadura de mosquito Anopheles hembra infectado).",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos (forma de anillo) y Gametocitos en frotis sanguíneo.",
+        "epidemiology": "Zonas tropicales, especialmente África Subsahariana. Es la especie de Plasmodium más letal.",
+        "lifecycleSummary": "Inoculación de esporozoítos por el mosquito. Ciclo hepático (esquizogonia) silencioso, seguido por invasión masiva de eritrocitos. P. falciparum altera la membrana de los eritrocitos causando microtrombos capilares.",
+        "lifecycleDiagram": "assets/img/ciclos/plasmodium-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto en Anillo",
+                "text": "Eritrocito infectado frecuentemente presenta infecciones múltiples. Anillos finos, a menudo con doble cromatina ('auriculares'). No agranda el eritrocito.",
+                "image": "assets/img/morfologia/plasmodium-falciparum-anillo.webp"
+            },
+            {
+                "stage": "Gametocito",
+                "text": "Patognomónico de la especie: forma de 'banana', salchicha o media luna. Ocupa gran parte del eritrocito deformándolo.",
+                "image": "assets/img/morfologia/plasmodium-falciparum-gametocito.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/plasmodium-falciparum-gametocito.webp",
+                "structures": [
+                    {
+                        "id": "pf_struct_1",
+                        "name": "Forma de semiluna/banana",
+                        "relX": 0.5,
+                        "relY": 0.45
+                    },
+                    {
+                        "id": "pf_struct_2",
+                        "name": "Cromatina concentrada central",
+                        "relX": 0.48,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "pf_struct_3",
+                        "name": "Membrana eritrocitaria residual",
+                        "relX": 0.82,
+                        "relY": 0.35
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Esporozoítos inyectados por el mosquito viajan al hígado e invaden hepatocitos.",
+            "2. Ruptura de hepatocitos liberando miles de merozoítos al torrente sanguíneo (no forma hipnozoítos durmientes, a diferencia de P. vivax).",
+            "3. Invasión de eritrocitos de todas las edades. Modificación de la membrana eritrocitaria causando citoadherencia al endotelio capilar (malaria cerebral)."
+        ],
+        "diagnosticMethod": "Frotis de sangre periférica y Gota Gruesa (Gold Standard). Pruebas Rápidas de Diagnóstico (RDTs) detectando proteína HRP-2 específica de P. falciparum. PCR para confirmación molecular de especies.",
+        "treatment": "Terapia Combinada Basada en Artemisinina (ACT), por ejemplo: Arteméter-Lumefantrina o Artesunato IV en casos severos."
+    },
+    {
+        "id": "plasmodium-vivax",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Plasmodium vivax",
+        "commonName": "Plasmodium (Vivax)",
+        "disease": "Malaria (Paludismo) Vivax (Terciana benigna).",
+        "transmission": "Vectorial (picadura de mosquito Anopheles hembra infectado).",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos, Esquizontes y Gametocitos en frotis sanguíneo.",
+        "epidemiology": "La forma más ampliamente distribuida de malaria fuera de África, común en las Américas y Asia. Requiere el antígeno Duffy en los eritrocitos para invadirlos.",
+        "lifecycleSummary": "Ciclo hepático que incluye la formación de hipnozoítos (estadios latentes que causan recaídas meses/años después). En sangre, invade exclusivamente reticulocitos (eritrocitos jóvenes), produciendo paroxismos febriles cada 48 horas.",
+        "lifecycleDiagram": "assets/img/ciclos/plasmodium-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto en Anillo",
+                "text": "Eritrocito infectado suele estar agrandado y pálido. Aparece punteado rojizo (Granulaciones de Schüffner). El anillo es grueso y ameboide.",
+                "image": "assets/img/morfologia/plasmodium-vivax-anillo.webp"
+            },
+            {
+                "stage": "Esquizonte",
+                "text": "Estructura intracelular que contiene de 12 a 24 merozoítos formados, casi ocupando por completo el eritrocito agrandado.",
+                "image": "assets/img/morfologia/plasmodium-vivax-esquizonte.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/plasmodium-vivax-esquizonte.webp",
+                "structures": [
+                    {
+                        "id": "pv_struct_1",
+                        "name": "Merozoítos múltiples aglomerados",
+                        "relX": 0.45,
+                        "relY": 0.48
+                    },
+                    {
+                        "id": "pv_struct_2",
+                        "name": "Eritrocito hospedero agrandado",
+                        "relX": 0.8,
+                        "relY": 0.35
+                    },
+                    {
+                        "id": "pv_struct_3",
+                        "name": "Gránulos de Schüffner periféricos",
+                        "relX": 0.72,
+                        "relY": 0.22
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Esporozoítos invaden hepatocitos. Algunos se desarrollan a esquizontes tisulares y otros quedan inactivos como 'hipnozoítos'.",
+            "2. Ruptura de hepatocitos, liberación de merozoítos e invasión de reticulocitos sanguíneos.",
+            "3. Lisis sincronizada de eritrocitos cada 48 horas causando el acceso palúdico (escalofrío, fiebre, sudoración)."
+        ],
+        "diagnosticMethod": "Gota gruesa y frotis sanguíneo (búsqueda de eritrocitos agrandados con gránulos de Schüffner y trofozoítos ameboides). Pruebas rápidas (RDT) para pLDH. PCR.",
+        "treatment": "Esquizonticida sanguíneo (Cloroquina o ACT en zonas de resistencia) MÁS un esquizonticida tisular (Primaquina o Tafenoquina) obligatoriamente para erradicar los hipnozoítos y prevenir recaídas."
+    },
+    {
+        "id": "plasmodium-malariae",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Plasmodium malariae",
+        "commonName": "Plasmodium (Malariae)",
+        "disease": "Malaria (Paludismo) Cuartana.",
+        "transmission": "Vectorial (mosquito Anopheles hembra).",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos (en banda) y Esquizontes en roseta.",
+        "epidemiology": "Distribución irregular global. Produce la malaria más leve pero más crónica; puede persistir asintomáticamente en la sangre por décadas.",
+        "lifecycleSummary": "Ciclo sanguíneo lento: fiebre cada 72 horas (fiebre cuartana). Invade exclusivamente eritrocitos viejos (senescentes), lo que limita naturalmente la parasitemia a niveles muy bajos.",
+        "lifecycleDiagram": "assets/img/ciclos/plasmodium-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto en Banda",
+                "text": "Patognomónico de la especie. El citoplasma del parásito se extiende formando una banda compacta que cruza de lado a lado el eritrocito normal (no agrandado).",
+                "image": "assets/img/morfologia/plasmodium-malariae-banda.webp"
+            },
+            {
+                "stage": "Esquizonte en Roseta",
+                "text": "Contiene de 6 a 12 merozoítos grandes dispuestos simétricamente alrededor de un pigmento malárico central (hemozoína oscura), dando apariencia de flor o roseta.",
+                "image": "assets/img/morfologia/plasmodium-malariae-esquizonte.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/plasmodium-malariae-banda.webp",
+                "structures": [
+                    {
+                        "id": "pm_struct_1",
+                        "name": "Trofozoíto ecuatorial en banda",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "pm_struct_2",
+                        "name": "Eritrocito de tamaño normal",
+                        "relX": 0.78,
+                        "relY": 0.28
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Esporozoítos invaden el hígado. NO forma hipnozoítos durmientes.",
+            "2. Los merozoítos invaden solo glóbulos rojos senescentes.",
+            "3. Lisis de glóbulos rojos cada 72 horas. Alta asociación con Síndrome Nefrótico por depósito de inmunocomplejos en infecciones crónicas."
+        ],
+        "diagnosticMethod": "Gota gruesa y frotis fino. Búsqueda de las formas en banda y esquizontes en roseta en eritrocitos de tamaño normal, sin punteado de Schüffner.",
+        "treatment": "Cloroquina. Al no tener fase hepática latente (hipnozoítos), NO requiere tratamiento con Primaquina."
+    },
+    {
+        "id": "plasmodium-ovale",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Plasmodium ovale",
+        "commonName": "Plasmodium (Ovale)",
+        "disease": "Malaria (Paludismo) Terciana benigna.",
+        "transmission": "Vectorial (mosquito Anopheles hembra).",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Eritrocitos ovalados con fimbrias en frotis sanguíneo.",
+        "epidemiology": "Endémico casi exclusivamente en África Occidental. Mucho menos frecuente que P. vivax, pero clínicamente idéntico.",
+        "lifecycleSummary": "Al igual que P. vivax, tiene un ciclo de fiebre de 48 horas, invade reticulocitos y FORMA hipnozoítos en el hígado, causando recaídas.",
+        "lifecycleDiagram": "assets/img/ciclos/plasmodium-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Trofozoíto en Anillo y Glóbulo Rojo",
+                "text": "El eritrocito infectado adquiere una característica forma ovalada o alargada con bordes aserrados/desflecados (fimbriados). Punteado de James (similar a Schüffner pero más oscuro y grueso).",
+                "image": "assets/img/morfologia/plasmodium-ovale-anillo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/plasmodium-ovale-anillo.webp",
+                "structures": [
+                    {
+                        "id": "po_struct_1",
+                        "name": "Borde fimbriado aserrado eritrocitario",
+                        "relX": 0.85,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "po_struct_2",
+                        "name": "Punteado grueso de James",
+                        "relX": 0.65,
+                        "relY": 0.3
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Esporozoítos viajan al hígado, formando esquizontes y también hipnozoítos latentes.",
+            "2. Invasión de reticulocitos circulantes deformando su citoesqueleto (forma ovalada).",
+            "3. Lisis sincronizada cada 48 horas (febrícula terciana)."
+        ],
+        "diagnosticMethod": "Frotis sanguíneo fino mostrando eritrocitos ovalados y fimbriados con punteado de James. Confirmación por PCR para diferenciarlo de P. vivax.",
+        "treatment": "Esquizonticida sanguíneo (Cloroquina o ACT) MÁS un esquizonticida tisular (Primaquina) obligatoriamente para erradicar los hipnozoítos y curar radicalmente al paciente."
+    },
+    {
+        "id": "babesia-bovis",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Babesia bovis",
+        "commonName": "Babesia bovina pequeña",
+        "disease": "Babesiosis bovina (Fiebre de las garrapatas, variante severa/neurológica).",
+        "transmission": "Vectorial (picadura de garrapatas duras, principalmente Rhipicephalus microplus). Transmisión transovárica en la garrapata.",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos y Merozoítos en eritrocitos.",
+        "epidemiology": "Regiones tropicales y subtropicales. Es una de las enfermedades transmitidas por garrapatas más destructivas para la industria ganadera mundial.",
+        "lifecycleSummary": "Las garrapatas inoculan esporozoítos que invaden directamente los eritrocitos del bovino (sin fase hepática). B. bovis altera la membrana del glóbulo rojo causando secuestro capilar, lo que lleva a síndromes neurológicos severos (babesiosis cerebral) y choque hipotensivo.",
+        "lifecycleDiagram": "assets/img/ciclos/babesia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Merozoítos pareados",
+                "text": "Es una Babesia 'pequeña' (1-1.5 µm). Su morfología diagnóstica típica en eritrocitos consiste en pares de merozoítos piriformes (forma de pera) unidos por sus extremos puntiagudos formando un ÁNGULO OBTUSO (>90°).",
+                "image": "assets/img/morfologia/babesia-bovis-merozoito.webp"
+            },
+            {
+                "stage": "Trofozoíto en anillo",
+                "text": "Formas anulares pequeñas y compactas dentro del eritrocito. A diferencia de Plasmodium, no producen pigmento malárico (hemozoína).",
+                "image": "assets/img/morfologia/babesia-bovis-anillo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/babesia-bovis-merozoito.webp",
+                "structures": [
+                    {
+                        "id": "bbov_struct_1",
+                        "name": "Merozoítos piriformes en ángulo obtuso",
+                        "relX": 0.48,
+                        "relY": 0.45
+                    },
+                    {
+                        "id": "bbov_struct_2",
+                        "name": "Ausencia total de hemozoína celular",
+                        "relX": 0.7,
+                        "relY": 0.3
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. La garrapata Rhipicephalus inocula esporozoítos durante su alimentación sanguínea.",
+            "2. Invasión directa de eritrocitos y reproducción asexual (fisión binaria) formando trofozoítos y luego merozoítos.",
+            "3. Lisis eritrocitaria, anemia hemolítica, y secuestro de eritrocitos infectados en la microvasculatura del cerebro y pulmones."
+        ],
+        "diagnosticMethod": "Frotis sanguíneo grueso y fino teñido con Giemsa, preferentemente de capilares periféricos (punta de la oreja o cola del bovino) donde se secuestran los eritrocitos. Serología (ELISA, IFI).",
+        "treatment": "Uso veterinario: Dipropionato de imidocarbo o Aceturato de diminazeno. Terapia de soporte con fluidos. Control estricto de poblaciones de garrapatas mediante baños acaricidas."
+    },
+    {
+        "id": "babesia-bigemina",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Babesia bigemina",
+        "commonName": "Babesia bovina grande",
+        "disease": "Babesiosis bovina (Fiebre de Texas / Fiebre de aguas rojas).",
+        "transmission": "Vectorial (picadura de garrapata Rhipicephalus spp.). Transmisión transovárica en la garrapata.",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos y Merozoítos en eritrocitos.",
+        "epidemiology": "Endémica en regiones ganaderas tropicales y subtropicales. Coexiste frecuentemente con B. bovis y Anaplasma marginale.",
+        "lifecycleSummary": "Invade los eritrocitos causando una hemólisis intravascular aguda masiva. A diferencia de B. bovis, NO produce secuestro capilar, por lo que el cuadro clínico domina por la anemia severa y la hemoglobinuria (orina color vino o rojo oscuro).",
+        "lifecycleDiagram": "assets/img/ciclos/babesia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Merozoítos pareados",
+                "text": "Es una Babesia 'grande' (2.5-3.5 µm). Su característica patognomónica es formar pares piriformes que se unen formando un ÁNGULO AGUDO (<90°), y suelen ocupar gran parte del diámetro del eritrocito.",
+                "image": "assets/img/morfologia/babesia-bigemina-merozoito.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/babesia-bigemina-merozoito.webp",
+                "structures": [
+                    {
+                        "id": "bbig_struct_1",
+                        "name": "Merozoítos piriformes alargados en ángulo agudo",
+                        "relX": 0.5,
+                        "relY": 0.48
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Inoculación de esporozoítos por la garrapata vectora.",
+            "2. Invasión de eritrocitos, multiplicación rápida y lisis celular.",
+            "3. Liberación masiva de hemoglobina al plasma, superando la capacidad de la haptoglobina y resultando en excreción renal (hemoglobinuria)."
+        ],
+        "diagnosticMethod": "Frotis sanguíneo periférico (vena yugular). A diferencia de B. bovis, B. bigemina se encuentra fácilmente en la circulación general. PCR para confirmación de especie.",
+        "treatment": "Uso veterinario: Dipropionato de imidocarbo o Aceturato de diminazeno. Transfusión sanguínea en animales con hematocrito críticamente bajo (<12%)."
+    },
+    {
+        "id": "babesia-microti",
+        "category": "Protozoarios 🦠",
+        "scientificName": "Babesia microti",
+        "commonName": "Babesia humana / del ratón",
+        "disease": "Babesiosis humana.",
+        "transmission": "Vectorial (picadura de ninfa de garrapata Ixodes scapularis). Transfusional (bancos de sangre). Transplacentaria.",
+        "infectiveStage": "Esporozoíto.",
+        "diagnosticStage": "Trofozoítos en eritrocitos (Anillos o Cruz de Malta).",
+        "epidemiology": "Principalmente en Norteamérica. Zoonosis donde el humano es hospedero accidental (el reservorio es el ratón de patas blancas, Peromyscus leucopus). Altamente letal en pacientes asplénicos (sin bazo) o inmunocomprometidos.",
+        "lifecycleSummary": "El esporozoíto entra al torrente sanguíneo, invade los glóbulos rojos y se multiplica asincrónicamente por gemación, rompiendo los eritrocitos y causando febrícula intermitente, anemia hemolítica y trombocitopenia.",
+        "lifecycleDiagram": "assets/img/ciclos/babesia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Tétrada (Cruz de Malta)",
+                "text": "Estructura patognomónica (aunque rara de observar) formada por 4 merozoítos dispuestos en forma de cruz tras una gemación cuádruple simultánea en el eritrocito.",
+                "image": "assets/img/morfologia/babesia-microti-tetrada.webp"
+            },
+            {
+                "stage": "Anillos pleomórficos",
+                "text": "Anillos muy pequeños, frecuentemente con vacuolas, que se pueden confundir con P. falciparum. Se diferencian porque carecen de pigmento malárico, hay gran pleomorfismo y, en ocasiones, formas extra-eritrocitarias.",
+                "image": "assets/img/morfologia/babesia-microti-anillo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/babesia-microti-tetrada.webp",
+                "structures": [
+                    {
+                        "id": "bm_struct_1",
+                        "name": "Disposición en Cruz de Malta (Tétrada)",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. La ninfa de Ixodes inyecta esporozoítos (requiere estar adherida >36 horas).",
+            "2. Los esporozoítos invaden glóbulos rojos; se reproducen por gemación (división asexual).",
+            "3. La lisis de glóbulos rojos provoca la clínica, mientras que algunos parásitos se transforman en gametos que son ingeridos por otra garrapata para completar el ciclo sexual."
+        ],
+        "diagnosticMethod": "Frotis sanguíneo fino y gota gruesa teñidos con Giemsa (búsqueda meticulosa para diferenciar de malaria). PCR en sangre entera es el Gold Standard y la prueba más sensible. Serología (IFA).",
+        "treatment": "Casos leves a moderados: Atovacuona + Azitromicina. Casos graves (especialmente asplénicos): Clindamicina + Quinina IV, y puede requerirse exanguinotransfusión."
+    },
+    {
+        "id": "ascaris-lumbricoides",
+        "category": "Helmintos 🪱",
+        "scientificName": "Ascaris lumbricoides",
+        "commonName": "Lombriz intestinal",
+        "disease": "Ascariasis",
+        "transmission": "Fecal-oral (ingestión de huevos embrionados en suelo/alimentos). Geofagia.",
+        "infectiveStage": "Huevo embrionado (con larva L2/L3 en su interior).",
+        "diagnosticStage": "Huevos en heces o expulsión de gusanos adultos.",
+        "epidemiology": "La helmintiasis humana más común a nivel mundial. Predominante en zonas rurales tropicales.",
+        "lifecycleSummary": "Ingestión del huevo. La larva eclosiona, atraviesa la pared intestinal y realiza migración cardiopulmonar (ciclo de Loos).",
+        "lifecycleDiagram": "assets/img/ciclos/ascaris-lumbricoides-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Nematodo cilíndrico. Hembra: 20-35 cm, extremo posterior recto. Macho: 15-30 cm, extremo posterior curvado con espículas.",
+                "image": "assets/img/morfologia/ascaris-lumbricoides-adulto.webp"
+            },
+            {
+                "stage": "Huevo Fértil",
+                "text": "45-75 µm, ovalado, cubierta gruesa con capa externa mamelonada teñida por la bilis (color café).",
+                "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp",
+                "structures": [
+                    {
+                        "id": "al_struct_1",
+                        "name": "Capa albuminosa mamelonada teñida",
+                        "relX": 0.85,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "al_struct_2",
+                        "name": "Masa de células germinales internas de evolución",
+                        "relX": 0.48,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "al_struct_3",
+                        "name": "Capa quitinosa gruesa protectora",
+                        "relX": 0.78,
+                        "relY": 0.28
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados infectivos.",
+            "2. Eclosión en el intestino delgado; la larva atraviesa la mucosa.",
+            "3. Migración venosa hacia el corazón derecho y luego a los pulmones."
+        ],
+        "diagnosticMethod": "Coproparasitoscópico de concentración (Kato-Katz, Faust) para identificar huevos característicos. Imagenología (Rx con bario o ecografía) puede mostrar gusanos adultos en el intestino o vías biliares.",
+        "treatment": "Albendazol o Mebendazol. En caso de obstrucción intestinal por ovillos de Ascaris, manejo conservador o quirúrgico."
+    },
+    {
+        "id": "taenia-solium",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia solium",
+        "commonName": "Solitaria del cerdo",
+        "disease": "Teniasis (fase adulta) / Cisticercosis (fase larvaria).",
+        "transmission": "Teniasis: Carnivorismo. Cisticercosis: Fecal-oral.",
+        "infectiveStage": "Cisticerco (Teniasis) / Huevo (Cisticercosis).",
+        "diagnosticStage": "Teniasis: Proglótidos en heces. Cisticercosis: Imagenología/Serología.",
+        "epidemiology": "Áreas endémicas donde se crían cerdos en libre pastoreo (América Latina, Asia).",
+        "lifecycleSummary": "El humano adquiere Teniasis al comer cerdo con cisticercos. Adquiere Cisticercosis al ingerir huevos (enquistamiento en tejidos).",
+        "lifecycleDiagram": "assets/img/ciclos/taenia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Escólex y Adulto",
+                "text": "Cestodo de 2-4 m. Escólex con 4 ventosas y rostelo con ganchos. Proglótidos grávidos con <13 ramas uterinas.",
+                "image": "assets/img/morfologia/taenia-solium-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-40 µm, esférico, embrióforo radiado, contiene la oncosfera (embrión hexacanto). Indistinguible de T. saginata.",
+                "image": "assets/img/morfologia/taenia-solium-huevo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/taenia-solium-huevo.webp",
+                "structures": [
+                    {
+                        "id": "ts_struct_1",
+                        "name": "Embrióforo con estriaciones radiadas",
+                        "relX": 0.82,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "ts_struct_2",
+                        "name": "Oncosfera interna (embrión hexacanto)",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "ts_struct_3",
+                        "name": "Ganchos internos rudimentarios",
+                        "relX": 0.45,
+                        "relY": 0.42
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. TENIASIS: Ingestión de carne de cerdo infectada con cisticercos.",
+            "2. El escólex se evagina en el intestino, se fija a la mucosa.",
+            "3. CISTICERCOSIS: Ingestión accidental de huevos; la larva migra a tejidos."
+        ],
+        "diagnosticMethod": "Teniasis: Observación de proglótidos grávidos en heces (tinción con tinta china para contar ramas uterinas). Cisticercosis: TAC o Resonancia Magnética (SNC), Inmunotransferencia (Western Blot).",
+        "treatment": "Teniasis: Praziquantel o Niclosamida. Neurocisticercosis: Albendazol + Dexametasona (para controlar inflamación), antiepilépticos si hay convulsiones."
+    },
+    {
+        "id": "hymenolepis-nana",
+        "category": "Helmintos 🪱",
+        "scientificName": "Hymenolepis nana",
+        "commonName": "Teniasis enana",
+        "disease": "Himenolepiasis",
+        "transmission": "Fecal-oral (ingestión de huevos) o autoinfección interna. Ocasionalmente por ingestión de Artrópodos infectados.",
+        "infectiveStage": "Huevo embrionado o Cisticercoide (en Artrópodos).",
+        "diagnosticStage": "Huevos en heces.",
+        "epidemiology": "Cestodo más común en humanos a nivel mundial. Alta prevalencia en población infantil y ambientes de hacinamiento.",
+        "lifecycleSummary": "El huevo es ingerido, eclosiona en el intestino liberando la oncosfera que penetra las vellosidades, se desarrolla en cisticercoide y luego vuelve a la luz intestinal para madurar a adulto.",
+        "lifecycleDiagram": "assets/img/ciclos/hymenolepis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Pequeño, 15-40 mm de longitud. Escólex con 4 ventosas y un rostelo retráctil armado con una corona de ganchos.",
+                "image": "assets/img/morfologia/hymenolepis-nana-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-50 µm, ovalado, hialino. Presenta una oncosfera interna rodeada por una membrana con dos engrosamientos polares de donde surgen 4-8 filamentos polares.",
+                "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp",
+                "structures": [
+                    {
+                        "id": "hn_struct_1",
+                        "name": "Filamentos polares filiformes",
+                        "relX": 0.28,
+                        "relY": 0.4
+                    },
+                    {
+                        "id": "hn_struct_2",
+                        "name": "Oncosfera con tres pares de ganchos",
+                        "relX": 0.5,
+                        "relY": 0.5
+                    },
+                    {
+                        "id": "hn_struct_3",
+                        "name": "Membrana hialina externa transparente",
+                        "relX": 0.85,
+                        "relY": 0.5
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados desde el medio ambiente o manos contaminadas.",
+            "2. Las oncosferas eclosionan y penetran las vellosidades intestinales desarrollándose en cisticercoides.",
+            "3. Tras la ruptura de la vellosidad, el escólex se fija a la mucosa y madura a la forma adulta."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico (CPS) de concentración (ej. flotación de Faust) para la visualización de los huevos característicos con filamentos polares.",
+        "treatment": "Praziquantel es el fármaco de elección. Alternativa: Nitazoxanida."
+    },
+    {
+        "id": "enterobius-vermicularis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Enterobius vermicularis",
+        "commonName": "Oxiuro",
+        "disease": "Enterobiasis (Oxiuriasis)",
+        "transmission": "Fecal-oral (manos contaminadas tras rascado perianal), fómites (ropa de cama, juguetes) o inhalación de huevos aerolizados.",
+        "infectiveStage": "Huevo embrionado.",
+        "diagnosticStage": "Huevo en pliegues perianales (o visualización de adultos en heces).",
+        "epidemiology": "Cosmopolita. Es la infección por helmintos más común en países desarrollados, con alta prevalencia en niños en edad escolar, guarderías y ambientes de hacinamiento.",
+        "lifecycleSummary": "Se ingieren los huevos, los cuales eclosionan en el intestino delgado. Los adultos residen en el ciego y colon. Las hembras grávidas migran de noche a la región perianal para depositar sus huevos, causando prurito intenso.",
+        "lifecycleDiagram": "assets/img/ciclos/enterobius-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Nematodos pequeños y blanquecinos. La hembra (8-13 mm) tiene un extremo posterior muy afilado. El macho (2-5 mm) tiene la cola curvada. Ambos presentan expansiones cutáneas anteriores (aletas cervicales) y un prominente bulbo esofágico.",
+                "image": "assets/img/morfologia/enterobius-vermicularis-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "50-60 µm x 20-30 µm. Característica forma asimétrica de 'D' (un lado plano y otro convexo). Cáscara translúcida y gruesa, usualmente contiene una larva plegada parcialmente desarrollada en su interior.",
+                "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp",
+                "structures": [
+                    {
+                        "id": "ev_struct_1",
+                        "name": "Lado asimétrico aplanado",
+                        "relX": 0.25,
+                        "relY": 0.50
+                    },
+                    {
+                        "id": "ev_struct_2",
+                        "name": "Lado asimétrico convexo",
+                        "relX": 0.75,
+                        "relY": 0.50
+                    },
+                    {
+                        "id": "ev_struct_3",
+                        "name": "Larva plegada en desarrollo (L1/L2)",
+                        "relX": 0.50,
+                        "relY": 0.45
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados procedentes del rascado perianal o contacto con fómites.",
+            "2. Las larvas eclosionan en el intestino delgado y maduran a la fase adulta en el ciego.",
+            "3. La hembra migra al ano durante la noche para ovipositar. Los huevos depositados se vuelven infectivos rápidamente en apenas 4 a 6 horas."
+        ],
+        "diagnosticMethod": "Test de Graham (técnica de la cinta adhesiva transparente) aplicada en los pliegues perianales a primera hora de la mañana, antes del aseo o de la defecación.",
+        "treatment": "Albendazol, Mebendazol o Pamoato de pirantel. Es fundamental e indispensable dar tratamiento simultáneo a todo el núcleo familiar o a los convivientes para evitar reinfecciones cruzadas."
+    },
+    {
+        "id": "pediculus-humanus",
+        "category": "Artrópodos 🕷️",
+        "scientificName": "Pediculus humanus capitis",
+        "commonName": "Piojo de la cabeza",
+        "disease": "Pediculosis capitis.",
+        "transmission": "Contacto directo o mediante fómites.",
+        "infectiveStage": "Ninfa y Adulto.",
+        "diagnosticStage": "Identificación de liendres o formas móviles en cuero cabelludo.",
+        "epidemiology": "Distribución mundial. Común en niños en edad escolar.",
+        "lifecycleSummary": "Ciclo hemimetábolo. El piojo pasa toda su vida en el hospedero humano. Hematófagos estables.",
+        "lifecycleDiagram": "assets/img/ciclos/pediculus-humanus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Insecto áptero, 2-3 mm. Aplanado dorsoventralmente. 3 pares de patas con garras prensiles.",
+                "image": "assets/img/morfologia/pediculus-humanus-adulto.webp"
+            },
+            {
+                "stage": "Liendre (Huevo)",
+                "text": "0.8 mm, ovalada, blanquecina, firmemente agradecido al tallo piloso mediante un cemento quitinoso.",
+                "image": "assets/img/morfologia/pediculus-humanus-liendre.webp"
+            }
+        ],
+        "canvasData": {
+            "morphology": {
+                "image": "assets/img/morfologia/pediculus-humanus-adulto.webp",
+                "structures": [
+                    {
+                        "id": "ph_struct_1",
+                        "name": "Garras prensiles adaptadas",
+                        "relX": 0.22,
+                        "relY": 0.42
+                    },
+                    {
+                        "id": "ph_struct_2",
+                        "name": "Cuerpo áptero segmentado abdominal",
+                        "relX": 0.5,
+                        "relY": 0.7
+                    },
+                    {
+                        "id": "ph_struct_3",
+                        "name": "Antenas sensoriales cortas",
+                        "relX": 0.38,
+                        "relY": 0.15
+                    }
+                ]
+            }
+        },
+        "lifecycleDetails": [
+            "1. La hembra fecundada deposita huevos cementándolos en la base del cabello.",
+            "2. Incubación de 7 a 10 días bajo el calor corporal.",
+            "3. Eclosión de la ninfa (3 estadios ninfales hematófagos)."
+        ],
+        "diagnosticMethod": "Inspección visual directa del cuero cabelludo bajo luz adecuada. Uso de un peine de púas finas (liendrera) sobre cabello húmedo para detectar liendres viables (<1 cm del cuero cabelludo) y formas móviles.",
+        "treatment": "Tópico: Permetrina al 1%, loción de Dimeticona. Extracción mecánica con liendrera. En casos de resistencia: Ivermectina oral."
+    }
+]

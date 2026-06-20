@@ -1,0 +1,181 @@
+/* =========================================
+   SCROLLBAR & GLOBALS
+========================================= */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f3f4f6; } /* Gris muy claro */
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #DAA520; }
+
+.scientific-name { font-style: italic; }
+
+.custom-scrollbar::-webkit-scrollbar { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+
+/* =========================================
+   NAVIGATION TABS
+========================================= */
+.tab-btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem; /* Forma de recuadro en lugar de óvalo */
+    font-weight: 700;
+    transition: all 0.3s ease;
+    color: #4b5563; /* Gris oscuro cuando no está seleccionado */
+    border: 2px solid #DAA520; /* Borde amarillo siempre presente */
+    background-color: transparent;
+    cursor: pointer;
+}
+.tab-btn:hover { 
+    background-color: #fdf6e3; /* Fondo amarillo súper clarito al pasar el mouse */
+    color: #b8860b;
+}
+.tab-btn.active {
+    background-color: #DAA520; /* Se llena completamente de amarillo */
+    color: #ffffff; /* Letras cambian a blanco para contraste perfecto */
+    box-shadow: 0 4px 6px -1px rgba(218, 165, 32, 0.4);
+}
+
+/* =========================================
+   PARASITE CARDS (GRID)
+========================================= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.parasite-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.4s ease-out forwards;
+    opacity: 0;
+    cursor: pointer; /* Cursor de mano */
+}
+.parasite-card:hover { 
+    transform: translateY(-4px); /* Animación de flotar al hacer hover */
+    border-color: #DAA520; 
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.card-body { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+.card-title { font-size: 1.5rem; font-weight: 700; color: #111827; }
+.card-subtitle { font-size: 0.875rem; color: #b8860b; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+.card-text { font-size: 0.875rem; color: #4b5563; line-height: 1.5; }
+
+.card-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background-color: #f9fafb; /* Fondo gris tenue para destacar */
+    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+}
+@media (min-width: 640px) { .card-info-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.card-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background-color: #e5e7eb; margin-top: auto; }
+.btn-action {
+    background-color: #ffffff;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.btn-action:hover { color: #b8860b; background-color: #f9fafb; }
+
+/* =========================================
+   MODALS & LIGHTBOX
+========================================= */
+.modal-overlay {
+    position: fixed; inset: 0; z-index: 50;
+    display: flex; justify-content: center; align-items: center; padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscurecido suave */
+    backdrop-filter: blur(4px);
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+.modal-box {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    width: 100%; max-width: 48rem; max-height: 90vh;
+    display: flex; flex-direction: column;
+    transform: scale(0.95);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.modal-overlay.active .modal-box { transform: scale(1); }
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem; border-bottom: 1px solid #e5e7eb; }
+.modal-header h3 { font-size: 1.25rem; font-weight: 700; color: #111827; display: flex; align-items: center; gap: 0.75rem; }
+.btn-close { color: #9ca3af; padding: 0.5rem; border-radius: 9999px; transition: color 0.2s, background-color 0.2s; cursor: pointer; border: none; background: transparent; }
+.btn-close:hover { color: #111827; background-color: #f3f4f6; }
+.modal-body { padding: 1.5rem; overflow-y: auto; }
+
+/* =========================================
+   TESTING COMPONENT & CANVAS UI (MODO CLARO)
+========================================= */
+.test-macro-checkbox { cursor: pointer; }
+
+/* State A: Dropdown Marker overlaid on Canvas wrapper */
+.canvas-marker-select {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #111827; /* Texto oscuro */
+    border: 2px solid #DAA520;
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    outline: none;
+}
+.canvas-marker-select:focus { box-shadow: 0 0 10px rgba(218,165,32,0.4); }
+.canvas-marker-select.correct { border-color: #10b981; color: #064e3b; }
+.canvas-marker-select.incorrect { border-color: #ef4444; color: #7f1d1d; }
+
+/* State B: Structure Pill to Select -> Click Canvas */
+.structure-pill {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #d1d5db; /* Borde gris claro */
+    color: #4b5563; /* Letra gris oscura */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.structure-pill:hover { background-color: #f9fafb; }
+.structure-pill.selected-pill {
+    background-color: rgba(218, 165, 32, 0.1);
+    border-color: #DAA520;
+    color: #b8860b;
+    font-weight: 600;
+}
+.structure-pill.placed {
+    opacity: 0.5;
+    text-decoration: line-through;
+    cursor: not-allowed;
+    background-color: #f3f4f6;
+}
