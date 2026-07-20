@@ -130,20 +130,27 @@ function renderCards() {
             mainImage = parasite.morphology[0].image;
         }
 
-        const cardImgHtml = mainImage 
-            ? `<img src="${mainImage}" alt="${parasite.scientificName}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">`
+       const cardImgHtml = mainImage 
+            ? `<img src="${mainImage}" alt="${parasite.scientificName}" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">`
             : `<div style="width: 100%; height: 100%; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center;">
                    <svg style="width: 3rem; height: 3rem; color: #DAA520; opacity: 0.5;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                </div>`;
 
         card.innerHTML = `
-            <div style="display: flex; flex-direction: column; height: 100%;">
-                <div style="height: 14rem; width: 100%; overflow: hidden; border-bottom: 1px solid #e5e7eb;">
+            <div style="display: flex; flex-direction: row; height: 12rem; width: 100%;">
+                
+                <!-- Lado Izquierdo: Nombre (1/3 del espacio) -->
+                <div style="width: 33.33%; padding: 1rem; display: flex; justify-content: center; align-items: center; background-color: #ffffff; border-right: 1px solid #e5e7eb;">
+                    <h2 class="card-title scientific-name" style="font-size: 1.15rem; color: #111827; margin: 0; line-height: 1.2; text-align: center; word-break: break-word;">
+                        ${formatScientificName(parasite.scientificName)}
+                    </h2>
+                </div>
+                
+                <!-- Lado Derecho: Imagen centrada (2/3 del espacio) -->
+                <div style="width: 66.67%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color: #ffffff;">
                     ${cardImgHtml}
                 </div>
-                <div style="padding: 1.25rem 1.5rem; display: flex; justify-content: center; align-items: center; flex-grow: 1; background-color: #ffffff;">
-                    <h2 class="card-title scientific-name" style="font-size: 1.25rem; color: #111827; margin: 0; line-height: 1.2; text-align: center;">${formatScientificName(parasite.scientificName)}</h2>
-                </div>
+                
             </div>
         `;
         elements.gridContainer.appendChild(card);

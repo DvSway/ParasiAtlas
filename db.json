@@ -23,37 +23,6 @@
                 "image": "assets/img/morfologia/entamoeba-histolytica-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/entamoeba-histolytica-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "eh_struct_1",
-                        "name": "Cariosoma central",
-                        "relX": 0.45,
-                        "relY": 0.52
-                    },
-                    {
-                        "id": "eh_struct_2",
-                        "name": "Eritrocito fagocitado",
-                        "relX": 0.7,
-                        "relY": 0.65
-                    },
-                    {
-                        "id": "eh_struct_3",
-                        "name": "Ectoplasma",
-                        "relX": 0.85,
-                        "relY": 0.2
-                    },
-                    {
-                        "id": "eh_struct_4",
-                        "name": "Núcleo",
-                        "relX": 0.42,
-                        "relY": 0.48
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes maduros tetranucleados a través de vehículos contaminados.",
             "2. Exquistación en el tracto gastrointestinal inferior (íleon terminal/ciego).",
@@ -86,31 +55,6 @@
                 "image": "assets/img/morfologia/entamoeba-dispar-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/entamoeba-dispar-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "ed_struct_1",
-                        "name": "Cariosoma central plano",
-                        "relX": 0.48,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "ed_struct_2",
-                        "name": "Citoplasma vacuolado libre de hematíes",
-                        "relX": 0.65,
-                        "relY": 0.35
-                    },
-                    {
-                        "id": "ed_struct_3",
-                        "name": "Cromatina periférica fina",
-                        "relX": 0.52,
-                        "relY": 0.42
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes maduros tetranucleados viables en agua o alimentos.",
             "2. El pH y las enzimas desencadenan la exquistación en el íleon terminal/ciego.",
@@ -143,31 +87,6 @@
                 "image": "assets/img/morfologia/entamoeba-coli-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/entamoeba-coli-quiste.webp",
-                "structures": [
-                    {
-                        "id": "eco_struct_1",
-                        "name": "Núcleos maduros (hasta 8)",
-                        "relX": 0.3,
-                        "relY": 0.35
-                    },
-                    {
-                        "id": "eco_struct_2",
-                        "name": "Cuerpo cromatoidal astillado",
-                        "relX": 0.55,
-                        "relY": 0.75
-                    },
-                    {
-                        "id": "eco_struct_3",
-                        "name": "Cariosoma excéntrico",
-                        "relX": 0.32,
-                        "relY": 0.31
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes octanucleados en agua o alimentos.",
             "2. Exquistación en el intestino liberando trofozoítos.",
@@ -200,25 +119,6 @@
                 "image": "assets/img/morfologia/iodamoeba-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/iodamoeba-quiste.webp",
-                "structures": [
-                    {
-                        "id": "ib_struct_1",
-                        "name": "Vacuola de glucógeno prominente",
-                        "relX": 0.5,
-                        "relY": 0.55
-                    },
-                    {
-                        "id": "ib_struct_2",
-                        "name": "Núcleo único con cariosoma grande",
-                        "relX": 0.25,
-                        "relY": 0.3
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión del quiste uninucleado.",
             "2. Exquistación en el colon, liberando el trofozoíto.",
@@ -251,31 +151,6 @@
                 "image": "assets/img/morfologia/chilomastix-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/chilomastix-quiste.webp",
-                "structures": [
-                    {
-                        "id": "cm_struct_1",
-                        "name": "Pezón hialino (forma de limón)",
-                        "relX": 0.5,
-                        "relY": 0.15
-                    },
-                    {
-                        "id": "cm_struct_2",
-                        "name": "Citostoma en 'cayado de pastor'",
-                        "relX": 0.48,
-                        "relY": 0.6
-                    },
-                    {
-                        "id": "cm_struct_3",
-                        "name": "Núcleo único",
-                        "relX": 0.35,
-                        "relY": 0.38
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes en agua contaminada.",
             "2. Desencistamiento en el intestino grueso.",
@@ -308,25 +183,6 @@
                 "image": "assets/img/morfologia/endolimax-nana-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/endolimax-nana-quiste.webp",
-                "structures": [
-                    {
-                        "id": "en_struct_1",
-                        "name": "4 núcleos filiformes puntiformes",
-                        "relX": 0.4,
-                        "relY": 0.3
-                    },
-                    {
-                        "id": "en_struct_2",
-                        "name": "Ausencia de cuerpos cromatoidales",
-                        "relX": 0.7,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes maduros viables en agua o alimentos contaminados.",
             "2. Exquistación en el ciego, colonizando la luz del intestino grueso.",
@@ -359,31 +215,6 @@
                 "image": "assets/img/morfologia/naegleria-fowleri-flagelado.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/naegleria-fowleri-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "nf_struct_1",
-                        "name": "Lobopodio eruptivo espacioso",
-                        "relX": 0.2,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "nf_struct_2",
-                        "name": "Gran cariosoma central nuclear",
-                        "relX": 0.55,
-                        "relY": 0.48
-                    },
-                    {
-                        "id": "nf_struct_3",
-                        "name": "Vacuola contráctil reguladora",
-                        "relX": 0.72,
-                        "relY": 0.7
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. El agua contaminada entra por las fosas nasales.",
             "2. Los trofozoítos fagocitan el epitelio olfatorio y migran por el nervio olfatorio.",
@@ -416,25 +247,6 @@
                 "image": "assets/img/morfologia/acanthamoeba-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/acanthamoeba-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "aca_struct_1",
-                        "name": "Acantopodios espinosos",
-                        "relX": 0.3,
-                        "relY": 0.22
-                    },
-                    {
-                        "id": "aca_struct_2",
-                        "name": "Núcleo con cariosoma denso",
-                        "relX": 0.5,
-                        "relY": 0.52
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Entrada por epitelio olfatorio, úlceras cutáneas o epitelio corneal.",
             "2. En el ojo: lisis del epitelio corneal causando dolor severo y ceguera.",
@@ -467,25 +279,6 @@
                 "image": "assets/img/morfologia/balamuthia-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/balamuthia-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "bm_struct_1",
-                        "name": "Forma aracnoide ramificada",
-                        "relX": 0.4,
-                        "relY": 0.35
-                    },
-                    {
-                        "id": "bm_struct_2",
-                        "name": "Núcleo con nucleolos múltiples",
-                        "relX": 0.48,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Entrada de quistes/trofozoítos por inhalación o trauma en piel.",
             "2. Establecimiento inicial (frecuentemente una placa cutánea centrofacial).",
@@ -518,31 +311,6 @@
                 "image": "assets/img/morfologia/balantidium-coli-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/balantidium-coli-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "bc_struct_1",
-                        "name": "Macronúcleo arriñonado",
-                        "relX": 0.52,
-                        "relY": 0.45
-                    },
-                    {
-                        "id": "bc_struct_2",
-                        "name": "Citostoma anterior",
-                        "relX": 0.48,
-                        "relY": 0.15
-                    },
-                    {
-                        "id": "bc_struct_3",
-                        "name": "Revestimiento de cilios somáticos",
-                        "relX": 0.88,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes en agua o alimentos contaminados con heces porcinas.",
             "2. Exquistación en intestino delgado; colonización del intestino grueso.",
@@ -575,31 +343,6 @@
                 "image": "assets/img/morfologia/giardia-lamblia-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/giardia-lamblia-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "gl_struct_1",
-                        "name": "Núcleos gemelos anteriores",
-                        "relX": 0.38,
-                        "relY": 0.28
-                    },
-                    {
-                        "id": "gl_struct_2",
-                        "name": "Disco suctorio ventral",
-                        "relX": 0.5,
-                        "relY": 0.4
-                    },
-                    {
-                        "id": "gl_struct_3",
-                        "name": "Axonemas centrales",
-                        "relX": 0.5,
-                        "relY": 0.7
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes viables en agua o alimentos.",
             "2. La acidez gástrica estimula la exquistación en el duodeno.",
@@ -627,31 +370,6 @@
                 "image": "assets/img/morfologia/trichomonas-vaginalis-trofozoito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/trichomonas-vaginalis-trofozoito.webp",
-                "structures": [
-                    {
-                        "id": "tv_struct_1",
-                        "name": "Flagelos anteriores libres",
-                        "relX": 0.45,
-                        "relY": 0.1
-                    },
-                    {
-                        "id": "tv_struct_2",
-                        "name": "Membrana ondulante",
-                        "relX": 0.22,
-                        "relY": 0.45
-                    },
-                    {
-                        "id": "tv_struct_3",
-                        "name": "Axostilo posterior terminal",
-                        "relX": 0.52,
-                        "relY": 0.9
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Transmisión del trofozoíto a través de fluidos vaginales o prostáticos/uretrales durante el coito.",
             "2. Adhesión al epitelio escamoso del tracto urogenital.",
@@ -676,7 +394,7 @@
             {
                 "stage": "Promastigote",
                 "text": "15-20 µm. Forma extracelular móvil en el intestino del vector. Cuerpo alargado con un flagelo libre anterior y cinetoplasto anterior al núcleo.",
-                "image": "assets/img/morfologia/leishmania-promastigote.webp"
+                "image": "assets/img/morfologia/leishmania-promastigote1.webp"
             },
             {
                 "stage": "Amastigote",
@@ -684,31 +402,6 @@
                 "image": "assets/img/morfologia/leishmania-amastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/leishmania-promastigote.webp",
-                "structures": [
-                    {
-                        "id": "lm_struct_1",
-                        "name": "Flagelo libre anterior móvil",
-                        "relX": 0.5,
-                        "relY": 0.08
-                    },
-                    {
-                        "id": "lm_struct_2",
-                        "name": "Cinetoplasto condensado",
-                        "relX": 0.49,
-                        "relY": 0.32
-                    },
-                    {
-                        "id": "lm_struct_3",
-                        "name": "Núcleo vesicular central",
-                        "relX": 0.51,
-                        "relY": 0.6
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Lutzomyia pica e inyecta promastigotes metacíclicos en la piel.",
             "2. Fagocitosis por macrófagos, inhibición del estallido respiratorio lisosomal y transformación a amastigotes.",
@@ -731,36 +424,16 @@
         "lifecycleDiagram": "assets/img/ciclos/leishmania-donovani-ciclo.webp",
         "morphology": [
             {
+                "stage": "Promastigote",
+                "text": "15-20 µm. Forma extracelular móvil en el intestino del vector. Cuerpo alargado con un flagelo libre anterior y cinetoplasto anterior al núcleo.",
+                "image": "assets/img/morfologia/leishmania-promastigote2.webp"
+            },
+            {
                 "stage": "Amastigote (Cuerpo de Leishman-Donovan)",
                 "text": "2-4 µm, forma redondeada sin flagelo. Visible dentro de los macrófagos del sistema fagocítico mononuclear. Cinetoplasto y núcleo patognomónicos.",
                 "image": "assets/img/morfologia/leishmania-amastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/leishmania-amastigote.webp",
-                "structures": [
-                    {
-                        "id": "ld_struct_1",
-                        "name": "Núcleo del amastigote",
-                        "relX": 0.42,
-                        "relY": 0.46
-                    },
-                    {
-                        "id": "ld_struct_2",
-                        "name": "Cinetoplasto baciliforme",
-                        "relX": 0.58,
-                        "relY": 0.54
-                    },
-                    {
-                        "id": "ld_struct_3",
-                        "name": "Membrana del macrófago hospedero",
-                        "relX": 0.85,
-                        "relY": 0.3
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Inoculación del promastigote por Phlebotomus.",
             "2. Fagocitosis. Transformación a amastigotes y supervivencia en fagolisosomas.",
@@ -783,30 +456,16 @@
         "lifecycleDiagram": "assets/img/ciclos/leishmania-tropica-ciclo.webp",
         "morphology": [
             {
+                "stage": "Promastigote",
+                "text": "15-20 µm. Forma extracelular móvil en el intestino del vector. Cuerpo alargado con un flagelo libre anterior y cinetoplasto anterior al núcleo.",
+                "image": "assets/img/morfologia/leishmania-promastigote3.webp"
+            },
+            {
                 "stage": "Amastigote",
                 "text": "2-4 µm, intracelular (en macrófagos). Núcleo redondo y cinetoplasto en forma de barra. Idéntico a otras especies del género.",
                 "image": "assets/img/morfologia/leishmania-amastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/leishmania-amastigote.webp",
-                "structures": [
-                    {
-                        "id": "lt_struct_1",
-                        "name": "Núcleo de amastigote tisular",
-                        "relX": 0.4,
-                        "relY": 0.48
-                    },
-                    {
-                        "id": "lt_struct_2",
-                        "name": "Cinetoplasto en barra perpendicular",
-                        "relX": 0.55,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Inoculación del promastigote por Phlebotomus.",
             "2. Engullido por macrófagos; transformación a amastigotes.",
@@ -829,30 +488,16 @@
         "lifecycleDiagram": "assets/img/ciclos/leishmania-major-ciclo.webp",
         "morphology": [
             {
+                "stage": "Promastigote",
+                "text": "15-20 µm. Forma extracelular móvil en el intestino del vector. Cuerpo alargado con un flagelo libre anterior y cinetoplasto anterior al núcleo.",
+                "image": "assets/img/morfologia/leishmania-promastigote4.webp"
+            },
+            {
                 "stage": "Promastigote y Amastigote",
                 "text": "Morfológicamente idéntico a las demás especies de Leishmania bajo el microscopio óptico.",
                 "image": "assets/img/morfologia/leishmania-promastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/leishmania-promastigote.webp",
-                "structures": [
-                    {
-                        "id": "lmaj_struct_1",
-                        "name": "Cuerpo celular promastigote leptomónada",
-                        "relX": 0.52,
-                        "relY": 0.55
-                    },
-                    {
-                        "id": "lmaj_struct_2",
-                        "name": "Flagelo libre elongado",
-                        "relX": 0.48,
-                        "relY": 0.15
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Inoculación de promastigotes provenientes de roedores infectados.",
             "2. Proliferación agresiva de amastigotes en macrófagos de la piel.",
@@ -875,7 +520,7 @@
         "lifecycleDiagram": "assets/img/ciclos/trypanosoma-cruzi-ciclo.webp",
         "morphology": [
             {
-                "stage": "Tripomastigote",
+                "stage": "Tripomastigote sanguíneo",
                 "text": "Aprox 20 µm. Forma extracelular en sangre. Tiene un cinetoplasto posterior grande, núcleo central y un flagelo que forma una membrana ondulante a lo largo del cuerpo.",
                 "image": "assets/img/morfologia/trypanosoma-cruzi-tripomastigote.webp"
             },
@@ -885,31 +530,6 @@
                 "image": "assets/img/morfologia/trypanosoma-cruzi-amastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/trypanosoma-cruzi-tripomastigote.webp",
-                "structures": [
-                    {
-                        "id": "tc_struct_1",
-                        "name": "Cinetoplasto posterior voluminoso",
-                        "relX": 0.25,
-                        "relY": 0.78
-                    },
-                    {
-                        "id": "tc_struct_2",
-                        "name": "Núcleo vesiculoso central",
-                        "relX": 0.5,
-                        "relY": 0.45
-                    },
-                    {
-                        "id": "tc_struct_3",
-                        "name": "Membrana ondulante lateral",
-                        "relX": 0.42,
-                        "relY": 0.3
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. El triatomino infectado pica y defeca; el hospedero se rasca introduciendo los tripomastigotes metacíclicos.",
             "2. Invaden células locales (macrófagos, fibroblastos) y se transforman en amastigotes, multiplicándose por fisión binaria.",
@@ -932,36 +552,11 @@
         "lifecycleDiagram": "assets/img/ciclos/trypanosoma-brucei-ciclo.webp",
         "morphology": [
             {
-                "stage": "Tripomastigote",
+                "stage": "Tripomastigote sanguíneo",
                 "text": "15-30 µm, pleomórfico (formas largas y cortas gruesas) en sangre periférica. Idéntico morfológicamente a T. b. gambiense.",
                 "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp",
-                "structures": [
-                    {
-                        "id": "tbr_struct_1",
-                        "name": "Cinetoplasto puntiforme terminal",
-                        "relX": 0.18,
-                        "relY": 0.72
-                    },
-                    {
-                        "id": "tbr_struct_2",
-                        "name": "Membrana ondulante extendida",
-                        "relX": 0.45,
-                        "relY": 0.35
-                    },
-                    {
-                        "id": "tbr_struct_3",
-                        "name": "Flagelo libre anterior",
-                        "relX": 0.85,
-                        "relY": 0.15
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Inoculación por Glossina (fuerte chancro de inoculación doloroso).",
             "2. Fase hemolinfática aguda con fiebre intermitente alta, linfadenopatía y miocarditis severa.",
@@ -989,25 +584,6 @@
                 "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/trypanosoma-brucei-tripomastigote.webp",
-                "structures": [
-                    {
-                        "id": "tbg_struct_1",
-                        "name": "Núcleo polimórfico central",
-                        "relX": 0.5,
-                        "relY": 0.48
-                    },
-                    {
-                        "id": "tbg_struct_2",
-                        "name": "Cinetoplasto post-nuclear",
-                        "relX": 0.15,
-                        "relY": 0.7
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Mosca tsetsé inyecta tripomastigotes metacíclicos en el tejido subcutáneo (chancro de inoculación).",
             "2. Pasan a la linfa y torrente sanguíneo, reproduciéndose por fisión binaria longitudinal (Fase hemolinfática / Signo de Winterbottom).",
@@ -1035,25 +611,6 @@
                 "image": "assets/img/morfologia/cryptosporidium-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/cryptosporidium-ooquiste.webp",
-                "structures": [
-                    {
-                        "id": "cr_struct_1",
-                        "name": "Pared externa esporulada ácida",
-                        "relX": 0.75,
-                        "relY": 0.4
-                    },
-                    {
-                        "id": "cr_struct_2",
-                        "name": "Esporozoítos internos desprovistos de esporoquiste",
-                        "relX": 0.45,
-                        "relY": 0.55
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de ooquistes maduros; desenquistamiento en el intestino delgado.",
             "2. Esporozoítos se adhieren al epitelio formando una vacuola parasitófora en la zona apical (microvellosidades).",
@@ -1081,25 +638,6 @@
                 "image": "assets/img/morfologia/cyclospora-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/cyclospora-ooquiste.webp",
-                "structures": [
-                    {
-                        "id": "cc_struct_1",
-                        "name": "Dos esporoquistes internos",
-                        "relX": 0.48,
-                        "relY": 0.42
-                    },
-                    {
-                        "id": "cc_struct_2",
-                        "name": "Glóbulos refractiles dobles",
-                        "relX": 0.52,
-                        "relY": 0.58
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión del ooquiste esporulado ambiental.",
             "2. Exquistación liberando esporozoítos que invaden las células epiteliales del intestino delgado (yeyuno).",
@@ -1108,7 +646,6 @@
         "diagnosticMethod": "CPS de concentración. Tinción ácido-alcohol resistente modificada (Kinyoun) con tinción variable (algunos oscuros, otros claros o 'fantasmas'). Microscopía de epifluorescencia UV.",
         "treatment": "Trimetoprima-Sulfametoxazol (TMP-SMX) es el fármaco de elección. Ciprofloxacino en pacientes alérgicos a sulfas."
     },
-    
     {
         "id": "cystoisospora-belli",
         "category": "Protozoarios 🦠",
@@ -1128,25 +665,6 @@
                 "image": "assets/img/morfologia/cystoisospora-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/cystoisospora-ooquiste.webp",
-                "structures": [
-                    {
-                        "id": "cy_struct_1",
-                        "name": "Forma elipsoidal translúcida",
-                        "relX": 0.88,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "cy_struct_2",
-                        "name": "Dos esporoblastos circulares",
-                        "relX": 0.46,
-                        "relY": 0.45
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de ooquiste esporulado (con 8 esporozoítos).",
             "2. Invasión de enterocitos en intestino delgado, realizando reproducción asexual (esquizogonia).",
@@ -1179,25 +697,6 @@
                 "image": "assets/img/morfologia/blastocystis-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/blastocystis-vacuolar.webp",
-                "structures": [
-                    {
-                        "id": "bl_struct_1",
-                        "name": "Gran vacuola central",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "bl_struct_2",
-                        "name": "Núcleos periféricos marginados",
-                        "relX": 0.82,
-                        "relY": 0.42
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de quistes viables.",
             "2. Transformación en el colon a formas vacuolares.",
@@ -1220,7 +719,7 @@
         "lifecycleDiagram": "assets/img/ciclos/sarcocystis-ciclo.webp",
         "morphology": [
             {
-                "stage": "Esporoquiste (en heces)",
+                "stage": "Ooquiste Esporulado (en heces)",
                 "text": "10-15 µm, ovalado. Contiene 4 esporozoítos. Los ooquistes maduran in situ en la mucosa y se rompen, por lo que en heces se observan esporoquistes sueltos.",
                 "image": "assets/img/morfologia/sarcocystis-esporoquiste.webp"
             },
@@ -1230,25 +729,6 @@
                 "image": "assets/img/morfologia/sarcocystis-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/sarcocystis-esporoquiste.webp",
-                "structures": [
-                    {
-                        "id": "sa_struct_1",
-                        "name": "4 esporozoítos alargados",
-                        "relX": 0.5,
-                        "relY": 0.52
-                    },
-                    {
-                        "id": "sa_struct_2",
-                        "name": "Residuo refractario esporocístico",
-                        "relX": 0.32,
-                        "relY": 0.48
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. INTESTINAL: Ingestión de carne con sarcocistos. Los bradizoítos maduran a gametos en la mucosa intestinal, produciendo ooquistes que se rompen liberando esporoquistes.",
             "2. MUSCULAR: Ingestión accidental de esporoquistes (ej. heces de perro/serpiente). Los esporozoítos atraviesan el intestino.",
@@ -1276,25 +756,6 @@
                 "image": "assets/img/morfologia/eimeria-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/eimeria-ooquiste.webp",
-                "structures": [
-                    {
-                        "id": "et_struct_1",
-                        "name": "Cuatro esporoquistes bivalvos",
-                        "relX": 0.45,
-                        "relY": 0.4
-                    },
-                    {
-                        "id": "et_struct_2",
-                        "name": "Pared lisa oocística",
-                        "relX": 0.85,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión del ooquiste ambiental esporulado por el pollo.",
             "2. Los esporozoítos invaden exclusivamente el epitelio de los ciegos.",
@@ -1319,28 +780,9 @@
             {
                 "stage": "Ooquiste",
                 "text": "Es la Eimeria aviar con el ooquiste más GRANDE (29-30 µm de largo). Pared amarillo-marrón, con una ligera protuberancia en un polo.",
-                "image": "assets/img/morfologia/eimeria-maxima.webp"
+                "image": "assets/img/morfologia/eimeria-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/eimeria-maxima.webp",
-                "structures": [
-                    {
-                        "id": "emax_struct_1",
-                        "name": "Pared gruesa rugosa marrón",
-                        "relX": 0.78,
-                        "relY": 0.48
-                    },
-                    {
-                        "id": "emax_struct_2",
-                        "name": "Micrópilo polar hialino",
-                        "relX": 0.5,
-                        "relY": 0.12
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de ooquistes esporulados.",
             "2. Los esporozoítos invaden las células del epitelio del yeyuno.",
@@ -1365,22 +807,9 @@
             {
                 "stage": "Ooquiste",
                 "text": "18-20 µm, ovalado u ovoide. Relativamente pequeño en comparación con otras especies.",
-                "image": "assets/img/morfologia/eimeria-acervulina.webp"
+                "image": "assets/img/morfologia/eimeria-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/eimeria-acervulina.webp",
-                "structures": [
-                    {
-                        "id": "eace_struct_1",
-                        "name": "Forma subesférica simétrica",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión masiva de ooquistes.",
             "2. Liberación en el duodeno, colonizando preferentemente las vellosidades de la parte superior del intestino.",
@@ -1405,22 +834,9 @@
             {
                 "stage": "Esquizonte de segunda generación",
                 "text": "Muy grandes, visibles macroscópicamente como puntos blancos profundos en la serosa del intestino. Contienen miles de merozoítos.",
-                "image": "assets/img/morfologia/eimeria-necatrix.webp"
+                "image": "assets/img/morfologia/eimeria-ooquiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/eimeria-necatrix.webp",
-                "structures": [
-                    {
-                        "id": "enec_struct_1",
-                        "name": "Esquizonte gigante submucoso",
-                        "relX": 0.55,
-                        "relY": 0.45
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de ooquistes.",
             "2. En el yeyuno, los esquizontes crecen desproporcionadamente en la capa submucosa, causando hemorragia intensa y necrosis ('intestino en globo').",
@@ -1451,27 +867,13 @@
                 "stage": "Quiste Tisular",
                 "text": "Estructura intracelular que contiene de decenas a miles de bradizoítos de replicación lenta. Presentes de por vida en SNC y músculo esquelético.",
                 "image": "assets/img/morfologia/toxoplasma-gondii-quiste.webp"
+            },
+            {
+                "stage": "Ooquiste",
+                "text": "Los félidos, huéspedes definitivos, eliminan los ooquistes no esporulados en heces fecales, infectantes al cabo de 1 - 5 días en medio ambiente (suelo). Los ooquistes esporulados son ovoidales, miden 10 - 12 μm y contienen 2 esporoquistes, cada uno con cuatro esporozoitos.",
+                "image": "assets/img/morfologia/toxoplasma-gondii-quiste.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/toxoplasma-gondii-taquizoito.webp",
-                "structures": [
-                    {
-                        "id": "tg_struct_1",
-                        "name": "Forma conoide apical",
-                        "relX": 0.45,
-                        "relY": 0.15
-                    },
-                    {
-                        "id": "tg_struct_2",
-                        "name": "Núcleo vesicular inferior",
-                        "relX": 0.5,
-                        "relY": 0.65
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de carne mal cocida o verduras contaminadas con heces de felinos.",
             "2. Liberación en el tracto gastrointestinal; penetran el epitelio intestinal diseminándose vía linfohematógena.",
@@ -1499,36 +901,16 @@
                 "image": "assets/img/morfologia/plasmodium-falciparum-anillo.webp"
             },
             {
+                "stage": "Esquizonte",
+                "text": "Estructura intracelular que contiene de 12 a 24 merozoítos formados, casi ocupando por completo el eritrocito agrandado.",
+                "image": "assets/img/morfologia/plasmodium-falciparum-esquizonte.webp"
+            },
+            {
                 "stage": "Gametocito",
                 "text": "Patognomónico de la especie: forma de 'banana', salchicha o media luna. Ocupa gran parte del eritrocito deformándolo.",
                 "image": "assets/img/morfologia/plasmodium-falciparum-gametocito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/plasmodium-falciparum-gametocito.webp",
-                "structures": [
-                    {
-                        "id": "pf_struct_1",
-                        "name": "Forma de semiluna/banana",
-                        "relX": 0.5,
-                        "relY": 0.45
-                    },
-                    {
-                        "id": "pf_struct_2",
-                        "name": "Cromatina concentrada central",
-                        "relX": 0.48,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "pf_struct_3",
-                        "name": "Membrana eritrocitaria residual",
-                        "relX": 0.82,
-                        "relY": 0.35
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Esporozoítos inyectados por el mosquito viajan al hígado e invaden hepatocitos.",
             "2. Ruptura de hepatocitos liberando miles de merozoítos al torrente sanguíneo (no forma hipnozoítos durmientes, a diferencia de P. vivax).",
@@ -1559,33 +941,13 @@
                 "stage": "Esquizonte",
                 "text": "Estructura intracelular que contiene de 12 a 24 merozoítos formados, casi ocupando por completo el eritrocito agrandado.",
                 "image": "assets/img/morfologia/plasmodium-vivax-esquizonte.webp"
+            },
+            {
+                "stage": "Gametocito",
+                "text": "Redondo u ovalado. Ocupa casi todo el eritrocito, el cual se observa agrandado, pálido y con punteado de Schüffner. El macrogametocito presenta citoplasma azul oscuro y cromatina compacta excéntrica; el microgametocito tiene citoplasma azul claro/rosado con cromatina difusa central.",
+                "image": "assets/img/morfologia/plasmodium-vivax-gametocito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/plasmodium-vivax-esquizonte.webp",
-                "structures": [
-                    {
-                        "id": "pv_struct_1",
-                        "name": "Merozoítos múltiples aglomerados",
-                        "relX": 0.45,
-                        "relY": 0.48
-                    },
-                    {
-                        "id": "pv_struct_2",
-                        "name": "Eritrocito hospedero agrandado",
-                        "relX": 0.8,
-                        "relY": 0.35
-                    },
-                    {
-                        "id": "pv_struct_3",
-                        "name": "Gránulos de Schüffner periféricos",
-                        "relX": 0.72,
-                        "relY": 0.22
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Esporozoítos invaden hepatocitos. Algunos se desarrollan a esquizontes tisulares y otros quedan inactivos como 'hipnozoítos'.",
             "2. Ruptura de hepatocitos, liberación de merozoítos e invasión de reticulocitos sanguíneos.",
@@ -1616,27 +978,13 @@
                 "stage": "Esquizonte en Roseta",
                 "text": "Contiene de 6 a 12 merozoítos grandes dispuestos simétricamente alrededor de un pigmento malárico central (hemozoína oscura), dando apariencia de flor o roseta.",
                 "image": "assets/img/morfologia/plasmodium-malariae-esquizonte.webp"
+            },
+            {
+                "stage": "Gametocito",
+                "text": "Esférico u ovalado, muy compacto y de menor tamaño que en P. vivax. El eritrocito infectado es de tamaño normal o reducido y no presenta punteado de Schüffner (ocasionalmente puntos de Ziemann). Presenta pigmento palúdico (hemozoína) oscuro, de grano grueso y abundante.",
+                "image": "assets/img/morfologia/plasmodium-malariae-gametocito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/plasmodium-malariae-banda.webp",
-                "structures": [
-                    {
-                        "id": "pm_struct_1",
-                        "name": "Trofozoíto ecuatorial en banda",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "pm_struct_2",
-                        "name": "Eritrocito de tamaño normal",
-                        "relX": 0.78,
-                        "relY": 0.28
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Esporozoítos invaden el hígado. NO forma hipnozoítos durmientes.",
             "2. Los merozoítos invaden solo glóbulos rojos senescentes.",
@@ -1659,30 +1007,21 @@
         "lifecycleDiagram": "assets/img/ciclos/plasmodium-ciclo.webp",
         "morphology": [
             {
-                "stage": "Trofozoíto en Anillo y Glóbulo Rojo",
+                "stage": "Trofozoíto en Anillo",
                 "text": "El eritrocito infectado adquiere una característica forma ovalada o alargada con bordes aserrados/desflecados (fimbriados). Punteado de James (similar a Schüffner pero más oscuro y grueso).",
                 "image": "assets/img/morfologia/plasmodium-ovale-anillo.webp"
+            },
+            {
+                "stage": "Esquizonte",
+                "text": "Contiene en promedio de 8 a 12 merozoítos (generalmente menos que P. vivax), frecuentemente dispuestos en forma de roseta alrededor de una masa central compacta de hemozoína pardo-verdosa. El eritrocito infectado suele estar ligeramente agrandado, mantener su característica forma ovalada con bordes fimbriados (desflecados) y mostrar un punteado de Schüffner (puntos de James) muy prominente.",
+                "image": "assets/img/morfologia/plasmodium-ovale-esquizonte.webp"
+            },
+            {
+                "stage": "Gametocito",
+                "text": "Redondo u ovalado. El eritrocito huésped suele estar ligeramente agrandado, presentar una forma ovalada con bordes fimbriados (desflecados) y un punteado de Schüffner (puntos de James) muy prominente. Su morfología interna es similar a P. vivax, pero de aspecto ligeramente más compacto.",
+                "image": "assets/img/morfologia/plasmodium-ovale-gametocito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/plasmodium-ovale-anillo.webp",
-                "structures": [
-                    {
-                        "id": "po_struct_1",
-                        "name": "Borde fimbriado aserrado eritrocitario",
-                        "relX": 0.85,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "po_struct_2",
-                        "name": "Punteado grueso de James",
-                        "relX": 0.65,
-                        "relY": 0.3
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Esporozoítos viajan al hígado, formando esquizontes y también hipnozoítos latentes.",
             "2. Invasión de reticulocitos circulantes deformando su citoesqueleto (forma ovalada).",
@@ -1706,34 +1045,15 @@
         "morphology": [
             {
                 "stage": "Merozoítos pareados",
-                "text": "Es una Babesia 'pequeña' (1-1.5 µm). Su morfología diagnóstica típica en eritrocitos consiste en pares de merozoítos piriformes (forma de pera) unidos por sus extremos puntiagudos formando un ÁNGULO OBTUSO (>90°).",
+                "text": "Es una Babesia 'pequeña' (1-1.5 µm). Su morfología diagnóstica típica en eritrocitos consiste en pares de merozoítos piriformes (forma de pera) unidos por sus extremos puntiagudos formando un ángulo obtuso (>90°).",
                 "image": "assets/img/morfologia/babesia-bovis-merozoito.webp"
             },
             {
-                "stage": "Trofozoíto en anillo",
+                "stage": "Trofozoíto en Anillo",
                 "text": "Formas anulares pequeñas y compactas dentro del eritrocito. A diferencia de Plasmodium, no producen pigmento malárico (hemozoína).",
                 "image": "assets/img/morfologia/babesia-bovis-anillo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/babesia-bovis-merozoito.webp",
-                "structures": [
-                    {
-                        "id": "bbov_struct_1",
-                        "name": "Merozoítos piriformes en ángulo obtuso",
-                        "relX": 0.48,
-                        "relY": 0.45
-                    },
-                    {
-                        "id": "bbov_struct_2",
-                        "name": "Ausencia total de hemozoína celular",
-                        "relX": 0.7,
-                        "relY": 0.3
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. La garrapata Rhipicephalus inocula esporozoítos durante su alimentación sanguínea.",
             "2. Invasión directa de eritrocitos y reproducción asexual (fisión binaria) formando trofozoítos y luego merozoítos.",
@@ -1757,23 +1077,10 @@
         "morphology": [
             {
                 "stage": "Merozoítos pareados",
-                "text": "Es una Babesia 'grande' (2.5-3.5 µm). Su característica patognomónica es formar pares piriformes que se unen formando un ÁNGULO AGUDO (<90°), y suelen ocupar gran parte del diámetro del eritrocito.",
+                "text": "Es una Babesia 'grande' (2.5-3.5 µm). Su característica patognomónica es formar pares piriformes que se unen formando un ángulo agudo (90°), y suelen ocupar gran parte del diámetro del eritrocito.",
                 "image": "assets/img/morfologia/babesia-bigemina-merozoito.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/babesia-bigemina-merozoito.webp",
-                "structures": [
-                    {
-                        "id": "bbig_struct_1",
-                        "name": "Merozoítos piriformes alargados en ángulo agudo",
-                        "relX": 0.5,
-                        "relY": 0.48
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Inoculación de esporozoítos por la garrapata vectora.",
             "2. Invasión de eritrocitos, multiplicación rápida y lisis celular.",
@@ -1806,19 +1113,6 @@
                 "image": "assets/img/morfologia/babesia-microti-anillo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/babesia-microti-tetrada.webp",
-                "structures": [
-                    {
-                        "id": "bm_struct_1",
-                        "name": "Disposición en Cruz de Malta (Tétrada)",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. La ninfa de Ixodes inyecta esporozoítos (requiere estar adherida >36 horas).",
             "2. Los esporozoítos invaden glóbulos rojos; se reproducen por gemación (división asexual).",
@@ -1851,31 +1145,6 @@
                 "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp",
-                "structures": [
-                    {
-                        "id": "al_struct_1",
-                        "name": "Capa albuminosa mamelonada teñida",
-                        "relX": 0.85,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "al_struct_2",
-                        "name": "Masa de células germinales internas de evolución",
-                        "relX": 0.48,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "al_struct_3",
-                        "name": "Capa quitinosa gruesa protectora",
-                        "relX": 0.78,
-                        "relY": 0.28
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de huevos embrionados infectivos.",
             "2. Eclosión en el intestino delgado; la larva atraviesa la mucosa.",
@@ -1908,31 +1177,6 @@
                 "image": "assets/img/morfologia/taenia-solium-huevo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/taenia-solium-huevo.webp",
-                "structures": [
-                    {
-                        "id": "ts_struct_1",
-                        "name": "Embrióforo con estriaciones radiadas",
-                        "relX": 0.82,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "ts_struct_2",
-                        "name": "Oncosfera interna (embrión hexacanto)",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "ts_struct_3",
-                        "name": "Ganchos internos rudimentarios",
-                        "relX": 0.45,
-                        "relY": 0.42
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. TENIASIS: Ingestión de carne de cerdo infectada con cisticercos.",
             "2. El escólex se evagina en el intestino, se fija a la mucosa.",
@@ -1965,31 +1209,6 @@
                 "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp",
-                "structures": [
-                    {
-                        "id": "hn_struct_1",
-                        "name": "Filamentos polares filiformes",
-                        "relX": 0.28,
-                        "relY": 0.4
-                    },
-                    {
-                        "id": "hn_struct_2",
-                        "name": "Oncosfera con tres pares de ganchos",
-                        "relX": 0.5,
-                        "relY": 0.5
-                    },
-                    {
-                        "id": "hn_struct_3",
-                        "name": "Membrana hialina externa transparente",
-                        "relX": 0.85,
-                        "relY": 0.5
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de huevos embrionados desde el medio ambiente o manos contaminadas.",
             "2. Las oncosferas eclosionan y penetran las vellosidades intestinales desarrollándose en cisticercoides.",
@@ -2022,31 +1241,6 @@
                 "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp",
-                "structures": [
-                    {
-                        "id": "ev_struct_1",
-                        "name": "Lado asimétrico aplanado",
-                        "relX": 0.25,
-                        "relY": 0.50
-                    },
-                    {
-                        "id": "ev_struct_2",
-                        "name": "Lado asimétrico convexo",
-                        "relX": 0.75,
-                        "relY": 0.50
-                    },
-                    {
-                        "id": "ev_struct_3",
-                        "name": "Larva plegada en desarrollo (L1/L2)",
-                        "relX": 0.50,
-                        "relY": 0.45
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. Ingestión de huevos embrionados procedentes del rascado perianal o contacto con fómites.",
             "2. Las larvas eclosionan en el intestino delgado y maduran a la fase adulta en el ciego.",
@@ -2079,31 +1273,6 @@
                 "image": "assets/img/morfologia/pediculus-humanus-liendre.webp"
             }
         ],
-        "canvasData": {
-            "morphology": {
-                "image": "assets/img/morfologia/pediculus-humanus-adulto.webp",
-                "structures": [
-                    {
-                        "id": "ph_struct_1",
-                        "name": "Garras prensiles adaptadas",
-                        "relX": 0.22,
-                        "relY": 0.42
-                    },
-                    {
-                        "id": "ph_struct_2",
-                        "name": "Cuerpo áptero segmentado abdominal",
-                        "relX": 0.5,
-                        "relY": 0.7
-                    },
-                    {
-                        "id": "ph_struct_3",
-                        "name": "Antenas sensoriales cortas",
-                        "relX": 0.38,
-                        "relY": 0.15
-                    }
-                ]
-            }
-        },
         "lifecycleDetails": [
             "1. La hembra fecundada deposita huevos cementándolos en la base del cabello.",
             "2. Incubación de 7 a 10 días bajo el calor corporal.",
