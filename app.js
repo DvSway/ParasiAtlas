@@ -18,11 +18,9 @@ function formatScientificName(name) {
     
     return parts.map(part => {
         if (!part) return '';
-        // Mantiene el grosor de letra del contenedor (negrita si el padre es negrita) pero quita la itálica
         if (taxonChangeRegex.test(part)) {
             return `<span style="font-style: normal; font-weight: inherit;">${part}</span>`; 
         }
-        // El nombre del parásito se mantiene en itálicas
         return `<i>${part}</i>`;
     }).join('');
 }
@@ -44,6 +42,11 @@ const elements = {
  */
 async function initApp() {
     try {
+        // Limpieza automática de caché de formulario al cargar
+        elements.searchInput.value = '';
+        searchQuery = '';
+        activeCategory = categories[0];
+
         const response = await fetch('db.json');
         if (!response.ok) throw new Error('Network response error');
         
@@ -357,15 +360,13 @@ window.toggleAppMode = function() {
 const testController = {
     state: {
         macros: [],
-        micros: [],
-        variant: 'aleatorio',
-        currentTestObj: null,
-        currentStateLogic: null, 
+        questions: [],
+        currentIndex: 0,
+        score: 0,
+        userSelectedAnswer: null,
+        isAnswerChecked: false,
         canvasCtx: null,
-        baseImage: null,
-        drawnRect: { x: 0, y: 0, w: 0, h: 0 },
-        userAnswers: {},
-        correctClinicalAnswer: null
+        baseImage: null
     },
 
     elements: {
@@ -383,14 +384,19 @@ const testController = {
     init() {
         this.state.canvasCtx = this.elements.canvas.getContext('2d');
         
+        // Fuerzo limpieza de formulario en recarga
+        this.resetConfig();
+
         this.elements.macroCheckboxes.forEach(cb => {
             cb.addEventListener('change', () => this.updateMicroSelection());
         });
 
-        this.elements.canvas.addEventListener('click', (e) => this.handleCanvasClick(e));
         window.addEventListener('resize', () => {
-            if (this.state.baseImage && this.elements.testView.classList.contains('hidden') === false) {
-                this.renderCanvas(this.state.currentTestObj.canvasData.morphology.structures); 
+            if (this.state.questions.length > 0 && !this.elements.testView.classList.contains('hidden')) {
+                const q = this.state.questions[this.state.currentIndex];
+                if (q && q.image) {
+                    this.renderCanvasImage();
+                }
             }
         });
     },
@@ -400,13 +406,15 @@ const testController = {
         const micros = document.querySelectorAll('.test-micro-checkbox');
         micros.forEach(cb => cb.checked = false);
         this.updateMicroSelection();
-        document.getElementById('practiceVariant').value = 'aleatorio';
+        
+        const variantSelect = document.getElementById('practiceVariant');
+        if (variantSelect) variantSelect.value = 'aleatorio';
     },
 
     updateMicroSelection() {
         this.state.macros = Array.from(this.elements.macroCheckboxes)
-                                     .filter(cb => cb.checked)
-                                     .map(cb => cb.value);
+                                   .filter(cb => cb.checked)
+                                   .map(cb => cb.value);
         
         this.elements.microContainer.innerHTML = '';
 
@@ -425,8 +433,7 @@ const testController = {
         filtered.forEach(p => {
             const label = document.createElement('label');
             label.className = 'flex items-center gap-2 cursor-pointer text-gray-700 hover:text-gray-900 transition-colors p-2 bg-white rounded border border-gray-300';
-            // Busca esta línea dentro de updateMicroSelection() en tu app.js:
-label.innerHTML = `<input type="checkbox" value="${p.id}" class="test-micro-checkbox accent-accent w-4 h-4"> <span class="scientific-name">${formatScientificName(p.scientificName)}</span>`;
+            label.innerHTML = `<input type="checkbox" value="${p.id}" class="test-micro-checkbox accent-accent w-4 h-4"> <span class="scientific-name">${formatScientificName(p.scientificName)}</span>`;
             this.elements.microContainer.appendChild(label);
         });
     },
@@ -441,83 +448,198 @@ label.innerHTML = `<input type="checkbox" value="${p.id}" class="test-micro-chec
             return;
         }
 
-        const randomId = microsSelected[Math.floor(Math.random() * microsSelected.length)];
-        this.state.currentTestObj = parasiteDatabase.find(p => p.id === randomId);
-        
-        this.state.variant = document.getElementById('practiceVariant').value;
-        this.state.userAnswers = {};
-        this.state.activePillId = null;
-        this.state.correctClinicalAnswer = null;
+        const variant = document.getElementById('practiceVariant').value;
+        let generatedQuestions = [];
 
-        if (this.state.variant === 'identificacion') {
-            this.state.currentStateLogic = Math.random() > 0.5 ? 'stateA' : 'stateB';
-        } else if (this.state.variant === 'clinica') {
-            this.state.currentStateLogic = 'stateC';
-        } else {
-            const rand = Math.random();
-            if (rand < 0.33) this.state.currentStateLogic = 'stateA';
-            else if (rand < 0.66) this.state.currentStateLogic = 'stateB';
-            else this.state.currentStateLogic = 'stateC';
+        microsSelected.forEach(id => {
+            const p = parasiteDatabase.find(item => item.id === id);
+            if (!p) return;
+
+            // 1. Identificación morfológica (Solo si es 'identificacion' o 'aleatorio')
+            if (variant === 'identificacion' || variant === 'aleatorio') {
+                if (p.morphology && Array.isArray(p.morphology)) {
+                    p.morphology.forEach(m => {
+                        if (m.image) {
+                            // Pregunta de Identificación de Estadio
+                            generatedQuestions.push({
+                                scientificName: p.scientificName,
+                                hideTitle: false, 
+                                image: m.image,
+                                categoryText: "Identificación de Estadio",
+                                questionText: `¿A qué fase o estadio corresponde la siguiente estructura morfológica?`,
+                                correctAnswer: m.stage,
+                                isNameQuestion: false,
+                                options: this.getStageDistractors(m.stage)
+                            });
+
+                            // Pregunta de Identificación de Nombre del Parásito
+                            generatedQuestions.push({
+                                scientificName: p.scientificName,
+                                hideTitle: true, 
+                                image: m.image,
+                                categoryText: "Identificación de Especie",
+                                questionText: `¿A qué parásito pertenece la siguiente estructura morfológica?`,
+                                correctAnswer: p.scientificName,
+                                isNameQuestion: true, 
+                                options: this.getParasiteNameDistractors(p.scientificName)
+                            });
+                        }
+                    });
+                }
+            }
+
+            // 2. Preguntas Clínicas / Teóricas puras sin imagen (Solo si es 'clinica' o 'aleatorio')
+            if (variant === 'clinica' || variant === 'aleatorio') {
+                const clinicalFields = [
+                    { field: 'transmission', text: '¿Cuál es el mecanismo de transmisión de este organismo?' },
+                    { field: 'infectiveStage', text: '¿Cuál es la fase infectante para el ser humano?' },
+                    { field: 'diagnosticStage', text: '¿Cuál es la fase diagnóstica de este organismo?' },
+                    { field: 'diagnosticMethod', text: '¿Cuál es el método de diagnóstico indicado?' },
+                    { field: 'treatment', text: '¿Cuál es el tratamiento recomendado?' }
+                ];
+
+                clinicalFields.forEach(cf => {
+                    if (p[cf.field]) {
+                        generatedQuestions.push({
+                            scientificName: p.scientificName,
+                            hideTitle: false,
+                            image: null,
+                            categoryText: "Clínica",
+                            questionText: cf.text,
+                            correctAnswer: p[cf.field],
+                            isNameQuestion: false,
+                            options: this.getDistractors(p, cf.field)
+                        });
+                    }
+                });
+            }
+        });
+
+        if (generatedQuestions.length === 0) {
+            alert('Los parásitos seleccionados no tienen suficientes datos para la modalidad elegida.');
+            return;
         }
+
+        this.state.questions = generatedQuestions.sort(() => 0.5 - Math.random());
+        this.state.currentIndex = 0;
+        this.state.score = 0;
+        this.state.isAnswerChecked = false;
 
         this.elements.configView.classList.add('hidden');
         this.elements.testView.classList.remove('hidden');
+
+        this.loadCurrentQuestion();
+    },
+
+    getStageDistractors(correctStage) {
+        let allStages = [];
+        parasiteDatabase.forEach(p => {
+            if (p.morphology && Array.isArray(p.morphology)) {
+                p.morphology.forEach(m => {
+                    if (m.stage && !allStages.includes(m.stage)) {
+                        allStages.push(m.stage);
+                    }
+                });
+            }
+        });
+        const others = allStages.filter(s => s !== correctStage);
+        const shuffledOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
+        return [correctStage, ...shuffledOthers].sort(() => 0.5 - Math.random());
+    },
+
+    getParasiteNameDistractors(correctName) {
+        const others = parasiteDatabase.filter(p => p.scientificName !== correctName);
+        const shuffledOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const wrongAnswers = shuffledOthers.map(p => p.scientificName);
+        return [correctName, ...wrongAnswers].sort(() => 0.5 - Math.random());
+    },
+
+    getDistractors(currentParasite, field) {
+        const others = parasiteDatabase.filter(p => p.id !== currentParasite.id);
+        const shuffledOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const wrongAnswers = shuffledOthers.map(p => p[field]);
+        return [currentParasite[field], ...wrongAnswers].sort(() => 0.5 - Math.random());
+    },
+
+    loadCurrentQuestion() {
+        this.state.isAnswerChecked = false;
+        this.state.userSelectedAnswer = null;
         this.elements.feedback.textContent = '';
+        this.elements.btnCheck.textContent = 'Verificar Respuesta';
         this.elements.btnCheck.disabled = false;
 
-        this.loadQuizInterface();
-    },
+        const q = this.state.questions[this.state.currentIndex];
+        const totalQ = this.state.questions.length;
 
-    loadQuizInterface() {
-        const hasCanvasData = this.state.currentTestObj.canvasData && this.state.currentTestObj.canvasData.morphology;
-        
-        if (!hasCanvasData && (this.state.currentStateLogic === 'stateA' || this.state.currentStateLogic === 'stateB')) {
-            this.state.currentStateLogic = 'stateC'; 
+        // Ocultar nombre científico si es pregunta para adivinar el nombre
+        if (q.hideTitle) {
+            document.getElementById('testOrganismTitle').innerHTML = '<span style="font-style: normal;">Organismo Desconocido</span>';
+        } else {
+            document.getElementById('testOrganismTitle').innerHTML = formatScientificName(q.scientificName);
         }
-
-        document.getElementById('testOrganismTitle').innerHTML = formatScientificName(this.state.currentTestObj.scientificName);
         
-        if (this.state.currentStateLogic === 'stateA') {
-            document.getElementById('testPromptText').textContent = 'Práctica (Identificar): Selecciona el nombre correcto para cada marcador.';
-        } else if (this.state.currentStateLogic === 'stateB') {
-            document.getElementById('testPromptText').textContent = 'Práctica (Localizar): Selecciona un término de la lista y haz clic en la imagen.';
-        } else if (this.state.currentStateLogic === 'stateC') {
-            document.getElementById('testPromptText').textContent = 'Práctica (Clínica): Selecciona la respuesta correcta.';
-        }
+        document.getElementById('testPromptText').innerHTML = `Pregunta ${this.state.currentIndex + 1} de ${totalQ} — <span class="text-accent font-bold">${q.categoryText}</span>`;
 
-        let imageSrc = null;
-        let structures = [];
-        
-        if (hasCanvasData) {
-            imageSrc = this.state.currentTestObj.canvasData.morphology.image;
-            structures = this.state.currentTestObj.canvasData.morphology.structures || [];
-        } else if (this.state.currentTestObj.morphology && this.state.currentTestObj.morphology[0]) {
-            imageSrc = this.state.currentTestObj.morphology[0].image;
-        }
+        const canvasParent = this.elements.canvas.parentElement;
+        const testRow = this.elements.testView.querySelector('.flex.flex-col') || canvasParent.parentElement;
+        const bankCol = this.elements.bank.closest('div.bg-gray-50') || this.elements.bank.parentElement.parentElement;
 
-        if(imageSrc) {
-            this.state.baseImage = new Image();
-            this.state.baseImage.src = imageSrc;
-            this.state.baseImage.onload = () => {
-                this.renderCanvas(structures);
-                this.buildUIControls(structures);
+        if (q.image) {
+            if (canvasParent) canvasParent.style.display = 'flex';
+            if (canvasParent) canvasParent.className = 'relative w-full lg:w-2/3 bg-gray-50 border border-gray-300 rounded-lg overflow-hidden flex items-center justify-center min-h-[400px]';
+            if (bankCol) bankCol.className = 'w-full lg:w-1/3 bg-gray-50 border border-gray-300 rounded-lg p-5 flex flex-col';
+            if (testRow) testRow.className = 'flex flex-col lg:flex-row gap-6 max-w-5xl mx-auto items-center justify-center';
+
+            const img = new Image();
+            img.src = q.image;
+            img.onload = () => {
+                this.state.baseImage = img;
+                this.renderCanvasImage();
             };
         } else {
-             this.elements.canvas.width = this.elements.canvas.parentElement.clientWidth;
-             this.elements.canvas.height = 500;
-             this.state.canvasCtx.clearRect(0, 0, this.elements.canvas.width, 500);
-             this.buildUIControls([]);
+            if (canvasParent) canvasParent.style.display = 'none';
+            if (bankCol) bankCol.className = 'w-full max-w-2xl mx-auto bg-gray-50 border border-gray-300 rounded-lg p-8 flex flex-col shadow-md';
+            if (testRow) testRow.className = 'flex flex-col gap-6 max-w-3xl mx-auto justify-center';
+
+            const ctx = this.state.canvasCtx;
+            ctx.clearRect(0, 0, this.elements.canvas.width, this.elements.canvas.height);
         }
+
+        let html = `<p class="text-gray-900 font-semibold mb-4 text-base sm:text-lg leading-snug">${q.questionText}</p>`;
+        html += `<div class="flex flex-col gap-3">`;
+
+        q.options.forEach((opt, idx) => {
+            const displayOpt = q.isNameQuestion ? formatScientificName(opt) : opt;
+            const extraClass = q.isNameQuestion ? 'scientific-name' : '';
+            
+            html += `
+                <label class="flex items-start gap-3 p-3.5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors option-label shadow-sm">
+                    <input type="radio" name="quizOption" value="${idx}" class="mt-1 accent-accent">
+                    <span class="text-sm text-gray-700 leading-relaxed ${extraClass}">${displayOpt}</span>
+                </label>
+            `;
+        });
+        html += `</div>`;
+
+        this.elements.bank.innerHTML = html;
+
+        this.elements.bank.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                if (this.state.isAnswerChecked) return;
+                this.state.userSelectedAnswer = q.options[e.target.value];
+            });
+        });
     },
 
-    renderCanvas(structures = []) {
+    renderCanvasImage() {
         const canvas = this.elements.canvas;
         const ctx = this.state.canvasCtx;
         const img = this.state.baseImage;
+        if (!img) return;
 
         const wrapper = canvas.parentElement;
         canvas.width = wrapper.clientWidth;
-        canvas.height = 500; 
+        canvas.height = 400;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         const scale = Math.min(canvas.width / img.width, canvas.height / img.height);
@@ -526,251 +648,104 @@ label.innerHTML = `<input type="checkbox" value="${p.id}" class="test-micro-chec
         const x = (canvas.width / 2) - (w / 2);
         const y = (canvas.height / 2) - (h / 2);
 
-        this.state.drawnRect = { x, y, w, h };
         ctx.drawImage(img, x, y, w, h);
-
-        this.elements.overlay.innerHTML = '';
-
-        if (this.state.currentStateLogic === 'stateA') {
-            structures.forEach(struct => {
-                this.drawMarkerDot(struct.relX, struct.relY);
-                this.createDropdownAt(struct.id, struct.relX, struct.relY, structures);
-            });
-        }
-        else if (this.state.currentStateLogic === 'stateB') {
-            Object.keys(this.state.userAnswers).forEach(id => {
-                const ans = this.state.userAnswers[id];
-                const struct = structures.find(s => s.id === id);
-                if(struct) this.drawMarkerWithText(ans.relX, ans.relY, struct.name, '#3b82f6'); 
-            });
-        }
-    },
-
-    buildUIControls(structures) {
-        this.elements.bank.innerHTML = '';
-        const panelTitle = document.getElementById('panelRightTitle'); 
-
-        if (this.state.currentStateLogic === 'stateA') {
-            if(panelTitle) panelTitle.textContent = "Banco de Estructuras";
-            this.elements.bank.innerHTML = '<p class="text-gray-500 text-sm">Utiliza los menús desplegables sobre la imagen para asignar las estructuras correspondientes.</p>';
-            this.elements.btnCheck.classList.remove('hidden');
-
-        } else if (this.state.currentStateLogic === 'stateB') {
-            if(panelTitle) panelTitle.textContent = "Banco de Estructuras";
-            this.elements.btnCheck.classList.remove('hidden');
-            structures.forEach(struct => {
-                const btn = document.createElement('button');
-                btn.className = 'structure-pill';
-                btn.id = `pill_${struct.id}`;
-                btn.textContent = struct.name;
-                btn.onclick = () => this.selectPill(struct.id);
-                this.elements.bank.appendChild(btn);
-            });
-
-        } else if (this.state.currentStateLogic === 'stateC') {
-            if(panelTitle) panelTitle.textContent = "Pregunta Clínica";
-            this.elements.btnCheck.classList.remove('hidden');
-            
-            const askTreatment = Math.random() > 0.5;
-            const questionType = askTreatment ? 'tratamiento' : 'método de diagnóstico';
-            const correctAnswer = askTreatment ? this.state.currentTestObj.treatment : this.state.currentTestObj.diagnosticMethod;
-            
-            const others = parasiteDatabase.filter(p => p.id !== this.state.currentTestObj.id);
-            const shuffledOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
-            const wrongAnswers = shuffledOthers.map(p => askTreatment ? p.treatment : p.diagnosticMethod);
-            
-            const allOptions = [correctAnswer, ...wrongAnswers].sort(() => 0.5 - Math.random());
-            this.state.correctClinicalAnswer = correctAnswer;
-            
-            let html = `<p class="text-gray-900 font-semibold mb-4">¿Cuál es el <span class="text-accent">${questionType}</span> indicado para ${formatScientificName(this.state.currentTestObj.scientificName)}?</p>`;
-            html += `<div class="flex flex-col gap-3">`;
-            
-            allOptions.forEach((opt, idx) => {
-                html += `
-                    <label class="flex items-start gap-3 p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
-                        <input type="radio" name="clinicalAnswer" value="${idx}" class="mt-1 accent-accent">
-                        <span class="text-sm text-gray-700 leading-tight">${opt}</span>
-                    </label>
-                `;
-            });
-            html += `</div>`;
-            
-            this.elements.bank.innerHTML = html;
-            
-            this.elements.bank.querySelectorAll('input[type="radio"]').forEach(radio => {
-                radio.addEventListener('change', (e) => {
-                    this.state.userAnswers['clinical'] = allOptions[e.target.value];
-                });
-            });
-        }
-    },
-
-    createDropdownAt(id, relX, relY, structures) {
-        const rect = this.state.drawnRect;
-        const absX = rect.x + (relX * rect.w);
-        const absY = rect.y + (relY * rect.h);
-
-        const select = document.createElement('select');
-        select.className = 'canvas-marker-select';
-        select.style.left = `${absX}px`;
-        select.style.top = `${absY - 25}px`; 
-        select.dataset.id = id;
-
-        let options = `<option value="" disabled selected>?</option>`;
-        
-        const shuffled = [...structures].sort(() => 0.5 - Math.random());
-        shuffled.forEach(s => {
-            options += `<option value="${s.id}">${s.name}</option>`;
-        });
-        
-        select.innerHTML = options;
-        
-        select.addEventListener('change', (e) => {
-            this.state.userAnswers[id] = e.target.value;
-        });
-
-        this.elements.overlay.appendChild(select);
-    },
-
-    selectPill(id) {
-        if (this.state.userAnswers[id]) return; 
-
-        document.querySelectorAll('.structure-pill').forEach(p => p.classList.remove('selected-pill'));
-        document.getElementById(`pill_${id}`).classList.add('selected-pill');
-        this.state.activePillId = id;
-    },
-
-    handleCanvasClick(e) {
-        if (this.state.currentStateLogic !== 'stateB' || !this.state.activePillId) return;
-
-        const rect = this.elements.canvas.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left;
-        const mouseY = e.clientY - rect.top;
-
-        const dRect = this.state.drawnRect;
-        if (mouseX < dRect.x || mouseX > dRect.x + dRect.w || mouseY < dRect.y || mouseY > dRect.y + dRect.h) return;
-
-        const relX = (mouseX - dRect.x) / dRect.w;
-        const relY = (mouseY - dRect.y) / dRect.h;
-
-        this.state.userAnswers[this.state.activePillId] = { relX, relY };
-        const pill = document.getElementById(`pill_${this.state.activePillId}`);
-        pill.classList.remove('selected-pill');
-        pill.classList.add('placed');
-        pill.innerHTML += ` <span class="text-xs text-blue-500 font-bold">✓</span>`;
-        
-        this.state.activePillId = null;
-        this.renderCanvas(this.state.currentTestObj.canvasData.morphology.structures);
-    },
-
-    drawMarkerDot(relX, relY) {
-        const ctx = this.state.canvasCtx;
-        const rect = this.state.drawnRect;
-        const absX = rect.x + (relX * rect.w);
-        const absY = rect.y + (relY * rect.h);
-
-        ctx.beginPath();
-        ctx.arc(absX, absY, 6, 0, 2 * Math.PI);
-        ctx.fillStyle = '#DAA520';
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#121212';
-        ctx.stroke();
-    },
-
-    drawMarkerWithText(relX, relY, text, color = '#DAA520') {
-        const ctx = this.state.canvasCtx;
-        const rect = this.state.drawnRect;
-        const absX = rect.x + (relX * rect.w);
-        const absY = rect.y + (relY * rect.h);
-
-        ctx.beginPath();
-        ctx.moveTo(absX, absY);
-        ctx.lineTo(absX + 25, absY - 25);
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(absX, absY, 5, 0, 2 * Math.PI);
-        ctx.fillStyle = color;
-        ctx.fill();
-
-        ctx.font = '12px Inter, sans-serif';
-        const textWidth = ctx.measureText(text).width;
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
-        ctx.fillRect(absX + 25, absY - 35, textWidth + 10, 20);
-        
-        ctx.fillStyle = '#111827';
-        ctx.fillText(text, absX + 30, absY - 21);
     },
 
     validateAnswers() {
-        let score = 0;
-
-        if (this.state.currentStateLogic === 'stateA') {
-            const data = this.state.currentTestObj.canvasData.morphology;
-            const selects = document.querySelectorAll('.canvas-marker-select');
-            selects.forEach(select => {
-                const markerId = select.dataset.id;
-                const selectedVal = select.value;
-
-                if (selectedVal === markerId) {
-                    score++;
-                    select.classList.add('correct');
-                    select.classList.remove('incorrect');
-                } else {
-                    select.classList.add('incorrect');
-                    select.classList.remove('correct');
-                }
-            });
-            const total = data.structures.length;
-            this.elements.feedback.innerHTML = `<span class="${score === total ? 'text-green-600' : 'text-accent'}">Obtuviste ${score} de ${total} aciertos.</span>`;
-            
-        } else if (this.state.currentStateLogic === 'stateB') {
-            const data = this.state.currentTestObj.canvasData.morphology;
-            const tolerance = 0.08; 
-            data.structures.forEach(struct => {
-                const ans = this.state.userAnswers[struct.id];
-                const pill = document.getElementById(`pill_${struct.id}`);
-                
-                if (ans) {
-                    const dx = Math.abs(ans.relX - struct.relX);
-                    const dx_abs = Math.abs(ans.relY - struct.relY); // Se conserva variable previa del scope
-                    
-                    if (dx <= tolerance && Math.abs(ans.relY - struct.relY) <= tolerance) {
-                        score++;
-                        pill.style.borderColor = '#10b981'; 
-                    } else {
-                        pill.style.borderColor = '#ef4444'; 
-                    }
-                } else {
-                    pill.style.borderColor = '#ef4444'; 
-                }
-            });
-            const total = data.structures.length;
-            this.elements.feedback.innerHTML = `<span class="${score === total ? 'text-green-600' : 'text-accent'}">Obtuviste ${score} de ${total} aciertos.</span>`;
-
-        } else if (this.state.currentStateLogic === 'stateC') {
-            const userAns = this.state.userAnswers['clinical'];
-            if (!userAns) {
+        if (!this.state.isAnswerChecked) {
+            if (!this.state.userSelectedAnswer) {
                 this.elements.feedback.innerHTML = `<span class="text-red-600">Por favor, selecciona una opción.</span>`;
                 return;
             }
-            
-            if (userAns === this.state.correctClinicalAnswer) {
-                this.elements.feedback.innerHTML = `<span class="text-green-600 font-bold">¡Correcto! Excelente diagnóstico.</span>`;
+
+            this.state.isAnswerChecked = true;
+            const q = this.state.questions[this.state.currentIndex];
+            const isCorrect = this.state.userSelectedAnswer === q.correctAnswer;
+
+            if (isCorrect) {
+                this.state.score++;
+                this.elements.feedback.innerHTML = `<span class="text-green-600 font-bold">¡Correcto!</span>`;
             } else {
-                this.elements.feedback.innerHTML = `<span class="text-red-600 font-bold">Incorrecto.</span> <br><span class="text-xs text-gray-700 block mt-1">La respuesta era: ${this.state.correctClinicalAnswer}</span>`;
+                this.elements.feedback.innerHTML = `<span class="text-red-600 font-bold">Incorrecto.</span>`;
+            }
+
+            const labels = this.elements.bank.querySelectorAll('.option-label');
+            labels.forEach(label => {
+                const textSpan = label.querySelector('span').textContent;
+                const radioInput = label.querySelector('input');
+                
+                if (textSpan === q.correctAnswer) {
+                    label.style.borderColor = '#10b981';
+                    label.style.backgroundColor = '#ecfdf5';
+                } else if (radioInput.checked && textSpan !== q.correctAnswer) {
+                    label.style.borderColor = '#ef4444';
+                    label.style.backgroundColor = '#fef2f2';
+                }
+                radioInput.disabled = true;
+            });
+
+            if (this.state.currentIndex < this.state.questions.length - 1) {
+                this.elements.btnCheck.textContent = 'Siguiente Pregunta';
+            } else {
+                this.elements.btnCheck.textContent = 'Ver Resultados Finales';
+            }
+
+        } else {
+            this.state.currentIndex++;
+            if (this.state.currentIndex < this.state.questions.length) {
+                this.loadCurrentQuestion();
+            } else {
+                this.showFinalScore();
             }
         }
+    },
 
-        this.elements.btnCheck.disabled = true;
+    showFinalScore() {
+        const total = this.state.questions.length;
+        const percentage = Math.round((this.state.score / total) * 100);
+
+        document.getElementById('testOrganismTitle').textContent = "¡Prueba Finalizada!";
+        document.getElementById('testPromptText').textContent = "Resumen de evaluación global";
+        
+        const canvasParent = this.elements.canvas.parentElement;
+        const bankCol = this.elements.bank.closest('div.bg-gray-50') || this.elements.bank.parentElement.parentElement;
+
+        if (canvasParent) canvasParent.style.display = 'none';
+        if (bankCol) {
+            bankCol.className = 'w-full max-w-2xl mx-auto bg-gray-50 border border-gray-300 rounded-lg p-8 flex flex-col shadow-md';
+        }
+
+        let badgeColor = percentage >= 70 ? 'text-green-600' : 'text-accent';
+
+        this.elements.bank.innerHTML = `
+            <div class="text-center py-8 flex flex-col items-center justify-center h-full">
+                <h3 class="text-4xl font-bold ${badgeColor} mb-2">${this.state.score} / ${total}</h3>
+                <p class="text-lg font-semibold text-gray-800 mb-4">Aciertos (${percentage}%)</p>
+                <p class="text-sm text-gray-600 mb-8">${percentage >= 70 ? '¡Excelente dominio clínico de la parasitología!' : 'Sigue repasando el catálogo para afianzar conceptos.'}</p>
+                <button onclick="testController.exitTest()" class="bg-[#DAA520] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#b8860b] transition-colors shadow-md">
+                    Volver a Configurar Prueba
+                </button>
+            </div>
+        `;
+
+        this.elements.btnCheck.classList.add('hidden');
+        this.elements.feedback.textContent = '';
     },
 
     exitTest() {
+        const canvasParent = this.elements.canvas.parentElement;
+        const testRow = this.elements.testView.querySelector('.flex.flex-col') || canvasParent.parentElement;
+        const bankCol = this.elements.bank.closest('div.bg-gray-50') || this.elements.bank.parentElement.parentElement;
+
+        if (canvasParent) canvasParent.style.display = 'flex';
+        if (canvasParent) canvasParent.className = 'relative w-full lg:w-2/3 bg-gray-50 border border-gray-300 rounded-lg overflow-hidden flex items-center justify-center min-h-[400px]';
+        if (bankCol) bankCol.className = 'w-full lg:w-1/3 bg-gray-50 border border-gray-300 rounded-lg p-5 flex flex-col';
+        if (testRow) testRow.className = 'flex flex-col lg:flex-row gap-6';
+
+        this.elements.canvas.style.display = 'block';
         this.elements.testView.classList.add('hidden');
         this.elements.configView.classList.remove('hidden');
+        this.updateMicroSelection();
     }
 };
 
