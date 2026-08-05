@@ -1,4 +1,4 @@
-Copyright (c) 2026 Rubén Vargas (ParasiAtlas)
+Copyright (©) 2026 Rubén Vargas (ParasiAtlas)
 
 Todos los derechos reservados.
 
