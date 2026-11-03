@@ -1250,6 +1250,230 @@
         "treatment": "Albendazol, Mebendazol o Pamoato de pirantel. Es fundamental e indispensable dar tratamiento simultáneo a todo el núcleo familiar o a los convivientes para evitar reinfecciones cruzadas."
     },
     {
+        "id": "fasciola-hepatica",
+        "category": "Helmintos 🪱",
+        "scientificName": "Fasciola hepatica",
+        "commonName": "Duela del hígado",
+        "disease": "Fascioliasis",
+        "transmission": "Oral (ingestión de plantas acuáticas de agua dulce como berros o agua contaminada con metacercarias).",
+        "infectiveStage": "Metacercaria enquistada.",
+        "diagnosticStage": "Huevo no embrionado en heces o aspirado biliar/duodenal.",
+        "epidemiology": "Zoonosis cosmopolita vinculada a zonas ganaderas (ovinos y bovinos). Hiperendémica en el Altiplano Andino (Perú, Bolivia) y frecuente en zonas rurales de México y Europa.",
+        "lifecycleSummary": "Los huevos maduran en agua dulce liberando miracidios que invaden caracoles Lymnaeidae. Las cercarias salen del caracol y se enquistan como metacercarias en plantas acuáticas. Al ingerirlas, desenquistan en duodeno, atraviesan la pared intestinal y el parénquima hepático hasta establecerse en los conductos biliares.",
+        "lifecycleDiagram": "assets/img/ciclos/fasciola-hepatica-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Trematodo grande (2-3 cm x 1 cm), aplanado dorsoventralmente con forma de hoja (foliáceo). Presenta un cono cefálico anterior característico con 'hombros' prominentes, ventosa oral y ventral cercanas, y ciegos intestinales muy ramificados.",
+                "image": "assets/img/morfologia/fasciola-hepatica-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Muy grande (130-150 µm x 60-90 µm), elipsoidal, de color amarillo-parduzco por pigmentos biliares. Posee un opérculo pequeño y poco evidente en uno de sus polos y se excreta sin embrionar.",
+                "image": "assets/img/morfologia/fasciola-hepatica-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Excreción de huevos no embrionados en heces; maduran en agua dulce (9-15 días) liberando el miracidio ciliado.",
+            "2. El miracidio penetra al hospedero intermediario (caracol del género Lymnaea / Galba), donde se multiplica asexualmente (esporoquiste, redias y cercarias).",
+            "3. Las cercarias nadan y se enquistan como metacercarias en plantas semiacuáticas (berros); tras su ingestión, migran por la cavidad peritoneal y cápsula de Glisson hasta los conductos biliares."
+        ],
+        "diagnosticMethod": "Fase aguda (invasiva/migratoria): Serología (ELISA, Western Blot) e hipereosinofilia marcada, junto con tomografía o ecografía hepatobiliar. Fase crónica (biliar/obstructiva): Examen coproparasitoscópico de sedimentación (ej. técnica de Lumbreras o Ritchie) para observar huevos operculados.",
+        "treatment": "Triclabendazol (fármaco de elección en dosis única o doble, activo contra formas inmaduras y adultas). Nota clínica: A diferencia de otros trematodos, NO responde a Praziquantel; Nitazoxanida o Bithionol son alternativas."
+    },
+    {
+        "id": "paragonimus-mexicanus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Paragonimus mexicanus",
+        "commonName": "Duela pulmonar latinoamericana",
+        "disease": "Paragonimiasis (Distomatosis pulmonar).",
+        "transmission": "Oral (ingestión de cangrejos o acociles de agua dulce crudos, marinados en limón o mal cocidos).",
+        "infectiveStage": "Metacercaria.",
+        "diagnosticStage": "Huevos operculados en esputo, lavado broncoalveolar o heces.",
+        "epidemiology": "Endémica de América Latina (desde México hasta Perú y Ecuador). Asociada a la costumbre culinaria de consumir crustáceos de agua dulce crudos en ceviche o jugo de limón.",
+        "lifecycleSummary": "El humano ingiere metacercarias en crustáceos de agua dulce. La larva desenquista en duodeno, atraviesa la pared intestinal, cruza el diafragma y penetra la pleura y el parénquima pulmonar, donde forma cápsulas fibrosas en pares.",
+        "lifecycleDiagram": "assets/img/ciclos/paragonimus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Trematodo robusto y ovalado (8-16 mm x 4-8 mm), de aspecto rojizo-parduzco semejante a un 'grano de café'. Tegumento cubierto de espinas escamosas, con ventosa oral y acetábulo ecuatorial de tamaño similar.",
+                "image": "assets/img/morfologia/paragonimus-mexicanus-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "80-100 µm x 45-60 µm, ovalado, de color café dorado y cáscara gruesa. Presenta un opérculo aplanado muy visible con rebordes prominentes ('hombros' operculares) y un engrosamiento leve en el polo abopercular.",
+                "image": "assets/img/morfologia/paragonimus-mexicanus-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos expulsados en el esputo o deglutidos en las heces llegan al agua dulce y liberan miracidios que infectan al primer hospedero intermediario (caracoles del género Aroapyrgus).",
+            "2. Las cercarias microcercas emergen del caracol e invaden al segundo hospedero intermediario (cangrejos Pseudothelphusidae o acociles), enquistándose como metacercarias en músculos y branquias.",
+            "3. Al ingerir el crustáceo crudo, las larvas migran desde el intestino a través de la cavidad peritoneal y el diafragma hasta los pulmones, madurando en 6 a 10 semanas."
+        ],
+        "diagnosticMethod": "Examen microscópico directo de esputo (con KOH al 10%) o CPS por sedimentación. Frecuentemente se confunde clínicamente y radiológicamente con Tuberculosis pulmonar (presenta hemoptisis crónica y eosinofilia elevada). Serología (ELISA) para casos extrapulmonares.",
+        "treatment": "Praziquantel (fármaco de elección, durante 2 a 3 días). Triclabendazol es una excelente alternativa con eficacia similar."
+    },
+    {
+        "id": "paragonimus-westermani",
+        "category": "Helmintos 🪱",
+        "scientificName": "Paragonimus westermani",
+        "commonName": "Duela pulmonar oriental",
+        "disease": "Paragonimiasis pulmonar y cerebral.",
+        "transmission": "Oral (consumo de cangrejos o langostinos de río crudos, en salmuera o marinados en vino/alcohol, o carne de jabalí).",
+        "infectiveStage": "Metacercaria.",
+        "diagnosticStage": "Huevos operculados en esputo o heces.",
+        "epidemiology": "Especie de Paragonimus más prevalente a nivel global, endémica en el Extremo Oriente y Sudeste Asiático (China, Japón, Corea, Filipinas, Taiwán).",
+        "lifecycleSummary": "Ciclo bioecológico con dos hospederos intermediarios acuáticos (caracol Semisulcospira y crustáceos decápodos). En el humano, los parásitos jóvenes migran desde el duodeno a través del diafragma hasta alojarse en quistes fibrosos pulmonares, o migran erráticamente al SNC.",
+        "lifecycleDiagram": "assets/img/ciclos/paragonimus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Trematodo carnoso de 7-12 mm de largo por 4-6 mm de ancho, convexo dorsalmente y aplanado ventralmente (forma de 'grano de café' o cuchara). Posee testículos lobulados opuestos y ovario ramificado.",
+                "image": "assets/img/morfologia/paragonimus-westermani-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "80-120 µm x 45-70 µm, asimétrico u ovoide, de color marrón-amarillento. No embrionado al excretarse, con un opérculo ancho y 'hombros' bien marcados, además de un franco engrosamiento de la cáscara en el extremo opuesto al opérculo.",
+                "image": "assets/img/morfologia/paragonimus-westermani-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Excreción de huevos no embrionados por expectoración (esputo herrumbroso) o en heces si son deglutidos.",
+            "2. En el agua, el miracidio penetra caracoles (Semisulcospira), se reproduce asexualmente y libera cercarias que infectan cangrejos de río (Eriocheir, Potamon).",
+            "3. El humano se infecta al comer crustáceos crudos o carne cruda de hospederos paraténicos (jabalíes); las larvas migran a los pulmones causando tos crónica, hemoptisis y dolor pleural."
+        ],
+        "diagnosticMethod": "Observación microscópica de huevos operculados en esputo (frecuente presencia de cristales de Charcot-Leyden) o en heces por sedimentación. Serología (ELISA/inmunoblot) y neuroimagen (TAC/RM con lesiones en 'pompas de jabón') en paragonimiasis cerebral.",
+        "treatment": "Praziquantel (75 mg/kg/día dividido en 3 dosis por 2-3 días). En casos de afectación cerebral, se asocia con corticosteroides (Dexametasona) para evitar edema e hipertensión intracraneal."
+    },
+    {
+        "id": "clonorchis-sinensis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Clonorchis sinensis",
+        "commonName": "Duela hepática china",
+        "disease": "Clonorquiasis",
+        "transmission": "Oral (ingestión de pescado de agua dulce crudo, seco, en salazón o poco cocido).",
+        "infectiveStage": "Metacercaria enquistada en músculo o piel de pescado.",
+        "diagnosticStage": "Huevos embrionados operculados en heces o aspirado duodenal.",
+        "epidemiology": "Endémica en Asia Oriental (China, Corea, Taiwán, Vietnam y Rusia oriental). Clasificado por la IARC como carcinógeno biológico de Grupo 1 por su fuerte asociación con el colangiocarcinoma.",
+        "lifecycleSummary": "El humano ingiere metacercarias en pescado de agua dulce. Desenquistan en el duodeno y migran directamente a través de la ampolla de Vater hacia los conductos biliares intrahepáticos distales, donde maduran y pueden sobrevivir de 20 a 30 años causando inflamación biliar crónica.",
+        "lifecycleDiagram": "assets/img/ciclos/clonorchis-sinensis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Trematodo lanceolado, aplanado y translúcido, de 10-25 mm de largo por 3-5 mm de ancho. Carece de espinas en el tegumento en su etapa madura y se distingue por sus dos testículos profundamente ramificados (dendríticos) situados en tándem en el tercio posterior.",
+                "image": "assets/img/morfologia/clonorchis-sinensis-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Muy pequeño (27-35 µm x 12-19 µm), ovoide, de color amarillo-parduzco con forma de 'bombilla eléctrica' o urna antigua. Presenta un opérculo convexo prominente que descansa sobre 'hombros' marcados y una pequeña protuberancia o coma en el polo abopercular.",
+                "image": "assets/img/morfologia/clonorchis-sinensis-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos ya embrionados son excretados con las heces y deben ser ingeridos directamente por el primer hospedero intermediario (caracoles del género Parafossarulus) para eclosionar.",
+            "2. En el caracol se desarrollan esporoquistes, redias y cercarias lofocercas de cola larga, las cuales salen al agua y penetran bajo las escamas de peces ciprínidos de agua dulce.",
+            "3. Tras ingerir pescado crudo con metacercarias, las larvas ascienden por el colédoco sin perforar tejidos hasta las vías biliares pequeñas, provocando hiperplasia adenomatosa y fibrosis periductal."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico de concentración por sedimentación (formalina-éter) o técnica cuantitativa de Kato-Katz. Ecografía hepatobiliar o colangiopancreatografía (CPRE) que muestra dilatación difusa de conductos biliares intrahepáticos periféricos.",
+        "treatment": "Praziquantel (fármaco de elección). Alternativa: Albendazol en esquemas prolongados de 7 días."
+    },
+    {
+        "id": "schistosoma-mansoni",
+        "category": "Helmintos 🪱",
+        "scientificName": "Schistosoma mansoni",
+        "commonName": "Esquistosoma intestinal",
+        "disease": "Esquistosomiasis (Bilharziasis) intestinal y hepatoesplénica.",
+        "transmission": "Cutánea directa (penetración activa de la piel intacta por furcocercarias presentes en agua dulce contaminada).",
+        "infectiveStage": "Furcocercaria (cercaria de cola bifurcada).",
+        "diagnosticStage": "Huevo con espina lateral prominente en heces.",
+        "epidemiology": "Ampliamente distribuido en África Subsahariana, Medio Oriente y es la única especie de Schistosoma endémica en el continente americano (Brasil, Venezuela, Surinam y algunas islas del Caribe).",
+        "lifecycleSummary": "Las cercarias penetran la piel, se transforman en esquistosómulos, viajan por pulmones hacia la circulación portal hepática donde maduran y se acoplan. Los adultos migran a las vénulas mesentéricas inferiores (colon); los huevos atraviesan la pared intestinal o son arrastrados al hígado causando fibrosis periportal de Symmers.",
+        "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en cópula",
+                "text": "Trematodos dioicos (sexos separados) con marcado dimorfismo sexual. El macho (1 cm) es ancho, tiene el tegumento cubierto de tubérculos prominentes y posee el canal ginecóforo donde aloja permanentemente a la hembra (1.2-1.6 cm), la cual es más larga, cilíndrica y filiforme.",
+                "image": "assets/img/morfologia/schistosoma-mansoni-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Grande (114-180 µm x 45-70 µm), alargado, sin opérculo y transparente/amarillento. Su rasgo patognomónico es una prominente y afilada ESPINA LATERAL cerca de uno de los polos. Contiene un miracidio maduro en su interior al ser excretado.",
+                "image": "assets/img/morfologia/schistosoma-mansoni-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos excretados en las heces eclosionan al contacto con agua dulce, liberando miracidios que penetran caracoles planorbídeos del género Biomphalaria.",
+            "2. Tras dos generaciones de esporoquistes (sin fase de redia), emergen miles de furcocercarias que nadan activamente y penetran la piel humana mediante enzimas proteolíticas (causando dermatitis por cercarias).",
+            "3. Maduran en el sistema portal y residen en el plexo venoso mesentérico inferior; los huevos atrapados en el hígado inducen granulomas eosinofílicos e hipertensión portal presinusoidal."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico cuantitativo de Kato-Katz o sedimentación. En infecciones crónicas o de baja carga: biopsia de mucosa rectal (valvas de Houston), detección de antígeno catódico circulante (CCA) en orina o serología.",
+        "treatment": "Praziquantel (40 mg/kg en dosis única o dividida en el mismo día). En la fase aguda (Fiebre de Katayama), se administran corticosteroides previos o concomitantes al Praziquantel."
+    },
+    {
+        "id": "schistosoma-haematobium",
+        "category": "Helmintos 🪱",
+        "scientificName": "Schistosoma haematobium",
+        "commonName": "Esquistosoma vesical / urogenital",
+        "disease": "Esquistosomiasis (Bilharziasis) urogenital.",
+        "transmission": "Cutánea directa (penetración de furcocercarias en piel expuesta a aguas dulces estancadas o de corriente lenta).",
+        "infectiveStage": "Furcocercaria (cercaria de cola bifurcada).",
+        "diagnosticStage": "Huevo con espina terminal en sedimento urinario.",
+        "epidemiology": "Endémica en toda África y focos del Medio Oriente. Reconocido como carcinógeno biológico de Grupo 1 (IARC) por su asociación directa con el carcinoma de células escamosas de vejiga.",
+        "lifecycleSummary": "Tras penetrar la piel y madurar en el sistema venoso portal, las parejas de adultos migran a través de las anastomosis venosas rectovesicales hasta establecerse en los plexos venosos vesical y pélvico. Los huevos atraviesan la pared de la vejiga hacia la orina, causando hematuria terminal y fibrosis urogenital.",
+        "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en cópula",
+                "text": "Trematodos dioicos intravasculares. El macho mide 10-15 mm y presenta tubérculos tegumentarios finos; sostiene en su canal ginecóforo a la hembra (20 mm), de aspecto oscuro debido a la hemozoína derivada de la digestión de eritrocitos.",
+                "image": "assets/img/morfologia/schistosoma-haematobium-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "112-170 µm x 40-70 µm, elongado u ovalado, sin opérculo y con un miracidio formado en su interior. Su característica patognomónica es la presencia de una ESPINA TERMINAL nítida ubicada exactamente en uno de sus polos.",
+                "image": "assets/img/morfologia/schistosoma-haematobium-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Eliminación de huevos embrionados en la orina; al caer en agua dulce eclosionan liberando miracidios que infectan caracoles del género Bulinus.",
+            "2. El caracol libera furcocercarias que penetran la piel humana, pierden su cola transformándose en esquistosómulos y migran vía cardiopulmonar hacia el hígado.",
+            "3. Los adultos se alojan en el plexo venoso vesical; los huevos retenidos en la pared vesical y uréteres generan granulomas calcificados ('vejiga en porcelana'), hidronefrosis y metaplasia escamosa."
+        ],
+        "diagnosticMethod": "Examen microscópico del sedimento de orina recolectada entre las 10:00 y 14:00 horas (pico de excreción tras ejercicio leve) o filtración de orina con membrana de policarbonato. Cistoscopia (muestra 'parches de arena' en la mucosa vesical) y ecografía renal/vesical.",
+        "treatment": "Praziquantel (40 mg/kg en un solo día). Seguimiento urológico para vigilar secuelas obstructivas o neoplasia vesical."
+    },
+    {
+        "id": "schistosoma-japonicum",
+        "category": "Helmintos 🪱",
+        "scientificName": "Schistosoma japonicum",
+        "commonName": "Esquistosoma oriental",
+        "disease": "Esquistosomiasis oriental (Enfermedad de Katayama).",
+        "transmission": "Cutánea directa (penetración de furcocercarias en agua dulce, frecuentemente en arrozales).",
+        "infectiveStage": "Furcocercaria (cercaria de cola bifurcada).",
+        "diagnosticStage": "Huevo redondeado con espina lateral rudimentaria en heces.",
+        "epidemiology": "Endémica en Asia Oriental (China, Filipinas e Indonesia). A diferencia de otras especies de Schistosoma, es una verdadera zoonosis que infecta a múltiples reservorios mamíferos (búfalos de agua, cerdos, perros, roedores).",
+        "lifecycleSummary": "Las furcocercarias penetran la piel, migran por pulmones e hígado y los adultos se localizan preferentemente en las vénulas mesentéricas superiores que drenan el intestino delgado. Es la especie más patógena debido a su altísima tasa de oviposición (~3,000 huevos/día por hembra, 10 veces más que S. mansoni).",
+        "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en cópula",
+                "text": "Trematodos dioicos. El macho mide 12-20 mm y se diferencia por tener un tegumento LISO (sin tubérculos cuticulares), mientras que la hembra mide 15-26 mm y presenta el ovario en la mitad del cuerpo y el útero lleno de decenas de huevos en cadena.",
+                "image": "assets/img/morfologia/schistosoma-japonicum-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Más pequeño y esférico/subovalado que otras especies (70-100 µm x 50-70 µm), sin opérculo. Posee una ESPINA LATERAL RUDIMENTARIA muy pequeña, curva o en forma de botón, que a menudo queda oculta por detritos fecales adheridos a su cubierta viscosa.",
+                "image": "assets/img/morfologia/schistosoma-japonicum-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos eliminados en heces eclosionan en el agua e infectan caracoles anfibios operculados del género Oncomelania.",
+            "2. Emergencia de furcocercarias que penetran rápidamente la piel de humanos o mamíferos domésticos (ej. búfalos de agua en campos de arroz).",
+            "3. Los adultos se alojan en las venas mesentéricas superiores; la oviposición masiva en racimos causa cuadros severos de Fiebre de Katayama, hipertensión portal temprana y embolización frecuente de huevos al cerebro (esquistosomiasis cerebral)."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico por técnica de Kato-Katz o eclosión de miracidios en agua. Biopsia rectal, pruebas serológicas (ELISA) y neuroimagen (RM/TAC) ante sintomatología neurológica focal o convulsiones.",
+        "treatment": "Praziquantel a dosis más altas que en otras especies (60 mg/kg divididos en 2 o 3 tomas en un solo día) debido a su menor sensibilidad relativa."
+    },
+    {
         "id": "pediculus-humanus",
         "category": "Artrópodos 🕷️",
         "scientificName": "Pediculus humanus capitis",
