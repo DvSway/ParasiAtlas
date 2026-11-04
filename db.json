@@ -495,7 +495,7 @@
             {
                 "stage": "Promastigote y Amastigote",
                 "text": "Morfológicamente idéntico a las demás especies de Leishmania bajo el microscopio óptico.",
-                "image": "assets/img/morfologia/leishmania-promastigote.webp"
+                "image": "assets/img/morfologia/leishmania-amastigote.webp"
             }
         ],
         "lifecycleDetails": [
@@ -1263,7 +1263,7 @@
         "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
         "morphology": [
             {
-                "stage": "Adultos en cópula",
+                "stage": "Adulto",
                 "text": "Trematodos dioicos intravasculares. El macho mide 10-15 mm y presenta tubérculos tegumentarios finos; sostiene en su canal ginecóforo a la hembra (20 mm), de aspecto oscuro debido a la hemozoína derivada de la digestión de eritrocitos.",
                 "image": "assets/img/morfologia/schistosoma-haematobium-adulto.webp"
             },
@@ -1346,6 +1346,164 @@
         "treatment": "Praziquantel (40 mg/kg en dosis única o dividida en el mismo día). En la fase aguda (Fiebre de Katayama), se administran corticosteroides previos o concomitantes al Praziquantel."
     },
     {
+        "id": "diphyllobothrium-latum",
+        "category": "Helmintos 🪱",
+        "scientificName": "Diphyllobothrium latum",
+        "commonName": "Tenia ancha de los peces",
+        "disease": "Difilobotriasis (asociada a anemia megaloblástica por deficiencia de vitamina B12).",
+        "transmission": "Oral / Ictiofagia (ingestión de carne de pescado de agua dulce o anádromo cruda o mal cocida, ej. ceviche, sushi, salmón).",
+        "infectiveStage": "Larva plerocercoide (espargano).",
+        "diagnosticStage": "Huevos operculados no embrionados o cadenas de proglótidos en heces.",
+        "epidemiology": "Regiones lacustres templadas y subárticas (Escandinavia, Rusia, Norteamérica, Chile y Argentina). Es el cestodo más largo que infecta al ser humano (hasta 10-15 metros).",
+        "lifecycleSummary": "Ciclo acuático con dos hospederos intermediarios: un crustáceo copépodo (larva procercoide) y un pez teleósteo (larva plerocercoide en músculo). En el intestino delgado humano madura a adulto y compite selectivamente por la absorción de cianocobalamina (vitamina B12).",
+        "lifecycleDiagram": "assets/img/ciclos/diphyllobothrium-latum-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Es el cestodo más largo que infecta al ser humano, alcanzando de 4 a 15 metros de longitud con hasta 3,000 a 4,000 segmentos de color blanco-marfil o amarillento.",
+                "image": "assets/img/morfologia/diphyllobothrium-latum-adulto.webp"
+            },
+            {
+                "stage": "Escólex",
+                "text": "Pequeño (2-3 mm), alargado en forma de espátula o almendra. A diferencia de los ciclofilídeos, carece de ventosas y ganchos; posee dos surcos suctorios longitudinales profundos (botrios), uno dorsal y otro ventral.",
+                "image": "assets/img/morfologia/diphyllobothrium-latum-escolex.webp"
+            },
+            {
+                "stage": "Proglótido Grávido",
+                "text": "Característicamente más ancho que largo (10-12 mm de ancho por 2-4 mm de largo). Presenta un poro genital central ventral y un útero central enrollado con apariencia patognomónica de 'roseta'.",
+                "image": "assets/img/morfologia/diphyllobothrium-latum-proglotides.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "58-75 µm x 40-50 µm, ovalado, de color amarillo-marrón y no embrionado al excretarse. Presenta un opérculo en un extremo y una pequeña protuberancia o botón (espolón) en el polo abopercular.",
+                "image": "assets/img/morfologia/diphyllobothrium-latum-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos no embrionados maduran en agua dulce y liberan el coracidio ciliado, el cual es ingerido por copépodos (Cyclops o Diaptomus) transformándose en larva procercoide.",
+            "2. Peces pequeños ingieren al copépodo desarrollando la larva plerocercoide en su musculatura; peces depredadores grandes (trucha, salmón, perca) actúan como hospederos paraténicos acumulando larvas.",
+            "3. El humano se infecta al comer pescado crudo; el adulto se fija al íleon mediante sus botrios y absorbe hasta el 80% de la vitamina B12 de la dieta."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico directo o de sedimentación (huevos abundantes, no flotan bien en soluciones estándar). Identificación de proglótidos más anchos que largos con útero en roseta. Biometría hemática (anemia macrocítica megaloblástica).",
+        "treatment": "Praziquantel (dosis única de 10-25 mg/kg) o Niclosamida. Suplementación con vitamina B12 (cianocobalamina) si existe anemia megaloblástica o neuropatía."
+    },
+    {
+        "id": "dipylidium-caninum",
+        "category": "Helmintos 🪱",
+        "scientificName": "Dipylidium caninum",
+        "commonName": "Tenia del perro y del gato",
+        "disease": "Dipilidiasis.",
+        "transmission": "Oral accidental (ingestión de pulgas infectadas con cisticercoides, principalmente Ctenocephalides felis y C. canis).",
+        "infectiveStage": "Cisticercoide (dentro de la pulga o piojo masticador).",
+        "diagnosticStage": "Cápsulas ovígeras o proglótidos grávidos móviles en heces o región perianal.",
+        "epidemiology": "Cosmopolita. Zoonosis frecuente en perros y gatos; los casos humanos ocurren predominantemente en lactantes y niños pequeños que conviven estrechamente con mascotas infestadas de pulgas.",
+        "lifecycleSummary": "Las larvas de pulga ingieren las cápsulas ovígeras del suelo, desarrollándose el cisticercoide en el hemocele del insecto adulto. Cuando el perro, gato o niño ingiere accidentalmente la pulga, el cestodo madura en el intestino delgado y libera proglótidos con movimiento propio.",
+        "lifecycleDiagram": "assets/img/ciclos/dipylidium-caninum-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Cestodo de 10 a 70 cm de longitud, con estróbilo delgado cuyos segmentos van aumentando de tamaño y adoptando forma elíptica conforme maduran hacia el extremo posterior.",
+                "image": "assets/img/morfologia/dipylidium-caninum-adulto.webp"
+            },
+            {
+                "stage": "Escólex",
+                "text": "Pequeño y romboidal (0.3-0.5 mm), provisto de 4 ventosas ovaladas profundas y un rostelo cónico retráctil armado con 4 a 7 coronas transversales de pequeños ganchos con forma de 'espina de rosal'.",
+                "image": "assets/img/morfologia/dipylidium-caninum-escolex.webp"
+            },
+            {
+                "stage": "Proglótido",
+                "text": "Alargado con bordes convexos en forma de 'semilla de pepino' o grano de arroz. Su característica diagnóstica clave es poseer un DOBLE aparato reproductor con dos poros genitales bilaterales simétricos (uno en cada margen lateral).",
+                "image": "assets/img/morfologia/dipylidium-caninum-proglotide.webp"
+            },
+            {
+                "stage": "Cápsula Ovígera (Paquete de huevos)",
+                "text": "Estructura patognomónica (120-200 µm) conformada por un saco membranoso uterino que agrupa de 8 a 20 huevos esféricos (35-40 µm cada uno), cada cual con su oncosfera hexacanta.",
+                "image": "assets/img/morfologia/dipylidium-caninum-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los proglótidos grávidos reptan activamente fuera del ano o salen en heces, desintegrándose en el ambiente y liberando las cápsulas ovígeras.",
+            "2. Las larvas de las pulgas (Ctenocephalides spp.) mastican e ingieren los huevos; la oncosfera evoluciona a cisticercoide mientras la pulga sufre metamorfosis a adulto.",
+            "3. El hospedero definitivo ingiere la pulga al lamerse (mascotas) o por contacto mano-boca (niños), alcanzando la madurez sexual en el intestino delgado en 3 a 4 semanas."
+        ],
+        "diagnosticMethod": "Observación macroscópica de proglótidos blanquecinos móviles (con forma de semilla de pepino) en el pañal o heces, y confirmación microscópica de los dos poros genitales laterales o de las cápsulas ovígeras en el CPS.",
+        "treatment": "Praziquantel (dosis única) o Niclosamida. El control definitivo exige desparasitar simultáneamente a los perros/gatos y eliminar las pulgas del hogar."
+    },
+    {
+        "id": "echinococcus-granulosus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Echinococcus granulosus",
+        "commonName": "Tenia hidatídica del perro",
+        "disease": "Hidatidosis quística (Equinococosis quística).",
+        "transmission": "Fecal-oral para el humano y ovinos (ingestión de huevos embrionados excretados en heces de perros en agua, tierra o pelaje).",
+        "infectiveStage": "Huevo embrionado (para humano/ovino); Quiste hidatídico con protoescólices (para el perro).",
+        "diagnosticStage": "Quiste hidatídico en hígado/pulmón (imagenología y serología) o 'arenilla hidatídica'.",
+        "epidemiology": "Zoonosis importante en regiones ganaderas ovinas (Sudamérica, cuenca del Mediterráneo, Asia Central y África Oriental) donde se alimenta a los perros pastores con vísceras crudas.",
+        "lifecycleSummary": "Ciclo perro-oveja. El adulto diminuto vive en el intestino del perro. El humano actúa como hospedero intermediario accidental al ingerir huevos; la oncosfera viaja por vía portal desarrollándose lentamente en grandes quistes hidatídicos uniloculares en hígado (70%) y pulmones (20%).",
+        "lifecycleDiagram": "assets/img/ciclos/echinococcus-granulosus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Cestodo diminuto (3-6 mm de longitud total) que habita en el intestino del perro; su estróbilo consta únicamente de 3 proglótidos: uno inmaduro, uno maduro y uno grávido terminal que contiene cientos de huevos.",
+                "image": "assets/img/morfologia/echinococcus-granulosus-adulto.webp"
+            },
+            {
+                "stage": "Escólex",
+                "text": "Globular y pequeño (0.3 mm), dotado de 4 ventosas prominentes y un rostelo saliente armado con una doble corona de 28 a 50 ganchos quitinosos.",
+                "image": "assets/img/morfologia/echinococcus-granulosus-escolex.webp"
+            },
+            {
+                "stage": "Quiste Hidatídico",
+                "text": "Quiste esférico unilocular tisular (en hígado o pulmón) delimitado por una reacción adventicia del hospedero, una gruesa membrana cuticular externa acelular laminada y una fina membrana germinativa interna nucleada.",
+                "image": "assets/img/morfologia/echinococcus-granulosus-quiste.webp"
+            },
+            {
+                "stage": "Arenilla Hidatídica (Protoescólices)",
+                "text": "Sedimento microscópico libre en el líquido hidatídico compuesto por cápsulas prolígeras, ganchos sueltos y miles de protoescólices invaginados y evaginados provistos de ventosas y coronas de ganchos.",
+                "image": "assets/img/morfologia/echinococcus-granulosus-arenilla.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. El perro (hospedero definitivo) excreta huevos tipo Taenia inmediatamente infectantes en sus heces.",
+            "2. El hospedero intermediario (ovino, bovino o humano accidental) ingiere los huevos; la oncosfera penetra la pared intestinal y alcanza el hígado o pulmón por circulación portal.",
+            "3. Se desarrolla el quiste hidatídico (crece ~1 cm por año). Su ruptura espontánea o traumática libera líquido hidatídico altamente antigénico, causando choque anafiláctico letal y siembra peritoneal secundaria."
+        ],
+        "diagnosticMethod": "Ecografía (clasificación de la OMS/Gharbi, signo del 'camalote' o 'nevada'), TAC/RM combinada con Serología (ELISA e Inmunoblot/Western Blot). La punción diagnóstica simple está contraindicada por riesgo de anafilaxia.",
+        "treatment": "Albendazol (terapia médica prolongada y profilaxis perioperatoria), técnica PAIR (Punción, Aspiración, Inyección de escolicida como etanol/solución salina hipertónica y Reaspiración) o resección quirúrgica según el estadio del quiste."
+    },
+    {
+        "id": "hymenolepis-diminuta",
+        "category": "Helmintos 🪱",
+        "scientificName": "Hymenolepis diminuta",
+        "commonName": "Tenia de la rata",
+        "disease": "Himenolepiasis por H. diminuta.",
+        "transmission": "Oral accidental (ingestión de artrópodos infectados en cereales o harinas, como gorgojos Tribolium spp., Tenebrio spp. o pulgas).",
+        "infectiveStage": "Cisticercoide (en el hemocele de insectos).",
+        "diagnosticStage": "Huevos en heces.",
+        "epidemiology": "Cosmopolita en roedores silvestres y sinantrópicos (ratas y ratones). La infección humana es poco frecuente y ocurre principalmente en niños que ingieren cereales precocidos o granos secos contaminados con insectos.",
+        "lifecycleSummary": "A diferencia de H. nana, H. diminuta requiere obligatoriamente un hospedero intermediario artrópodo y NO presenta autoinfección. El humano ingiere accidentalmente el insecto con cisticercoides, desarrollándose el gusano adulto en el intestino delgado.",
+        "lifecycleDiagram": "assets/img/ciclos/hymenolepis-diminuta-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Proglótidos",
+                "text": "El adulto mide 20-60 cm y posee un escólex inerme (sin ganchos). Sus proglótidos son craspedotos (con bordes superpuestos), más anchos que largos, con poro genital unilateral y 3 testículos ovoides.",
+                "image": "assets/img/morfologia/hymenolepis-diminuta-proglotides.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Grande (70-85 µm x 60-80 µm), esférico, de color amarillo-parduzco (teñido por bilis) con cubierta externa gruesa estriada. Contiene una oncosfera con 6 ganchos dispuestos en abanico, pero CARECE de mamelones y filamentos polares (aspecto de 'huevo frito').",
+                "image": "assets/img/morfologia/hymenolepis-diminuta-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos excretados en heces de roedores (o humanos) son ingeridos por escarabajos de la harina (Tribolium, Tenebrio) o larvas de pulgas.",
+            "2. Las oncosferas penetran la pared intestinal del insecto y se transforman en larvas cisticercoides en su cavidad corporal.",
+            "3. Tras la ingestión accidental del artrópodo en granos o cereales, el cisticercoide evagina su escólex inerme en el intestino delgado y madura en unos 20 días."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico (CPS) directo o de concentración (Faust/Ritchie), diferenciando sus huevos grandes, amarillentos y sin filamentos polares de los huevos más pequeños y hialinos de H. nana.",
+        "treatment": "Praziquantel (fármaco de elección en dosis única) o Niclosamida. Control de roedores y almacenamiento hermético de granos y cereales."
+    },
+    {
         "id": "hymenolepis-nana",
         "category": "Helmintos 🪱",
         "scientificName": "Hymenolepis nana",
@@ -1360,12 +1518,22 @@
         "morphology": [
             {
                 "stage": "Adulto",
-                "text": "Pequeño, 15-40 mm de longitud. Escólex con 4 ventosas y un rostelo retráctil armado con una corona de ganchos.",
+                "text": "Es el cestodo humano más pequeño, midiendo apenas de 15 a 40 mm de longitud por 1 mm de ancho, con un estróbilo filiforme compuesto por hasta 200 proglótidos trapezoidales.",
                 "image": "assets/img/morfologia/hymenolepis-nana-adulto.webp"
             },
             {
+                "stage": "Escólex",
+                "text": "Pequeño y globular (0.3 mm), provisto de 4 ventosas hemisféricas y un rostelo corto y retráctil armado con una sola corona de 20 a 30 ganchos en forma de diapasón (diferencial clave frente al escólex inerme de H. diminuta).",
+                "image": "assets/img/morfologia/hymenolepis-nana-escolex.webp"
+            },
+            {
+                "stage": "Proglótidos",
+                "text": "Segmentos craspedotos (más anchos que largos) con poros genitales unilaterales orientados todos hacia el mismo lado; los proglótidos grávidos se desintegran en el intestino liberando los huevos.",
+                "image": "assets/img/morfologia/hymenolepis-nana-proglotides.webp"
+            },
+            {
                 "stage": "Huevo",
-                "text": "30-50 µm, ovalado, hialino. Presenta una oncosfera interna rodeada por una membrana con dos engrosamientos polares de donde surgen 4-8 filamentos polares.",
+                "text": "30-50 µm, ovalado, hialino (transparente). Presenta una oncosfera interna rodeada por una membrana con dos engrosamientos o mamelones polares de donde emergen de 4 a 8 filamentos polares refringentes.",
                 "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp"
             }
         ],
@@ -1376,6 +1544,250 @@
         ],
         "diagnosticMethod": "Examen coproparasitoscópico (CPS) de concentración (ej. flotación de Faust) para la visualización de los huevos característicos con filamentos polares.",
         "treatment": "Praziquantel es el fármaco de elección. Alternativa: Nitazoxanida."
+    },
+    {
+        "id": "moniezia-benedeni",
+        "category": "Helmintos 🪱",
+        "scientificName": "Moniezia benedeni",
+        "commonName": "Tenia ancha del ganado bovino",
+        "disease": "Monieziosis bovina (Teniasis de los rumiantes).",
+        "transmission": "Oral (ingestión accidental de ácaros oribátidos de vida libre en el pasto forrajero infectados con cisticercoides).",
+        "infectiveStage": "Cisticercoide.",
+        "diagnosticStage": "Proglótidos en heces o huevos con aparato piriforme.",
+        "epidemiology": "Cosmopolita en zonas de pastoreo. Afecta principalmente al ganado bovino joven (becerros) y ocasionalmente a ovinos, causando retraso del crecimiento y enteritis catarral.",
+        "lifecycleSummary": "Cestodo anoplocefálido heteroxeno. Los rumiantes excretan proglótidos y huevos en las pasturas; los ácaros oribátidos coprófagos del suelo ingieren los huevos, desarrollan el cisticercoide y son consumidos por el bovino al pastar temprano por la mañana.",
+        "lifecycleDiagram": "assets/img/ciclos/moniezia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Cestodo robusto de hasta 4 metros de largo y muy ancho (hasta 2.5 cm). Posee escólex inerme con 4 ventosas y proglótidos más anchos que largos con glándulas interproglotídeas dispuestas en una fila corta y compacta en el centro del borde posterior.",
+                "image": "assets/img/morfologia/moniezia-benedeni-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "75-85 µm, de forma característicamente cuadrangular o cúbica (a diferencia del huevo triangular de M. expansa). Contiene en su interior un 'aparato piriforme' quitinoso bien desarrollado que aloja a la oncosfera hexacanta.",
+                "image": "assets/img/morfologia/moniezia-benedeni-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Eliminación de proglótidos grávidos (semejantes a granos de arroz cocido) y huevos cuadrangulares en las heces del bovino.",
+            "2. Ácaros del suelo de la familia Oribatidae (Galumna, Scheloribates) ingieren los huevos; la oncosfera madura a cisticercoide en el hemocele del ácaro en 1 a 4 meses.",
+            "3. El ganado ingiere los ácaros adheridos al pasto húmedo; el cestodo adulto se desarrolla en el intestino delgado en unas 5 a 6 semanas."
+        ],
+        "diagnosticMethod": "Flotación fecal veterinaria (técnica de McMaster) identificando los típicos huevos cuadrangulares con aparato piriforme. Tinción de proglótidos maduros para observar las glándulas interproglotídeas agrupadas al centro.",
+        "treatment": "Uso veterinario: Praziquantel, Niclosamida o Benzimidazoles de amplio espectro (Albendazol, Fenbendazol, Oxfendazol). Rotación y descanso de potreros."
+    },
+    {
+        "id": "moniezia-expansa",
+        "category": "Helmintos 🪱",
+        "scientificName": "Moniezia expansa",
+        "commonName": "Tenia de las ovejas y cabras",
+        "disease": "Monieziosis ovina y caprina.",
+        "transmission": "Oral (ingestión de ácaros oribátidos del pasto que contienen larvas cisticercoides).",
+        "infectiveStage": "Cisticercoide.",
+        "diagnosticStage": "Proglótidos grávidos o huevos triangulares con aparato piriforme en heces.",
+        "epidemiology": "Distribución mundial. Afecta primordialmente a pequeños rumiantes (corderos y cabritos menores de 6 meses), pudiendo causar obstrucción intestinal mecánica, diarrea, anemia y lana quebradiza.",
+        "lifecycleSummary": "Ciclo indirecto mediado por ácaros del césped (Oribatidae). Al ser ingeridos los ácaros durante el pastoreo, los cisticercoides se liberan en el intestino delgado del cordero y crecen aceleradamente produciendo millones de huevos.",
+        "lifecycleDiagram": "assets/img/ciclos/moniezia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Proglótidos",
+                "text": "El adulto mide de 1 a 6 m. Sus proglótidos son cortos, anchos y con dos poros genitales laterales; se diferencia de M. benedeni porque sus glándulas interproglotídeas forman una serie de rosetas o sacos distribuidos a todo lo largo del margen posterior del segmento.",
+                "image": "assets/img/morfologia/moniezia-expansa-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "50-65 µm, de contorno subtriangular o piramidal con cubierta gruesa. En su interior destaca claramente el 'aparato piriforme' (estructura en forma de pera con dos prolongaciones como cuernos) que envuelve al embrión hexacanto.",
+                "image": "assets/img/morfologia/moniezia-expansa-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Excreción de segmentos grávidos repletos de huevos subtriangulares en las heces de ovinos y caprinos.",
+            "2. Los ácaros oribátidos coprófagos ingieren los huevos en la pradera, desarrollándose el estadio infectivo de cisticercoide en su cavidad corporal.",
+            "3. Los corderos se infectan al pastar hierba contaminada con ácaros; el gusano se fija a la mucosa del intestino delgado y alcanza la patencia en 40 días."
+        ],
+        "diagnosticMethod": "Observación macroscópica de proglótidos blanquecinos en las heces del rebaño y examen de flotación coproparasitoscópico (McMaster) revelando los huevos triangulares con aparato piriforme.",
+        "treatment": "Uso veterinario: Praziquantel (fármaco de elección, a menudo combinado con Ivermectina o Moxidectina), Albendazol o Niclosamida."
+    },
+    {
+        "id": "taenia-brauni",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia brauni",
+        "commonName": "Tenia africana causante de cenurosis",
+        "disease": "Cenurosis (ocular, subcutánea y cerebral).",
+        "transmission": "Fecal-oral para el humano (ingestión accidental de huevos excretados en las heces de cánidos salvajes o perros).",
+        "infectiveStage": "Huevo embrionado (para humano/roedores); Cenuro (Coenurus brauni) para cánidos.",
+        "diagnosticStage": "Quiste larvario tipo Cenuro (Coenurus) en biopsia ocular, subcutánea o del SNC.",
+        "epidemiology": "Zoonosis endémica de África Central y Oriental (especialmente República Democrática del Congo, Ruanda y Uganda). Frecuentemente considerada una subespecie o variante geográfica de Taenia serialis.",
+        "lifecycleSummary": "Ciclo depredador-presa entre cánidos (perros, chacales) y roedores africanos (ratas del género Rattus, Otomys). El humano se convierte en hospedero intermediario accidental al ingerir agua o alimentos contaminados con huevos, desarrollando la larva quística policéfala (cenuro) en el ojo, tejido subcutáneo o cerebro.",
+        "lifecycleDiagram": "assets/img/ciclos/coenurosis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cenuro (Coenurus brauni)",
+                "text": "Vesícula larvaria quística de pared delgada y translúcida llena de líquido hialino (frecuentemente intraocular o subcutánea) que contiene múltiples protoescólices invaginados adheridos a su membrana germinativa.",
+                "image": "assets/img/morfologia/taenia-brauni-cenuro.webp"
+            },
+            {
+                "stage": "Protoescólex",
+                "text": "Estructura cefálica larvaria invaginada dentro del cenuro que presenta 4 ventosas musculosas, corpúsculos calcáreos y un rostelo invaginado.",
+                "image": "assets/img/morfologia/taenia-brauni-protoescolex.webp"
+            },
+            {
+                "stage": "Gancho Rostelar",
+                "text": "Gancho quitinoso esclerotizado refringente (perteneciente a la doble corona de 22 a 36 ganchos del protoescólex), cuya forma de daga con mango, guarda y hoja curva permite el diagnóstico específico.",
+                "image": "assets/img/morfologia/taenia-brauni-gancho.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Cánidos definitivos eliminan proglótidos y huevos embrionados en el ambiente.",
+            "2. Roedores (o accidentalmente humanos) ingieren los huevos; la oncosfera atraviesa el intestino y se disemina por vía hematógena.",
+            "3. En humanos, la larva se establece preferentemente en la cámara vítrea/espacio subconjuntival del ojo o tejido subcutáneo, madurando a un cenuro multicefálico que causa inflamación severa y pérdida visual."
+        ],
+        "diagnosticMethod": "Examen histopatológico del quiste extirpado quirúrgicamente (identificación de pared vesical delgada con corpúsculos calcáreos y múltiples protoescólices con doble corona de ganchos, diferenciándolo del cisticerco que tiene un solo escólex). Examen oftalmológico y RM/TAC.",
+        "treatment": "Extirpación quirúrgica completa de la vesícula larvaria (tratamiento definitivo en formas subcutáneas e intraoculares). Praziquantel o Albendazol asociados a corticosteroides en localizaciones inoperables."
+    },
+    {
+        "id": "taenia-glomeratus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia glomeratus",
+        "commonName": "Tenia causante de cenurosis intramuscular",
+        "disease": "Cenurosis subcutánea e intramuscular.",
+        "transmission": "Fecal-oral (ingestión accidental de huevos presentes en tierra, agua o vegetación contaminada con heces de cánidos).",
+        "infectiveStage": "Huevo embrionado.",
+        "diagnosticStage": "Cenuro (Coenurus glomeratus) en biopsia de nódulos subcutáneos o musculares.",
+        "epidemiology": "Zoonosis rara reportada principalmente en África Occidental y Central (Nigeria, República Democrática del Congo y Uganda).",
+        "lifecycleSummary": "El gusano adulto habita en carnívoros silvestres/cánidos y los hospederos intermediarios naturales son roedores africanos. En el humano (hospedero intermediario accidental), la oncosfera migra hacia el tejido celular subcutáneo o los músculos intercostales y de las extremidades, formando un cenuro.",
+        "lifecycleDiagram": "assets/img/ciclos/coenurosis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cenuro (Coenurus glomeratus)",
+                "text": "Quiste larvario globular de 1 a 3 cm de diámetro rodeado por una cápsula fibrosa del hospedero, cuya pared vesical plegada aloja múltiples invaginaciones cefálicas.",
+                "image": "assets/img/morfologia/taenia-glomeratus-cenuro.webp"
+            },
+            {
+                "stage": "Protoescólices",
+                "text": "Numerosos protoescólices invaginados dispuestos en racimos compactos ('glomerulados') que brotan de la capa germinativa interna de la pared del cenuro.",
+                "image": "assets/img/morfologia/taenia-glomeratus-protoescolex.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-40 µm, esférico, con embrióforo grueso estriado radialmente de color pardo y oncosfera hexacanta en su interior (indistinguible de otros ténidos).",
+                "image": "assets/img/morfologia/taenia-glomeratus-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Excreción de huevos infectantes en las heces del hospedero definitivo carnívoro.",
+            "2. El humano ingiere accidentalmente los huevos; la oncosfera se libera en el duodeno y penetra a la circulación sistémica.",
+            "3. Se aloja en el tejido subcutáneo o músculo esquelético formando un tumor quístico indoloro o levemente inflamatorio que contiene decenas de protoescólices."
+        ],
+        "diagnosticMethod": "Biopsia excisional y estudio histopatológico del nódulo subcutáneo/intramuscular, observando la estructura policéfala del cenuro y midiendo el número y longitud de los ganchos rostelares.",
+        "treatment": "Resección quirúrgica simple del quiste subcutáneo o intramuscular (curativa). Albendazol o Praziquantel como terapia antiparasitaria complementaria."
+    },
+    {
+        "id": "taenia-multiceps",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia multiceps",
+        "commonName": "Tenia del torneo ovino",
+        "disease": "Cenurosis cerebral (Modorra o 'Torneo' en ovejas).",
+        "transmission": "Fecal-oral (ingestión de huevos excretados en las heces de perros, coyotes o zorros en pasturas, agua o alimentos).",
+        "infectiveStage": "Huevo embrionado (para ovinos y humanos); Cenuro (Coenurus cerebralis) para el perro.",
+        "diagnosticStage": "Cenuro en tejido cerebral/ocular (humano y ovino) o proglótidos/huevos en heces del perro.",
+        "epidemiology": "Cosmopolita en zonas de cría de ganado ovino. Causa importantes pérdidas veterinarias en ovejas y cabras; en humanos es una zoonosis rara pero grave que afecta selectivamente el Sistema Nervioso Central y el ojo.",
+        "lifecycleSummary": "El cestodo adulto vive en el intestino delgado del perro. Los huevos expulsados contaminan el pasto y son ingeridos por ovejas (o humanos); las oncosferas viajan por sangre con neurotropismo marcado hacia el encéfalo y médula espinal, formando un gran quiste (Coenurus cerebralis).",
+        "lifecycleDiagram": "assets/img/ciclos/coenurosis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cenuro (Coenurus cerebralis)",
+                "text": "Vesícula larvaria quística esférica de 2 a 6 cm llena de líquido transparente. A diferencia del cisticerco (1 escólex), su membrana germinal interna contiene cientos de protoescólices blancos agrupados en racimos visibles a simple vista.",
+                "image": "assets/img/morfologia/taenia-multiceps-cenuro.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-38 µm, esférico, con cubierta gruesa radiada (embrióforo) de color marrón oscuro y embrión hexacanto (6 ganchos) en su interior.",
+                "image": "assets/img/morfologia/taenia-multiceps-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Perros y cánidos silvestres excretan proglótidos grávidos y huevos embrionados en las heces.",
+            "2. Ovejas, cabras o humanos ingieren los huevos; la oncosfera atraviesa el intestino y alcanza el cerebro o el globo ocular por vía hematógena.",
+            "3. En 2 a 8 meses madura el Coenurus cerebralis, causando hipertensión intracraneal, hidrocefalia obstructiva, convulsiones y en ovejas el giro compulsivo en círculos ('torneo')."
+        ],
+        "diagnosticMethod": "En humanos: Neuroimagen (TAC/RM cerebral mostrando quistes grandes en sistema ventricular o espacio subaracnoideo) y confirmación histopatológica post-quirúrgica (múltiples protoescólices) o PCR. En ovinos: clínica neurológica y necropsia.",
+        "treatment": "Humanos: Neurocirugía para extirpación del quiste combinada con Albendazol o Praziquantel y Dexametasona para controlar la aracnoiditis e hipertensión intracraneal. Prevención: no alimentar perros con cabezas/cerebros de ovinos crudos."
+    },
+    {
+        "id": "taenia-saginata",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia saginata",
+        "commonName": "Solitaria de la res",
+        "disease": "Teniasis bovina (exclusivamente intestinal; NO causa cisticercosis humana).",
+        "transmission": "Oral / Carnivorismo (ingestión de carne de ganado vacuno cruda o término medio infectada con cisticercos).",
+        "infectiveStage": "Cisticerco (Cysticercus bovis) en músculo de bovino.",
+        "diagnosticStage": "Proglótidos grávidos móviles (con ≥12 ramas uterinas) o huevos en heces.",
+        "epidemiology": "Cosmopolita. Altamente prevalente en regiones con alto consumo de carne de res cruda o poco cocida (América Latina, África Oriental, Medio Oriente y Europa).",
+        "lifecycleSummary": "El humano es el único hospedero definitivo. Al ingerir carne vacuna con Cysticercus bovis, el escólex se fija al yeyuno y se desarrolla un adulto de hasta 10 metros. Los proglótidos grávidos se desprenden individualmente y fuerzan el esfínter anal; el ganado bovino se infecta al ingerir pasto contaminado con heces humanas.",
+        "lifecycleDiagram": "assets/img/ciclos/taenia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Cestodo de gran tamaño que mide habitualmente de 4 a 10 metros de longitud, conformado por entre 1,000 y 2,000 proglótidos de color blanco nacarado.",
+                "image": "assets/img/morfologia/taenia-saginata-adulto.webp"
+            },
+            {
+                "stage": "Escólex",
+                "text": "Cuadrangular o piriforme (1.5-2 mm de diámetro), provisto de 4 ventosas acetabulares potentes, pero característicamente INERME (carece por completo de rostelo y de corona de ganchos).",
+                "image": "assets/img/morfologia/taenia-saginata-escolex.webp"
+            },
+            {
+                "stage": "Proglótido Grávido",
+                "text": "Rectangular y más largo que ancho (16-20 mm x 5-7 mm), con poro genital lateral alternante. Presenta de 15 a 30 ramas uterinas primarias laterales a cada lado del tallo central (siempre ≥12 ramas, de ramificación dicotómica).",
+                "image": "assets/img/morfologia/taenia-saginata-proglotide.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-40 µm, esférico, con embrióforo grueso prismático y estriado radialmente de color café que protege a la oncosfera hexacanta. Morfológicamente indistinguible del huevo de Taenia solium.",
+                "image": "assets/img/morfologia/taenia-saginata-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. El humano infectado elimina proglótidos grávidos con musculatura potente que reptan activamente a través del ano (incluso sin defecar).",
+            "2. El ganado bovino ingiere los huevos en pasturas o aguas residuales; las oncosferas migran a la musculatura estriada (maseteros, corazón, lengua) formando el Cysticercus bovis.",
+            "3. Al consumir carne de res mal cocida, el cisticerco evagina en el intestino delgado humano y madura a adulto en 10 a 12 semanas."
+        ],
+        "diagnosticMethod": "Tamizado de heces para recuperar proglótidos grávidos y aclaramiento con ácido acético o inyección de tinta china por el poro genital para contar las ramas uterinas primarias (≥12 ramas = T. saginata; <12 ramas = T. solium). CPS o técnica de Graham.",
+        "treatment": "Praziquantel (5-10 mg/kg en dosis única) o Niclosamida. Cocción completa de la carne de res (>60 °C) o congelación a -10 °C por al menos 5 días."
+    },
+    {
+        "id": "taenia-serialis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia serialis",
+        "commonName": "Tenia del perro y del conejo",
+        "disease": "Cenurosis subcutánea e intramuscular.",
+        "transmission": "Fecal-oral (ingestión accidental de huevos excretados en heces de perros y zorros).",
+        "infectiveStage": "Huevo embrionado (para lagomorfos y humanos); Cenuro (Coenurus serialis) para cánidos.",
+        "diagnosticStage": "Quiste larvario tipo Cenuro con protoescólices dispuestos en hileras (series) en tejido subcutáneo o muscular.",
+        "epidemiology": "Distribución mundial (Norteamérica, Europa, África). El ciclo silvestre y doméstico involucra a perros/zorros y conejos/liebres; el humano es un hospedero intermediario accidental.",
+        "lifecycleSummary": "Los perros y zorros alojan al cestodo adulto en su intestino y excretan huevos que contaminan la vegetación. Los conejos y liebres (o accidentalmente el humano) ingieren los huevos; la oncosfera migra al tejido conjuntivo subcutáneo e intermuscular desarrollando el Coenurus serialis.",
+        "lifecycleDiagram": "assets/img/ciclos/coenurosis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cenuro (Coenurus serialis)",
+                "text": "Quiste vesicular de 2 a 5 cm, frecuentemente ramificado o con vesículas hijas externas e internas. Su rasgo distintivo es que los numerosos protoescólices invaginados se disponen alineados en filas o líneas radiales ('en serie', de ahí el nombre serialis).",
+                "image": "assets/img/morfologia/taenia-serialis-cenuro.webp"
+            },
+            {
+                "stage": "Protoescólex en tejido",
+                "text": "Protoescólex invaginado dentro de la pared del cenuro mostrando 4 ventosas y un rostelo armado con una doble corona de 26 a 32 ganchos refringentes y abundantes corpúsculos calcáreos.",
+                "image": "assets/img/morfologia/taenia-serialis-protoescolex.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Perros, coyotes y zorros excretan huevos embrionados en sus heces tras comer carne de conejos infectados.",
+            "2. Lagomorfos (conejos, liebres), roedores o humanos ingieren los huevos en agua o alimentos contaminados.",
+            "3. Las oncosferas atraviesan la pared intestinal y se localizan en el tejido subcutáneo o conectivo intermuscular, formando nódulos quísticos fluctuantes."
+        ],
+        "diagnosticMethod": "Extirpación y estudio histopatológico del quiste subcutáneo o intramuscular, identificando la vesícula cenurótica con múltiples protoescólices alineados y ganchos rostelares birrefringentes. Ecografía o RM de partes blandas.",
+        "treatment": "Escisión quirúrgica completa del cenuro. En casos de múltiples quistes o ruptura accidental, se administra Praziquantel o Albendazol."
     },
     {
         "id": "taenia-solium",
@@ -1391,13 +1803,23 @@
         "lifecycleDiagram": "assets/img/ciclos/taenia-ciclo.webp",
         "morphology": [
             {
-                "stage": "Escólex y Adulto",
-                "text": "Cestodo de 2-4 m. Escólex con 4 ventosas y rostelo con ganchos. Proglótidos grávidos con <13 ramas uterinas.",
-                "image": "assets/img/morfologia/taenia-solium-adulto.webp"
+                "stage": "Escólex",
+                "text": "Globoso (~1 mm de diámetro), armado con 4 ventosas acetabulares cupuliformes y un rostelo apical retráctil provisto de una doble corona de 22 a 32 ganchos quitinosos (alternando ganchos grandes y pequeños).",
+                "image": "assets/img/morfologia/taenia-solium-escolex.webp"
+            },
+            {
+                "stage": "Proglótido Grávido",
+                "text": "Rectangular (el estróbilo adulto completo mide de 2 a 4 metros con 800-1,000 segmentos). Su útero central emite únicamente de 7 a 12 ramas uterinas laterales primarias gruesas y dendríticas a cada lado (siempre <13 ramas, diferencial clave frente a T. saginata).",
+                "image": "assets/img/morfologia/taenia-solium-proglotide.webp"
+            },
+            {
+                "stage": "Cisticerco (Cysticercus cellulosae)",
+                "text": "Vesícula ovoide translúcida de 0.5 a 1.5 cm rellena de líquido vesicular claro, que contiene en su interior un único escólex invaginado armado con 4 ventosas y ganchos rostelares (visible como un nódulo blanco denso).",
+                "image": "assets/img/morfologia/taenia-solium-cisticerco.webp"
             },
             {
                 "stage": "Huevo",
-                "text": "30-40 µm, esférico, embrióforo radiado, contiene la oncosfera (embrión hexacanto). Indistinguible de T. saginata.",
+                "text": "30-40 µm, esférico, con embrióforo grueso radiado de bloques prismáticos color café que encierra la oncosfera hexacanta (con 6 ganchos). Morfológicamente indistinguible del huevo de Taenia saginata.",
                 "image": "assets/img/morfologia/taenia-solium-huevo.webp"
             }
         ],
@@ -1408,6 +1830,43 @@
         ],
         "diagnosticMethod": "Teniasis: Observación de proglótidos grávidos en heces (tinción con tinta china para contar ramas uterinas). Cisticercosis: TAC o Resonancia Magnética (SNC), Inmunotransferencia (Western Blot).",
         "treatment": "Teniasis: Praziquantel o Niclosamida. Neurocisticercosis: Albendazol + Dexametasona (para controlar inflamación), antiepilépticos si hay convulsiones."
+    },
+    {
+        "id": "ancylostoma-duodenale",
+        "category": "Helmintos 🪱",
+        "scientificName": "Ancylostoma duodenale",
+        "commonName": "Uncinaria del Viejo Mundo",
+        "disease": "Ancilostomiasis (Uncinariasis / Anemia ferropénica tropical).",
+        "transmission": "Cutánea directa (penetración de larvas filariformes en suelos húmedos con los pies descalzos), oral (agua/alimentos) y transmamaria.",
+        "infectiveStage": "Larva filariforme (L3) envainada.",
+        "diagnosticStage": "Huevos blastomerados en heces frescas (o larvas rabditiformes en heces tardías).",
+        "epidemiology": "Regiones subtropicales y tropicales del Mediterráneo, Norte de África, India, Asia y focos en Sudamérica. Causa mayor pérdida sanguínea por gusano (~0.2 mL/día) que Necator americanus.",
+        "lifecycleSummary": "Los huevos eclosionan en el suelo húmedo liberando larvas rabditiformes (L1) que mudan a larvas filariformes infectantes (L3). Estas penetran la piel, realizan el ciclo pulmonar de Loos y maduran en el duodeno/yeyuno, donde muerden la mucosa y succionan sangre continuamente.",
+        "lifecycleDiagram": "assets/img/ciclos/hookworm-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cápsula Bucal del Adulto",
+                "text": "Nematodo cilíndrico blanquecino-rosado (hembra 10-13 mm, macho 8-11 mm con bolsa copulatriz). Su cápsula bucal es grande y está armada con DOS PARES DE DIENTES VENTRALES quitinosos afilados (diferencial clave frente a las placas cortantes de N. americanus).",
+                "image": "assets/img/morfologia/ancylostoma-duodenale-adulto.webp"
+            },
+            {
+                "stage": "Larva Rabditiforme (L1)",
+                "text": "250-300 µm de longitud. Se distingue de la larva L1 de Strongyloides stercoralis por poseer un CANAL BUCAL LARGO (tan largo como el ancho del cuerpo en esa región) y un primordio genital diminuto e inconspicuo.",
+                "image": "assets/img/morfologia/ancylostoma-duodenale-larva.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "60-75 µm x 35-40 µm, ovalado con polos redondeados, cáscara hialina sumamente delgada y lisa. Al excretarse contiene de 2 a 8 blastómeros separados de la cáscara por un amplio espacio claro. Es morfológicamente indistinguible del huevo de Necator americanus.",
+                "image": "assets/img/morfologia/ancylostoma-duodenale-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos eliminados en heces eclosionan en tierra cálida y sombreada en 24-48 h liberando la larva L1 rabditiforme, que muda dos veces hasta L3 filariforme.",
+            "2. La larva L3 penetra la piel interdigital (o mucosa oral, en cuyo caso no hace ciclo pulmonar), viaja al corazón y pulmones (Síndrome de Löffler) y es deglutida.",
+            "3. En el intestino delgado se fija con sus dientes bucales, secreta anticoagulantes e ingiere sangre, provocando anemia microcítica hipocrómica e hipoalbuminemia."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico directo o cuantitativo (Kato-Katz, flotación de Faust) reportado como 'huevos de Uncinaria'. Coprocultivo de Harada-Mori para diferenciar las larvas L3 o recuperación de adultos post-tratamiento para ver los dientes.",
+        "treatment": "Albendazol (400 mg dosis única) o Mebendazol (100 mg cada 12 h por 3 días), o Pamoato de pirantel. Suplementación con sulfato ferroso oral para corregir la anemia ferropénica."
     },
     {
         "id": "ascaris-lumbricoides",
@@ -1442,6 +1901,38 @@
         "treatment": "Albendazol o Mebendazol. En caso de obstrucción intestinal por ovillos de Ascaris, manejo conservador o quirúrgico."
     },
     {
+        "id": "dictyocaulus-viviparus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Dictyocaulus viviparus",
+        "commonName": "Gusano pulmonar del ganado bovino",
+        "disease": "Dictiocaulosis (Bronquitis verminosa bovina).",
+        "transmission": "Oral (ingestión de larvas infectantes L3 presentes en el pasto forrajero o dispersadas por hongos coprófilos Pilobolus).",
+        "infectiveStage": "Larva de tercer estadio (L3).",
+        "diagnosticStage": "Larva de primer estadio (L1) en heces frescas (técnica de Baermann) o adultos en bronquios.",
+        "epidemiology": "Cosmopolita en regiones templadas y húmedas de cría bovina. Causa severos brotes de neumonía intersticial y bronquitis parasitaria en becerros durante su primera temporada de pastoreo.",
+        "lifecycleSummary": "Ciclo directo sin hospedero intermediario. Los adultos viven en la tráquea y grandes bronquios del bovino; las hembras son ovovivíparas, sus huevos eclosionan en las vías aéreas, las larvas L1 son expectoradas y deglutidas saliendo en las heces, donde mudan a L3 en el pasto.",
+        "lifecycleDiagram": "assets/img/ciclos/dictyocaulus-viviparus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en bronquios",
+                "text": "Nematodos filiformes largos y blanquecinos (hembras de 6-8 cm, machos de 4-5 cm con bolsa copulatriz pequeña y espículas cortas oscuras en forma de bota). Se observan agrupados obstruyendo la luz traqueobronquial con abundante moco espumoso.",
+                "image": "assets/img/morfologia/dictyocaulus-viviparus-adulto.webp"
+            },
+            {
+                "stage": "Larva L1",
+                "text": "300-450 µm de longitud, recuperada de heces frescas. Su rasgo diagnóstico es la presencia de abundantes gránulos alimenticios refractantes de color marrón oscuro en sus células intestinales y una cola puntiaguda sin espina dorsal.",
+                "image": "assets/img/morfologia/dictyocaulus-viviparus-larva.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Las hembras adultas depositan huevos embrionados en los bronquios que eclosionan rápidamente a larvas L1; estas suben por el escalador mucociliar, son deglutidas y excretadas en la bosta.",
+            "2. En el estiércol húmedo, la L1 muda a L3 infectante en 5 días (sin alimentarse, consumiendo sus gránulos intestinales) y se dispersa al pasto ayudada por los esporangios explosivos del hongo Pilobolus.",
+            "3. El bovino ingiere la L3 al pastar; la larva penetra la mucosa intestinal, migra por los ganglios linfáticos mesentéricos y el conducto torácico hacia el corazón derecho y los alvéolos pulmonares."
+        ],
+        "diagnosticMethod": "Uso veterinario: Técnica de embudo de Baermann utilizando heces frescas tomadas directamente del recto para recuperar y observar las larvas L1 móviles. Lavado traqueobronquial, serología (ELISA) o necropsia de pulmón.",
+        "treatment": "Uso veterinario: Lactonas macrocíclicas (Ivermectina, Doramectina, Eprinomectina, Moxidectina), Levamisol o Benzimidazoles (Fenbendazol, Albendazol). Vacunación oral con larvas L3 irradiadas en zonas endémicas."
+    },
+    {
         "id": "enterobius-vermicularis",
         "category": "Helmintos 🪱",
         "scientificName": "Enterobius vermicularis",
@@ -1472,6 +1963,309 @@
         ],
         "diagnosticMethod": "Test de Graham (técnica de la cinta adhesiva transparente) aplicada en los pliegues perianales a primera hora de la mañana, antes del aseo o de la defecación.",
         "treatment": "Albendazol, Mebendazol o Pamoato de pirantel. Es fundamental e indispensable dar tratamiento simultáneo a todo el núcleo familiar o a los convivientes para evitar reinfecciones cruzadas."
+    },
+    {
+        "id": "gnathostoma",
+        "category": "Helmintos 🪱",
+        "scientificName": "Gnathostoma spp.",
+        "commonName": "Gnatostoma",
+        "disease": "Gnatostomiasis (Larva migrans profunda / Paniculitis nodular migratoria eosinofílica).",
+        "transmission": "Oral (consumo de pescado de agua dulce o salobre crudo o marinado en limón —ceviche, sushi—, aves de corral, ranas o serpientes mal cocidas).",
+        "infectiveStage": "Larva de tercer estadio avanzado (L3A).",
+        "diagnosticStage": "Larva L3A recuperada de biopsia cutánea o diagnóstico clínico-serológico.",
+        "epidemiology": "Altamente endémica en el Sudeste Asiático (Tailandia, Japón) y América Latina (especialmente la costa del Pacífico de México y Ecuador, por consumo de ceviche de tilapia/robalo con G. binucleatum y G. spinigerum).",
+        "lifecycleSummary": "Ciclo acuático con dos hospederos intermediarios (copépodos Cyclops y peces/anfibios). El humano es un hospedero accidental paraténico donde la larva L3A NO puede madurar a adulto, por lo que migra erráticamente durante años por el tejido subcutáneo, vísceras, ojo o SNC.",
+        "lifecycleDiagram": "assets/img/ciclos/gnathostoma-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Larva L3 Avanzada (L3A)",
+                "text": "Nematodo robusto de 3 a 5 mm de largo y color rojizo. Todo su cuerpo está cubierto por anillos transversales de espinas cuticulares orientadas hacia atrás (tridentadas en la región anterior y de una sola punta en la posterior).",
+                "image": "assets/img/morfologia/gnathostoma-larva.webp"
+            },
+            {
+                "stage": "Bulbo Cefálico",
+                "text": "Estructura anterior patognomónica separada del cuerpo por un estrechamiento cervical; presenta dos labios trilobulados y está armado con 4 hileras transversales de ganchos quitinosos.",
+                "image": "assets/img/morfologia/gnathostoma-bulbo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los adultos viven en tumores gástricos de perros, gatos y felinos/mamíferos silvestres; los huevos salen en heces y liberan larvas L1 en agua dulce.",
+            "2. Copépodos (Cyclops) ingieren la L1 (pasa a L2); peces de agua dulce (tilapia, bagre) comen al copépodo desarrollando la larva L3A enquistada en su músculo.",
+            "3. Al ingerir pescado crudo (el jugo de limón NO mata la larva), la L3A perfora el estómago humano y migra al tejido subcutáneo causando edemas inflamatorios intermitentes y migratorios."
+        ],
+        "diagnosticMethod": "Tríada diagnóstica: antecedente de ingesta de pescado crudo (ceviche), paniculitis migratoria intermitente e hipereosinofilia periférica marcada. Confirmación por Serología (ELISA / Western Blot) o identificación histopatológica de la larva tras biopsia excisional.",
+        "treatment": "Ivermectina (200 µg/kg/día por 2 días consecutivos) o Albendazol (400 mg cada 12 h por 21 días; suele estimular la migración superficial de la larva hacia la epidermis permitiendo su extracción). En neurognatostomiasis se asocian corticosteroides."
+    },
+    {
+        "id": "haemonchus-contortus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Haemonchus contortus",
+        "commonName": "Gusano de alambre / Gusano en poste de barbero",
+        "disease": "Hemoncosis (Gastroenteritis verminosa hemorrágica de rumiantes).",
+        "transmission": "Oral (ingestión de larvas infectantes L3 presentes en las gotas de rocío del pasto forrajero).",
+        "infectiveStage": "Larva de tercer estadio (L3) envainada.",
+        "diagnosticStage": "Huevos tipo estróngilo en heces, coprocultivo larvario o adultos en abomaso.",
+        "epidemiology": "El nematodo gastrointestinal más patógeno y económicamente devastador en ovinos y caprinos de climas tropicales y subtropicales a nivel mundial.",
+        "lifecycleSummary": "Ciclo directo. Las larvas L3 ingeridas en el pasto desenquistan en el rumen y penetran las glándulas de la mucosa del abomaso (cuajar), donde mudan a L4 y adultos hematófagos voraces, causando anemia aguda severa, edema submandibular ('mandíbula de botella') y muerte súbita.",
+        "lifecycleDiagram": "assets/img/ciclos/haemonchus-contortus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos ('Poste de barbero')",
+                "text": "Miden de 1.5 a 3 cm. Poseen una lanceta bucal dorsal para perforar vasos del abomaso. En la hembra fresca, los ovarios blancos se enrollan en espiral alrededor del intestino lleno de sangre roja, dando el aspecto clásico de 'poste de barbero' (barber's pole), además de una solapa vulvar prominente. El macho tiene bolsa copulatriz con lóbulo dorsal asimétrico en 'Y'.",
+                "image": "assets/img/morfologia/haemonchus-contortus-adulto.webp"
+            },
+            {
+                "stage": "Huevo (Tipo Estróngilo)",
+                "text": "70-85 µm x 40-50 µm, ovalado, de cáscara fina y hialina, excretado con una mórula de 16 a 32 blastómeros en su interior.",
+                "image": "assets/img/morfologia/haemonchus-contortus-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Las hembras son extremadamente prolíficas (5,000 a 10,000 huevos/día); los huevos salen en heces y eclosionan en el pasto húmedo y cálido pasando de L1 a L3 en 4-7 días.",
+            "2. El ovino o caprino ingiere la larva L3 al pastar; en el abomaso la larva puede completar su desarrollo en 2-3 semanas o entrar en hipobiosis (arresto larvario estacional).",
+            "3. Cada adulto succiona ~0.05 mL de sangre al día; cargas de miles de parásitos provocan caída drástica del hematocrito e hipoproteinemia severa sin diarrea."
+        ],
+        "diagnosticMethod": "Uso veterinario: Evaluación clínica de anemia conjuntival (sistema FAMACHA), recuento cuantitativo de huevos por gramo de heces (técnica de McMaster), tinción con lectina fluorescente (PNA) o coprocultivo para identificar L3, y necropsia de abomaso.",
+        "treatment": "Uso veterinario: Monepantel, Derquantel, Closantel (salicilanilida específica contra hematófagos), Levamisol o Lactonas macrocíclicas. Tratamiento selectivo guiado por FAMACHA debido a la altísima resistencia antihelmíntica."
+    },
+    {
+        "id": "necator-americanus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Necator americanus",
+        "commonName": "Uncinaria del Nuevo Mundo",
+        "disease": "Necatoriasis (Uncinariasis / Anemia tropical).",
+        "transmission": "Estrictamente cutánea directa (penetración activa de larvas filariformes L3 a través de la piel de los pies descalzos en contacto con tierra húmeda).",
+        "infectiveStage": "Larva filariforme (L3) envainada.",
+        "diagnosticStage": "Huevos blastomerados en heces frescas.",
+        "epidemiology": "Es la especie de uncinaria más prevalente en el continente americano (México, Centro y Sudamérica), África Subsahariana y el Sudeste Asiático.",
+        "lifecycleSummary": "Los huevos maduran en suelos arenosos, sombreados y cálidos liberando larvas L1 que mudan a L3 infectantes. A diferencia de A. duodenale, N. americanus penetra exclusivamente por vía percutánea, realiza obligatoriamente el ciclo cardiopulmonar de Loos y se aloja en el intestino delgado succionando sangre.",
+        "lifecycleDiagram": "assets/img/ciclos/hookworm-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Cápsula Bucal del Adulto",
+                "text": "Nematodo delgado de 7-11 mm con el extremo anterior curvado dorsalmente en forma de gancho. Su cápsula bucal globular carece de dientes y en su lugar posee UN PAR DE PLACAS CORTANTES SEMILUNARES quitinosas ventrales.",
+                "image": "assets/img/morfologia/necator-americanus-adulto.webp"
+            },
+            {
+                "stage": "Larva Filariforme (L3)",
+                "text": "500-600 µm de longitud, estadio infectante percutáneo. Está envuelta en una vaina cuticular estriada, posee un esófago que ocupa un tercio de la longitud corporal y un extremo posterior que termina en punta afilada (a diferencia de la cola bifurcada de S. stercoralis).",
+                "image": "assets/img/morfologia/necator-americanus-larva.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "60-75 µm x 36-40 µm, ovalado, de cubierta delgada y transparente, con 4 a 8 blastómeros visibles en heces recién emitidas. Indistinguible al microscopio óptico del huevo de Ancylostoma duodenale.",
+                "image": "assets/img/morfologia/necator-americanus-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Excreción de huevos en heces; en suelo húmedo eclosiona la larva rabditiforme (L1, de cápsula bucal larga y primordio genital pequeño) y muda a larva filariforme (L3) envainada.",
+            "2. La larva L3 penetra la piel (causando dermatitis pruriginosa o 'sabañones'), entra a la circulación venosa, atraviesa alvéolos pulmonares, asciende a la faringe y es deglutida.",
+            "3. Madura en el yeyuno cortando las vellosidades con sus placas semilunares; cada adulto expolia ~0.03 mL de sangre/día causando anemia ferropénica crónica y retraso del desarrollo cognitivo y físico en niños."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico directo, flotación de Faust o técnica cuantitativa de Kato-Katz (para estimar la carga parasitaria). Coprocultivo en papel filtro (Harada-Mori) para diferenciar la larva L3 de S. stercoralis y A. duodenale.",
+        "treatment": "Albendazol (400 mg dosis única) o Mebendazol (100 mg cada 12 h por 3 días), acompañado de suplementación con hierro oral y uso de calzado como medida preventiva esencial."
+    },
+    {
+        "id": "onchocerca-volvulus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Onchocerca volvulus",
+        "commonName": "Filaria de la ceguera de los ríos",
+        "disease": "Oncocercosis (Ceguera de los ríos / Enfermedad de Robles / Mal morado).",
+        "transmission": "Vectorial biológica (picadura diurna de moscas negras hematófagas hembra del género Simulium que crían en ríos de corriente rápida).",
+        "infectiveStage": "Larva filariforme de tercer estadio (L3).",
+        "diagnosticStage": "Microfilarias sin vaina en biopsias superficiales de piel o adultos en oncocercomas.",
+        "epidemiology": "Endémica en África Subsahariana (>99% de los casos actuales) y focos residuales en la Amazonía (Yanomami en Brasil/Venezuela). Cuatro países de América (incluyendo México y Guatemala) lograron certificar la eliminación de su transmisión.",
+        "lifecycleSummary": "El vector Simulium inocula larvas L3 que maduran a adultos dentro de nódulos fibrosos subcutáneos (oncocercomas). Las hembras liberan miles de microfilarias que migran por la dermis y los tejidos oculares; al morir liberan su bacteria endosimbionte Wolbachia, desencadenando inflamación corneal y ceguera irreversible.",
+        "lifecycleDiagram": "assets/img/ciclos/onchocerca-volvulus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en Oncocercoma",
+                "text": "Nematodos filaroideos blancos enrollados en ovillos densos dentro de nódulos subcutáneos fibrosos. La hembra alcanza de 30 a 50 cm de longitud con cutícula estriada transversalmente, mientras que el macho es mucho más pequeño (2-4 cm).",
+                "image": "assets/img/morfologia/onchocerca-volvulus-adulto.webp"
+            },
+            {
+                "stage": "Microfilaria",
+                "text": "220-360 µm de longitud, se localiza en la dermis y cámara anterior del ojo (rara vez en sangre). CARECE DE VAINA, posee un espacio cefálico anterior amplio y su extremo posterior es puntiagudo, curvado y LIBRE DE NÚCLEOS somáticos hasta la punta.",
+                "image": "assets/img/morfologia/onchocerca-volvulus-microfilaria.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. La mosca negra (Simulium spp.) ingiere microfilarias dérmicas al alimentarse; estas atraviesan su intestino medio hacia los músculos torácicos, mudan a L3 y migran a la probóscide.",
+            "2. Al picar a otro humano, las larvas L3 penetran la herida y en ~1 año maduran a adultos longevos (viven 10-15 años) dentro de nódulos subcutáneos sobre prominencias óseas.",
+            "3. Las microfilarias migran por la piel (causando dermatitis pruriginosa, 'piel de leopardo' y paquidermia) y hacia el ojo (queratitis punteada, queratitis esclerosante y coriorretinitis)."
+        ],
+        "diagnosticMethod": "Biopsia cutánea exangüe ('skin snip') incubada en solución salina para observar la emergencia de microfilarias móviles sin vaina. Exploración con lámpara de hendidura (microfilarias en cámara anterior), escisión de nódulos (nodulectomía), PCR o serología (antígeno Ov16).",
+        "treatment": "Ivermectina (150 µg/kg cada 6 meses; es microfilaricida pero no mata al adulto) combinada con Doxiciclina durante 4 a 6 semanas (elimina la bacteria endosimbionte Wolbachia, esterilizando y matando finalmente a las hembras adultas). Nodulectomía quirúrgica."
+    },
+    {
+        "id": "strongyloides-stercoralis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Strongyloides stercoralis",
+        "commonName": "Estrongiloide",
+        "disease": "Estrongiloidiasis (con riesgo de Síndrome de Hiperinfección en inmunosuprimidos).",
+        "transmission": "Cutánea directa (penetración de larvas filariformes L3 del suelo) y AUTOINFECCIÓN interna/externa.",
+        "infectiveStage": "Larva filariforme (L3) no envainada.",
+        "diagnosticStage": "Larvas rabditiformes (L1) móviles en heces (los huevos eclosionan dentro de la mucosa intestinal).",
+        "epidemiology": "Zonas tropicales, subtropicales y templadas cálidas. Crítico en pacientes que recibirán corticosteroides, quimioterapia o infectados por el virus HTLV-1, en quienes la autoinfección descontrolada es altamente letal.",
+        "lifecycleSummary": "Nematodo facultativo con un ciclo de vida libre en el suelo y un ciclo parasitario en el humano. Solo las hembras son parásitas (se reproducen por partenogénesis en la mucosa duodenal). Los huevos eclosionan in situ liberando larvas L1 que salen en heces o mudan prematuramente a L3 causando autoinfección perpetua.",
+        "lifecycleDiagram": "assets/img/ciclos/strongyloides-stercoralis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Hembra Parásita Adulta",
+                "text": "Nematodo filiforme diminuto y transparente (2-2.5 mm de largo) que vive enhebrado dentro de las criptas de Lieberkühn de la mucosa duodenal. Posee un esófago cilíndrico largo que ocupa un tercio del cuerpo y útero con huevos alineados.",
+                "image": "assets/img/morfologia/strongyloides-stercoralis-adulto.webp"
+            },
+            {
+                "stage": "Larva Rabditiforme (L1)",
+                "text": "200-300 µm, es la fase diagnóstica en heces frescas. Se distingue de las larvas L1 de uncinarias por tener una CÁPSULA BUCAL MUY CORTA y un PRIMORDIO GENITAL GRANDE y prominente a mitad del cuerpo.",
+                "image": "assets/img/morfologia/strongyloides-stercoralis-larva.webp"
+            },
+            {
+                "stage": "Larva Filariforme (L3)",
+                "text": "500-600 µm, fase infectante percutánea y de autoinfección. Carece de vaina, presenta un esófago cilíndrico muy largo (ocupa la mitad de la longitud del cuerpo, relación 1:1 con el intestino) y su extremo caudal termina en una MUESCA O PUNTA BIFURCADA diagnóstica.",
+                "image": "assets/img/morfologia/strongyloides-stercoralis-filariforme.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Las larvas filariformes (L3) penetran la piel, realizan el ciclo pulmonar de Loos y maduran en el duodeno a hembras partenogenéticas.",
+            "2. Los huevos eclosionan en la submucosa liberando larvas rabditiformes (L1) hacia la luz intestinal; estas salen al suelo (donde hacen vida libre o mudan a L3).",
+            "3. AUTOINFECCIÓN: Las larvas L1 mudan a L3 dentro del propio intestino o región perianal y reingresan a la circulación (causando 'larva currens' y, en inmunosuprimidos, hiperinfección diseminada con sepsis por bacilos Gram negativos entéricos)."
+        ],
+        "diagnosticMethod": "Método de concentración de Baermann, cultivo en placa de agar (Koga) donde las larvas dejan rastros bacterianos (alta sensibilidad), método de Harada-Mori o CPS seriado. Serología (ELISA) y examen de esputo en síndrome de hiperinfección.",
+        "treatment": "Ivermectina (200 µg/kg/día por 2 días; fármaco de primera elección). Alternativa: Albendazol (400 mg cada 12 h por 7 días). En hiperinfección se prolonga la Ivermectina diaria hasta negativizar muestras por 2 semanas."
+    },
+    {
+        "id": "toxocara-canis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Toxocara canis",
+        "commonName": "Áscaris del perro",
+        "disease": "Toxocariasis (Síndrome de Larva Migrans Visceral [LMV], Larva Migrans Ocular [LMO] y Neurotoxocariasis).",
+        "transmission": "Fecal-oral / Geofagia (ingestión accidental de huevos embrionados presentes en tierra de parques, jardines o pelaje de cachorros).",
+        "infectiveStage": "Huevo embrionado con larva L3.",
+        "diagnosticStage": "Serología específica y clínica en humanos (no excreta huevos en heces humanas); huevos en heces del perro.",
+        "epidemiology": "Zoonosis cosmopolita de altísima prevalencia. Los cachorros nacen infectados por vía transplacentaria y contaminan masivamente los suelos públicos; los niños pequeños con hábito de pica o geofagia son el grupo de mayor riesgo.",
+        "lifecycleSummary": "En el perro (hospedero definitivo) cumple un ciclo completo intestinal. En el humano (hospedero paraténico accidental), las larvas eclosionan en el intestino pero NO pueden madurar a adultos; atraviesan la pared intestinal y migran erráticamente por hígado, pulmones, SNC y retina formando granulomas eosinofílicos.",
+        "lifecycleDiagram": "assets/img/ciclos/toxocara-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos (Macho y Hembra)",
+                "text": "Nematodos ascáridos grandes y cilíndricos de color blanquecino-crema que habitan el intestino delgado del perro. La hembra mide de 9 a 18 cm (cola recta) y el macho de 4 a 10 cm (extremo posterior curvado ventralmente con apéndice digitiforme).",
+                "image": "assets/img/morfologia/toxocara-canis-adulto.webp"
+            },
+            {
+                "stage": "Extremo Anterior (Aletas Cervicales)",
+                "text": "Presenta tres labios prominentes en el ápice y dos ALETAS CERVICALES LARGAS Y ESTRECHAS (lanceoladas), lo que confiere al extremo cefálico de T. canis la silueta de una punta de lanza (a diferencia de las aletas cortas y anchas de T. cati).",
+                "image": "assets/img/morfologia/toxocara-canis-anterior.webp"
+            },
+            {
+                "stage": "Huevo (en heces caninas)",
+                "text": "80-90 µm x 75 µm, subesférico, de color marrón oscuro y cáscara gruesa finamente alveolada o 'punteada' (con hoyuelos como pelota de golf), conteniendo una célula embrionaria oscura que ocupa casi todo el interior.",
+                "image": "assets/img/morfologia/toxocara-canis-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los cachorros (infectados in utero o por leche materna) excretan millones de huevos no embrionados que maduran a la fase infectante (con larva L3) en el suelo en 2 a 4 semanas.",
+            "2. El niño ingiere tierra contaminada; los huevos eclosionan en el duodeno y las larvas penetran la mucosa hacia la circulación portal y sistémica.",
+            "3. Las larvas quedan atrapadas en capilares hepáticos y pulmonares (LMV: hepatomegalia, fiebre, sibilancias e hipereosinofilia extrema) o llegan al ojo (LMO: granuloma retiniano unilateral que simula retinoblastoma)."
+        ],
+        "diagnosticMethod": "En humanos el CPS es inútil porque no hay fases intestinales ni huevos. El diagnóstico se realiza mediante Serología (ELISA con antígenos de excreción-secreción TES de larvas L3 y confirmación por Western Blot), biometría hemática (eosinofilia e hipergammaglobulinemia) y fondo de ojo.",
+        "treatment": "Albendazol (400 mg cada 12 h por 5 días en LMV y hasta 2-4 semanas en LMO) o Mebendazol. En Larva Migrans Ocular y Neurotoxocariasis es indispensable asociar corticosteroides sistémicos/tópicos para frenar la inflamación intraocular."
+    },
+    {
+        "id": "toxocara-cati",
+        "category": "Helmintos 🪱",
+        "scientificName": "Toxocara cati",
+        "commonName": "Áscaris del gato",
+        "disease": "Toxocariasis (Síndrome de Larva Migrans Visceral [LMV] y Ocular [LMO]).",
+        "transmission": "Fecal-oral (ingestión accidental de huevos embrionados en areneros infantiles, jardines o tierra contaminada con heces de gatos).",
+        "infectiveStage": "Huevo embrionado con larva L3.",
+        "diagnosticStage": "Serología en humanos; huevos subesféricos alveolados o adultos en heces de gatos.",
+        "epidemiology": "Cosmopolita. Los gatos entierran sus heces en areneros de parques y jardines, convirtiéndolos en focos de infección para niños. En los felinos existe transmisión lactogénica (transmamaria) y por caza de roedores, pero NO transplacentaria.",
+        "lifecycleSummary": "Ciclo biológico análogo al de T. canis en el que el gato es el hospedero definitivo. En el ser humano actúa como hospedero paraténico accidental: las larvas liberadas en el intestino delgado migran por vía hematógena hacia hígado, pulmones y ojos produciendo granulomas eosinofílicos.",
+        "lifecycleDiagram": "assets/img/ciclos/toxocara-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Extremo Anterior del Adulto",
+                "text": "Ascárido de 3 a 10 cm de largo. Su característica morfológica diferencial clave frente a T. canis son sus ALETAS CERVICALES MUY ANCHAS, CORTAS Y ESTRIADAS que se ensanchan bruscamente hacia atrás, dando al extremo anterior la silueta de una 'cabeza de cobra' o flecha ancha.",
+                "image": "assets/img/morfologia/toxocara-cati-adulto.webp"
+            },
+            {
+                "stage": "Huevo (en heces felinas)",
+                "text": "65-75 µm de diámetro (ligeramente más pequeño que el de T. canis), subesférico, de cubierta gruesa con depresiones superficiales (aspecto alveolado o punteado fino) y cigoto central denso.",
+                "image": "assets/img/morfologia/toxocara-cati-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los gatos infectados excretan huevos en sus heces al defecar en tierra suelta o areneros; los huevos embrionan en 2 a 3 semanas.",
+            "2. El humano ingiere huevos embrionados por contacto mano-boca o consumo de vegetales mal lavados.",
+            "3. Las larvas L3 eclosionan en el intestino delgado, penetran la pared intestinal y migran a través del parénquima hepático, pulmonar u ocular desencadenando LMV o LMO."
+        ],
+        "diagnosticMethod": "En humanos: Serología ELISA-TES (presenta reacción cruzada antigénica con T. canis) y Western Blot, acompañado de eosinofilia periférica marcada. En gatos: flotación fecal (Faust/sulfato de zinc) observando los huevos alveolados de 65-75 µm.",
+        "treatment": "En humanos: Albendazol (400 mg cada 12 h por 5 días) más corticosteroides si hay compromiso ocular o visceral severo. Prevención: cubrir areneros infantiles y desparasitar regularmente a los gatos domésticos."
+    },
+    {
+        "id": "trichinella-spiralis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Trichinella spiralis",
+        "commonName": "Triquina",
+        "disease": "Triquinelosis (Triquinosis).",
+        "transmission": "Oral / Carnivorismo (ingestión de carne de cerdo doméstico, jabalí o embutidos/chorizos crudos o mal cocidos con quistes larvarios).",
+        "infectiveStage": "Larva de primer estadio (L1) enquistada en célula nodriza muscular.",
+        "diagnosticStage": "Larvas L1 enquistadas en biopsia muscular o serología específica.",
+        "epidemiology": "Zoonosis cosmopolita vinculada al consumo de carne porcina sin inspección sanitaria o de caza (jabalí, oso). Un mismo animal actúa secuencialmente como hospedero definitivo (fase intestinal) e intermediario (fase muscular).",
+        "lifecycleSummary": "Parásito autoheteroxeno. Al ingerir carne infectada, las larvas L1 se liberan en el estómago, maduran a adultos en 48 h en la mucosa duodenal y las hembras vivíparas paren nuevas larvas L1 que viajan por sangre e invaden fibras musculares esqueléticas estriadas bien irrigadas, transformando el miocito en una 'célula nodriza'.",
+        "lifecycleDiagram": "assets/img/ciclos/trichinella-spiralis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Quiste Muscular (Célula Nodriza)",
+                "text": "Quiste elipsoidal en forma de limón (400 x 250 µm) paralelo a las fibras musculares estriadas (diafragma, maseteros, lengua, intercostales, deltoides), que aloja en su interior de 1 a 2 larvas L1 enrolladas en espiral.",
+                "image": "assets/img/morfologia/trichinella-spiralis-quiste.webp"
+            },
+            {
+                "stage": "Larva L1 Libre",
+                "text": "Larva de ~1 mm de longitud liberada por digestión péptica. Presenta un esófago capilar característico rodeado por una hilera de células glandulares grandes llamadas esticocitos (esticosoma).",
+                "image": "assets/img/morfologia/trichinella-spiralis-larva.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. FASE ENTERAL: La pepsina y el HCl gástrico digieren el quiste muscular; las larvas L1 invaden el epitelio del intestino delgado y en 2 días mudan 4 veces hasta adultos.",
+            "2. FASE DE DISEMINACIÓN: Tras la cópula, la hembra vivípara deposita hasta 1,500 larvas recién nacidas directamente en los vasos linfáticos y sanguíneos de la lámina propia.",
+            "3. FASE PARENTERAL/MUSCULAR: Las larvas penetran los miocitos esqueléticos activos (induciendo angiogénesis y formación de la célula nodriza), causando la tríada clínica clásica: fiebre, edema periorbitario bilateral, mialgias intensas e hipereosinofilia."
+        ],
+        "diagnosticMethod": "Clínica sugestiva + Eosinofilia elevada (hasta 50-70%) + Elevación de enzimas musculares (CPK, LDH). Confirmación por Serología (ELISA y Western Blot, positivos a partir de la 3.ª semana) o Biopsia de músculo deltoides/gastrocnemio (compresión entre portaobjetos o digestión artificial).",
+        "treatment": "Albendazol (400 mg cada 12 h por 8 a 14 días) o Mebendazol (más efectivos en la fase intestinal temprana) SIEMPRE asociados a Corticosteroides (Prednisona) para controlar la miositis alérgica, vasculitis o miocarditis/encefalitis."
+    },
+    {
+        "id": "trichuris-trichiura",
+        "category": "Helmintos 🪱",
+        "scientificName": "Trichuris trichiura",
+        "commonName": "Tricocéfalo / Gusano látigo",
+        "disease": "Tricuriasis (Tricocefalosis).",
+        "transmission": "Fecal-oral (ingestión de huevos embrionados presentes en tierra, agua o verduras crudas contaminadas).",
+        "infectiveStage": "Huevo embrionado (con larva L1 en su interior).",
+        "diagnosticStage": "Huevos no embrionados en forma de barril en heces o visualización de adultos en mucosa colónica.",
+        "epidemiology": "Geohelmintiasis cosmopolita altamente prevalente en zonas tropicales cálidas y húmedas (a menudo en coinfección con Ascaris lumbricoides). Afecta con mayor severidad a niños desnutridos.",
+        "lifecycleSummary": "Ciclo monoxeno directo SIN migración pulmonar. Tras ingerir el huevo embrionado, la larva eclosiona en el intestino delgado y desciende al ciego y colon ascendente, donde los adultos enhebran su delgado extremo anterior (como un hilván) dentro del sincitio epitelial colónico.",
+        "lifecycleDiagram": "assets/img/ciclos/trichuris-trichiura-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto ('Gusano látigo')",
+                "text": "Mide de 3 a 5 cm de longitud. Sus tres quintas partes anteriores son extremadamente finas y capilares (contienen el esófago tipo esticosoma que se incrusta en la mucosa), mientras que los dos quintos posteriores son gruesos (como el mango de un látigo; recto en la hembra y enrollado en espiral con espícula envainada en el macho).",
+                "image": "assets/img/morfologia/trichuris-trichiura-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "50-55 µm x 22-25 µm. Morfología patognomónica en forma de 'barril', 'bolillo' o balón de fútbol americano, de color café dorado por la bilis, con DOS TAPONES MUCOIDES HIALINOS prominentes en ambos polos.",
+                "image": "assets/img/morfologia/trichuris-trichiura-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos se excretan sin embrionar en las heces y requieren de 2 a 4 semanas en suelo cálido, húmedo y sombreado para desarrollar la larva L1 infectante.",
+            "2. Tras su ingestión, las larvas eclosionan en el intestino delgado, penetran transitoriamente las criptas y migran directamente al ciego y colon sin pasar por los pulmones.",
+            "3. El adulto clava su porción capilar anterior en la mucosa colónica; en infecciones masivas produce síndrome disentérico crónico, anemia microcítica y PROLAPSO RECTAL en niños por hipotonía muscular y pujo constante (tenesmo)."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico directo, flotación de Faust o recuento cuantitativo de Kato-Katz para identificar los inconfundibles huevos en forma de barril con tapones polares. Rectosigmoidoscopia o inspección directa del prolapso rectal mostrando los gusanos adheridos.",
+        "treatment": "Mebendazol (100 mg cada 12 h por 3 días) o Albendazol (400 mg al día por 3 días). En infecciones masivas o resistentes se combina Albendazol + Ivermectina o se utiliza Pamoato de oxantel."
     },
     {
         "id": "pediculus-humanus",
