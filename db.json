@@ -1122,132 +1122,36 @@
         "treatment": "Casos leves a moderados: Atovacuona + Azitromicina. Casos graves (especialmente asplénicos): Clindamicina + Quinina IV, y puede requerirse exanguinotransfusión."
     },
     {
-        "id": "ascaris-lumbricoides",
+        "id": "clonorchis-sinensis",
         "category": "Helmintos 🪱",
-        "scientificName": "Ascaris lumbricoides",
-        "commonName": "Lombriz intestinal",
-        "disease": "Ascariasis",
-        "transmission": "Fecal-oral (ingestión de huevos embrionados en suelo/alimentos). Geofagia.",
-        "infectiveStage": "Huevo embrionado (con larva L2/L3 en su interior).",
-        "diagnosticStage": "Huevos en heces o expulsión de gusanos adultos.",
-        "epidemiology": "La helmintiasis humana más común a nivel mundial. Predominante en zonas rurales tropicales.",
-        "lifecycleSummary": "Ingestión del huevo. La larva eclosiona, atraviesa la pared intestinal y realiza migración cardiopulmonar (ciclo de Loos).",
-        "lifecycleDiagram": "assets/img/ciclos/ascaris-lumbricoides-ciclo.webp",
+        "scientificName": "Clonorchis sinensis",
+        "commonName": "Duela hepática china",
+        "disease": "Clonorquiasis",
+        "transmission": "Oral (ingestión de pescado de agua dulce crudo, seco, en salazón o poco cocido).",
+        "infectiveStage": "Metacercaria enquistada en músculo o piel de pescado.",
+        "diagnosticStage": "Huevos embrionados operculados en heces o aspirado duodenal.",
+        "epidemiology": "Endémica en Asia Oriental (China, Corea, Taiwán, Vietnam y Rusia oriental). Clasificado por la IARC como carcinógeno biológico de Grupo 1 por su fuerte asociación con el colangiocarcinoma.",
+        "lifecycleSummary": "El humano ingiere metacercarias en pescado de agua dulce. Desenquistan en el duodeno y migran directamente a través de la ampolla de Vater hacia los conductos biliares intrahepáticos distales, donde maduran y pueden sobrevivir de 20 a 30 años causando inflamación biliar crónica.",
+        "lifecycleDiagram": "assets/img/ciclos/clonorchis-sinensis-ciclo.webp",
         "morphology": [
             {
                 "stage": "Adulto",
-                "text": "Nematodo cilíndrico. Hembra: 20-35 cm, extremo posterior recto. Macho: 15-30 cm, extremo posterior curvado con espículas.",
-                "image": "assets/img/morfologia/ascaris-lumbricoides-adulto.webp"
-            },
-            {
-                "stage": "Huevo Fértil",
-                "text": "45-75 µm, ovalado, cubierta gruesa con capa externa mamelonada teñida por la bilis (color café).",
-                "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp"
-            }
-        ],
-        "lifecycleDetails": [
-            "1. Ingestión de huevos embrionados infectivos.",
-            "2. Eclosión en el intestino delgado; la larva atraviesa la mucosa.",
-            "3. Migración venosa hacia el corazón derecho y luego a los pulmones."
-        ],
-        "diagnosticMethod": "Coproparasitoscópico de concentración (Kato-Katz, Faust) para identificar huevos característicos. Imagenología (Rx con bario o ecografía) puede mostrar gusanos adultos en el intestino o vías biliares.",
-        "treatment": "Albendazol o Mebendazol. En caso de obstrucción intestinal por ovillos de Ascaris, manejo conservador o quirúrgico."
-    },
-    {
-        "id": "taenia-solium",
-        "category": "Helmintos 🪱",
-        "scientificName": "Taenia solium",
-        "commonName": "Solitaria del cerdo",
-        "disease": "Teniasis (fase adulta) / Cisticercosis (fase larvaria).",
-        "transmission": "Teniasis: Carnivorismo. Cisticercosis: Fecal-oral.",
-        "infectiveStage": "Cisticerco (Teniasis) / Huevo (Cisticercosis).",
-        "diagnosticStage": "Teniasis: Proglótidos en heces. Cisticercosis: Imagenología/Serología.",
-        "epidemiology": "Áreas endémicas donde se crían cerdos en libre pastoreo (América Latina, Asia).",
-        "lifecycleSummary": "El humano adquiere Teniasis al comer cerdo con cisticercos. Adquiere Cisticercosis al ingerir huevos (enquistamiento en tejidos).",
-        "lifecycleDiagram": "assets/img/ciclos/taenia-ciclo.webp",
-        "morphology": [
-            {
-                "stage": "Escólex y Adulto",
-                "text": "Cestodo de 2-4 m. Escólex con 4 ventosas y rostelo con ganchos. Proglótidos grávidos con <13 ramas uterinas.",
-                "image": "assets/img/morfologia/taenia-solium-adulto.webp"
+                "text": "Trematodo lanceolado, aplanado y translúcido, de 10-25 mm de largo por 3-5 mm de ancho. Carece de espinas en el tegumento en su etapa madura y se distingue por sus dos testículos profundamente ramificados (dendríticos) situados en tándem en el tercio posterior.",
+                "image": "assets/img/morfologia/clonorchis-sinensis-adulto.webp"
             },
             {
                 "stage": "Huevo",
-                "text": "30-40 µm, esférico, embrióforo radiado, contiene la oncosfera (embrión hexacanto). Indistinguible de T. saginata.",
-                "image": "assets/img/morfologia/taenia-solium-huevo.webp"
+                "text": "Muy pequeño (27-35 µm x 12-19 µm), ovoide, de color amarillo-parduzco con forma de 'bombilla eléctrica' o urna antigua. Presenta un opérculo convexo prominente que descansa sobre 'hombros' marcados y una pequeña protuberancia o coma en el polo abopercular.",
+                "image": "assets/img/morfologia/clonorchis-sinensis-huevo.webp"
             }
         ],
         "lifecycleDetails": [
-            "1. TENIASIS: Ingestión de carne de cerdo infectada con cisticercos.",
-            "2. El escólex se evagina en el intestino, se fija a la mucosa.",
-            "3. CISTICERCOSIS: Ingestión accidental de huevos; la larva migra a tejidos."
+            "1. Los huevos ya embrionados son excretados con las heces y deben ser ingeridos directamente por el primer hospedero intermediario (caracoles del género Parafossarulus) para eclosionar.",
+            "2. En el caracol se desarrollan esporoquistes, redias y cercarias lofocercas de cola larga, las cuales salen al agua y penetran bajo las escamas de peces ciprínidos de agua dulce.",
+            "3. Tras ingerir pescado crudo con metacercarias, las larvas ascienden por el colédoco sin perforar tejidos hasta las vías biliares pequeñas, provocando hiperplasia adenomatosa y fibrosis periductal."
         ],
-        "diagnosticMethod": "Teniasis: Observación de proglótidos grávidos en heces (tinción con tinta china para contar ramas uterinas). Cisticercosis: TAC o Resonancia Magnética (SNC), Inmunotransferencia (Western Blot).",
-        "treatment": "Teniasis: Praziquantel o Niclosamida. Neurocisticercosis: Albendazol + Dexametasona (para controlar inflamación), antiepilépticos si hay convulsiones."
-    },
-    {
-        "id": "hymenolepis-nana",
-        "category": "Helmintos 🪱",
-        "scientificName": "Hymenolepis nana",
-        "commonName": "Teniasis enana",
-        "disease": "Himenolepiasis",
-        "transmission": "Fecal-oral (ingestión de huevos) o autoinfección interna. Ocasionalmente por ingestión de Artrópodos infectados.",
-        "infectiveStage": "Huevo embrionado o Cisticercoide (en Artrópodos).",
-        "diagnosticStage": "Huevos en heces.",
-        "epidemiology": "Cestodo más común en humanos a nivel mundial. Alta prevalencia en población infantil y ambientes de hacinamiento.",
-        "lifecycleSummary": "El huevo es ingerido, eclosiona en el intestino liberando la oncosfera que penetra las vellosidades, se desarrolla en cisticercoide y luego vuelve a la luz intestinal para madurar a adulto.",
-        "lifecycleDiagram": "assets/img/ciclos/hymenolepis-ciclo.webp",
-        "morphology": [
-            {
-                "stage": "Adulto",
-                "text": "Pequeño, 15-40 mm de longitud. Escólex con 4 ventosas y un rostelo retráctil armado con una corona de ganchos.",
-                "image": "assets/img/morfologia/hymenolepis-nana-adulto.webp"
-            },
-            {
-                "stage": "Huevo",
-                "text": "30-50 µm, ovalado, hialino. Presenta una oncosfera interna rodeada por una membrana con dos engrosamientos polares de donde surgen 4-8 filamentos polares.",
-                "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp"
-            }
-        ],
-        "lifecycleDetails": [
-            "1. Ingestión de huevos embrionados desde el medio ambiente o manos contaminadas.",
-            "2. Las oncosferas eclosionan y penetran las vellosidades intestinales desarrollándose en cisticercoides.",
-            "3. Tras la ruptura de la vellosidad, el escólex se fija a la mucosa y madura a la forma adulta."
-        ],
-        "diagnosticMethod": "Examen coproparasitoscópico (CPS) de concentración (ej. flotación de Faust) para la visualización de los huevos característicos con filamentos polares.",
-        "treatment": "Praziquantel es el fármaco de elección. Alternativa: Nitazoxanida."
-    },
-    {
-        "id": "enterobius-vermicularis",
-        "category": "Helmintos 🪱",
-        "scientificName": "Enterobius vermicularis",
-        "commonName": "Oxiuro",
-        "disease": "Enterobiasis (Oxiuriasis)",
-        "transmission": "Fecal-oral (manos contaminadas tras rascado perianal), fómites (ropa de cama, juguetes) o inhalación de huevos aerolizados.",
-        "infectiveStage": "Huevo embrionado.",
-        "diagnosticStage": "Huevo en pliegues perianales (o visualización de adultos en heces).",
-        "epidemiology": "Cosmopolita. Es la infección por helmintos más común en países desarrollados, con alta prevalencia en niños en edad escolar, guarderías y ambientes de hacinamiento.",
-        "lifecycleSummary": "Se ingieren los huevos, los cuales eclosionan en el intestino delgado. Los adultos residen en el ciego y colon. Las hembras grávidas migran de noche a la región perianal para depositar sus huevos, causando prurito intenso.",
-        "lifecycleDiagram": "assets/img/ciclos/enterobius-ciclo.webp",
-        "morphology": [
-            {
-                "stage": "Adulto",
-                "text": "Nematodos pequeños y blanquecinos. La hembra (8-13 mm) tiene un extremo posterior muy afilado. El macho (2-5 mm) tiene la cola curvada. Ambos presentan expansiones cutáneas anteriores (aletas cervicales) y un prominente bulbo esofágico.",
-                "image": "assets/img/morfologia/enterobius-vermicularis-adulto.webp"
-            },
-            {
-                "stage": "Huevo",
-                "text": "50-60 µm x 20-30 µm. Característica forma asimétrica de 'D' (un lado plano y otro convexo). Cáscara translúcida y gruesa, usualmente contiene una larva plegada parcialmente desarrollada en su interior.",
-                "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp"
-            }
-        ],
-        "lifecycleDetails": [
-            "1. Ingestión de huevos embrionados procedentes del rascado perianal o contacto con fómites.",
-            "2. Las larvas eclosionan en el intestino delgado y maduran a la fase adulta en el ciego.",
-            "3. La hembra migra al ano durante la noche para ovipositar. Los huevos depositados se vuelven infectivos rápidamente en apenas 4 a 6 horas."
-        ],
-        "diagnosticMethod": "Test de Graham (técnica de la cinta adhesiva transparente) aplicada en los pliegues perianales a primera hora de la mañana, antes del aseo o de la defecación.",
-        "treatment": "Albendazol, Mebendazol o Pamoato de pirantel. Es fundamental e indispensable dar tratamiento simultáneo a todo el núcleo familiar o a los convivientes para evitar reinfecciones cruzadas."
+        "diagnosticMethod": "Examen coproparasitoscópico de concentración por sedimentación (formalina-éter) o técnica cuantitativa de Kato-Katz. Ecografía hepatobiliar o colangiopancreatografía (CPRE) que muestra dilatación difusa de conductos biliares intrahepáticos periféricos.",
+        "treatment": "Praziquantel (fármaco de elección). Alternativa: Albendazol en esquemas prolongados de 7 días."
     },
     {
         "id": "fasciola-hepatica",
@@ -1346,70 +1250,6 @@
         "treatment": "Praziquantel (75 mg/kg/día dividido en 3 dosis por 2-3 días). En casos de afectación cerebral, se asocia con corticosteroides (Dexametasona) para evitar edema e hipertensión intracraneal."
     },
     {
-        "id": "clonorchis-sinensis",
-        "category": "Helmintos 🪱",
-        "scientificName": "Clonorchis sinensis",
-        "commonName": "Duela hepática china",
-        "disease": "Clonorquiasis",
-        "transmission": "Oral (ingestión de pescado de agua dulce crudo, seco, en salazón o poco cocido).",
-        "infectiveStage": "Metacercaria enquistada en músculo o piel de pescado.",
-        "diagnosticStage": "Huevos embrionados operculados en heces o aspirado duodenal.",
-        "epidemiology": "Endémica en Asia Oriental (China, Corea, Taiwán, Vietnam y Rusia oriental). Clasificado por la IARC como carcinógeno biológico de Grupo 1 por su fuerte asociación con el colangiocarcinoma.",
-        "lifecycleSummary": "El humano ingiere metacercarias en pescado de agua dulce. Desenquistan en el duodeno y migran directamente a través de la ampolla de Vater hacia los conductos biliares intrahepáticos distales, donde maduran y pueden sobrevivir de 20 a 30 años causando inflamación biliar crónica.",
-        "lifecycleDiagram": "assets/img/ciclos/clonorchis-sinensis-ciclo.webp",
-        "morphology": [
-            {
-                "stage": "Adulto",
-                "text": "Trematodo lanceolado, aplanado y translúcido, de 10-25 mm de largo por 3-5 mm de ancho. Carece de espinas en el tegumento en su etapa madura y se distingue por sus dos testículos profundamente ramificados (dendríticos) situados en tándem en el tercio posterior.",
-                "image": "assets/img/morfologia/clonorchis-sinensis-adulto.webp"
-            },
-            {
-                "stage": "Huevo",
-                "text": "Muy pequeño (27-35 µm x 12-19 µm), ovoide, de color amarillo-parduzco con forma de 'bombilla eléctrica' o urna antigua. Presenta un opérculo convexo prominente que descansa sobre 'hombros' marcados y una pequeña protuberancia o coma en el polo abopercular.",
-                "image": "assets/img/morfologia/clonorchis-sinensis-huevo.webp"
-            }
-        ],
-        "lifecycleDetails": [
-            "1. Los huevos ya embrionados son excretados con las heces y deben ser ingeridos directamente por el primer hospedero intermediario (caracoles del género Parafossarulus) para eclosionar.",
-            "2. En el caracol se desarrollan esporoquistes, redias y cercarias lofocercas de cola larga, las cuales salen al agua y penetran bajo las escamas de peces ciprínidos de agua dulce.",
-            "3. Tras ingerir pescado crudo con metacercarias, las larvas ascienden por el colédoco sin perforar tejidos hasta las vías biliares pequeñas, provocando hiperplasia adenomatosa y fibrosis periductal."
-        ],
-        "diagnosticMethod": "Examen coproparasitoscópico de concentración por sedimentación (formalina-éter) o técnica cuantitativa de Kato-Katz. Ecografía hepatobiliar o colangiopancreatografía (CPRE) que muestra dilatación difusa de conductos biliares intrahepáticos periféricos.",
-        "treatment": "Praziquantel (fármaco de elección). Alternativa: Albendazol en esquemas prolongados de 7 días."
-    },
-    {
-        "id": "schistosoma-mansoni",
-        "category": "Helmintos 🪱",
-        "scientificName": "Schistosoma mansoni",
-        "commonName": "Esquistosoma intestinal",
-        "disease": "Esquistosomiasis (Bilharziasis) intestinal y hepatoesplénica.",
-        "transmission": "Cutánea directa (penetración activa de la piel intacta por furcocercarias presentes en agua dulce contaminada).",
-        "infectiveStage": "Furcocercaria (cercaria de cola bifurcada).",
-        "diagnosticStage": "Huevo con espina lateral prominente en heces.",
-        "epidemiology": "Ampliamente distribuido en África Subsahariana, Medio Oriente y es la única especie de Schistosoma endémica en el continente americano (Brasil, Venezuela, Surinam y algunas islas del Caribe).",
-        "lifecycleSummary": "Las cercarias penetran la piel, se transforman en esquistosómulos, viajan por pulmones hacia la circulación portal hepática donde maduran y se acoplan. Los adultos migran a las vénulas mesentéricas inferiores (colon); los huevos atraviesan la pared intestinal o son arrastrados al hígado causando fibrosis periportal de Symmers.",
-        "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
-        "morphology": [
-            {
-                "stage": "Adultos en cópula",
-                "text": "Trematodos dioicos (sexos separados) con marcado dimorfismo sexual. El macho (1 cm) es ancho, tiene el tegumento cubierto de tubérculos prominentes y posee el canal ginecóforo donde aloja permanentemente a la hembra (1.2-1.6 cm), la cual es más larga, cilíndrica y filiforme.",
-                "image": "assets/img/morfologia/schistosoma-mansoni-adulto.webp"
-            },
-            {
-                "stage": "Huevo",
-                "text": "Grande (114-180 µm x 45-70 µm), alargado, sin opérculo y transparente/amarillento. Su rasgo patognomónico es una prominente y afilada ESPINA LATERAL cerca de uno de los polos. Contiene un miracidio maduro en su interior al ser excretado.",
-                "image": "assets/img/morfologia/schistosoma-mansoni-huevo.webp"
-            }
-        ],
-        "lifecycleDetails": [
-            "1. Los huevos excretados en las heces eclosionan al contacto con agua dulce, liberando miracidios que penetran caracoles planorbídeos del género Biomphalaria.",
-            "2. Tras dos generaciones de esporoquistes (sin fase de redia), emergen miles de furcocercarias que nadan activamente y penetran la piel humana mediante enzimas proteolíticas (causando dermatitis por cercarias).",
-            "3. Maduran en el sistema portal y residen en el plexo venoso mesentérico inferior; los huevos atrapados en el hígado inducen granulomas eosinofílicos e hipertensión portal presinusoidal."
-        ],
-        "diagnosticMethod": "Examen coproparasitoscópico cuantitativo de Kato-Katz o sedimentación. En infecciones crónicas o de baja carga: biopsia de mucosa rectal (valvas de Houston), detección de antígeno catódico circulante (CCA) en orina o serología.",
-        "treatment": "Praziquantel (40 mg/kg en dosis única o dividida en el mismo día). En la fase aguda (Fiebre de Katayama), se administran corticosteroides previos o concomitantes al Praziquantel."
-    },
-    {
         "id": "schistosoma-haematobium",
         "category": "Helmintos 🪱",
         "scientificName": "Schistosoma haematobium",
@@ -1472,6 +1312,166 @@
         ],
         "diagnosticMethod": "Examen coproparasitoscópico por técnica de Kato-Katz o eclosión de miracidios en agua. Biopsia rectal, pruebas serológicas (ELISA) y neuroimagen (RM/TAC) ante sintomatología neurológica focal o convulsiones.",
         "treatment": "Praziquantel a dosis más altas que en otras especies (60 mg/kg divididos en 2 o 3 tomas en un solo día) debido a su menor sensibilidad relativa."
+    },
+    {
+        "id": "schistosoma-mansoni",
+        "category": "Helmintos 🪱",
+        "scientificName": "Schistosoma mansoni",
+        "commonName": "Esquistosoma intestinal",
+        "disease": "Esquistosomiasis (Bilharziasis) intestinal y hepatoesplénica.",
+        "transmission": "Cutánea directa (penetración activa de la piel intacta por furcocercarias presentes en agua dulce contaminada).",
+        "infectiveStage": "Furcocercaria (cercaria de cola bifurcada).",
+        "diagnosticStage": "Huevo con espina lateral prominente en heces.",
+        "epidemiology": "Ampliamente distribuido en África Subsahariana, Medio Oriente y es la única especie de Schistosoma endémica en el continente americano (Brasil, Venezuela, Surinam y algunas islas del Caribe).",
+        "lifecycleSummary": "Las cercarias penetran la piel, se transforman en esquistosómulos, viajan por pulmones hacia la circulación portal hepática donde maduran y se acoplan. Los adultos migran a las vénulas mesentéricas inferiores (colon); los huevos atraviesan la pared intestinal o son arrastrados al hígado causando fibrosis periportal de Symmers.",
+        "lifecycleDiagram": "assets/img/ciclos/schistosoma-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adultos en cópula",
+                "text": "Trematodos dioicos (sexos separados) con marcado dimorfismo sexual. El macho (1 cm) es ancho, tiene el tegumento cubierto de tubérculos prominentes y posee el canal ginecóforo donde aloja permanentemente a la hembra (1.2-1.6 cm), la cual es más larga, cilíndrica y filiforme.",
+                "image": "assets/img/morfologia/schistosoma-mansoni-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Grande (114-180 µm x 45-70 µm), alargado, sin opérculo y transparente/amarillento. Su rasgo patognomónico es una prominente y afilada ESPINA LATERAL cerca de uno de los polos. Contiene un miracidio maduro en su interior al ser excretado.",
+                "image": "assets/img/morfologia/schistosoma-mansoni-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos excretados en las heces eclosionan al contacto con agua dulce, liberando miracidios que penetran caracoles planorbídeos del género Biomphalaria.",
+            "2. Tras dos generaciones de esporoquistes (sin fase de redia), emergen miles de furcocercarias que nadan activamente y penetran la piel humana mediante enzimas proteolíticas (causando dermatitis por cercarias).",
+            "3. Maduran en el sistema portal y residen en el plexo venoso mesentérico inferior; los huevos atrapados en el hígado inducen granulomas eosinofílicos e hipertensión portal presinusoidal."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico cuantitativo de Kato-Katz o sedimentación. En infecciones crónicas o de baja carga: biopsia de mucosa rectal (valvas de Houston), detección de antígeno catódico circulante (CCA) en orina o serología.",
+        "treatment": "Praziquantel (40 mg/kg en dosis única o dividida en el mismo día). En la fase aguda (Fiebre de Katayama), se administran corticosteroides previos o concomitantes al Praziquantel."
+    },
+    {
+        "id": "hymenolepis-nana",
+        "category": "Helmintos 🪱",
+        "scientificName": "Hymenolepis nana",
+        "commonName": "Teniasis enana",
+        "disease": "Himenolepiasis",
+        "transmission": "Fecal-oral (ingestión de huevos) o autoinfección interna. Ocasionalmente por ingestión de Artrópodos infectados.",
+        "infectiveStage": "Huevo embrionado o Cisticercoide (en Artrópodos).",
+        "diagnosticStage": "Huevos en heces.",
+        "epidemiology": "Cestodo más común en humanos a nivel mundial. Alta prevalencia en población infantil y ambientes de hacinamiento.",
+        "lifecycleSummary": "El huevo es ingerido, eclosiona en el intestino liberando la oncosfera que penetra las vellosidades, se desarrolla en cisticercoide y luego vuelve a la luz intestinal para madurar a adulto.",
+        "lifecycleDiagram": "assets/img/ciclos/hymenolepis-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Pequeño, 15-40 mm de longitud. Escólex con 4 ventosas y un rostelo retráctil armado con una corona de ganchos.",
+                "image": "assets/img/morfologia/hymenolepis-nana-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-50 µm, ovalado, hialino. Presenta una oncosfera interna rodeada por una membrana con dos engrosamientos polares de donde surgen 4-8 filamentos polares.",
+                "image": "assets/img/morfologia/hymenolepis-nana-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados desde el medio ambiente o manos contaminadas.",
+            "2. Las oncosferas eclosionan y penetran las vellosidades intestinales desarrollándose en cisticercoides.",
+            "3. Tras la ruptura de la vellosidad, el escólex se fija a la mucosa y madura a la forma adulta."
+        ],
+        "diagnosticMethod": "Examen coproparasitoscópico (CPS) de concentración (ej. flotación de Faust) para la visualización de los huevos característicos con filamentos polares.",
+        "treatment": "Praziquantel es el fármaco de elección. Alternativa: Nitazoxanida."
+    },
+    {
+        "id": "taenia-solium",
+        "category": "Helmintos 🪱",
+        "scientificName": "Taenia solium",
+        "commonName": "Solitaria del cerdo",
+        "disease": "Teniasis (fase adulta) / Cisticercosis (fase larvaria).",
+        "transmission": "Teniasis: Carnivorismo. Cisticercosis: Fecal-oral.",
+        "infectiveStage": "Cisticerco (Teniasis) / Huevo (Cisticercosis).",
+        "diagnosticStage": "Teniasis: Proglótidos en heces. Cisticercosis: Imagenología/Serología.",
+        "epidemiology": "Áreas endémicas donde se crían cerdos en libre pastoreo (América Latina, Asia).",
+        "lifecycleSummary": "El humano adquiere Teniasis al comer cerdo con cisticercos. Adquiere Cisticercosis al ingerir huevos (enquistamiento en tejidos).",
+        "lifecycleDiagram": "assets/img/ciclos/taenia-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Escólex y Adulto",
+                "text": "Cestodo de 2-4 m. Escólex con 4 ventosas y rostelo con ganchos. Proglótidos grávidos con <13 ramas uterinas.",
+                "image": "assets/img/morfologia/taenia-solium-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "30-40 µm, esférico, embrióforo radiado, contiene la oncosfera (embrión hexacanto). Indistinguible de T. saginata.",
+                "image": "assets/img/morfologia/taenia-solium-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. TENIASIS: Ingestión de carne de cerdo infectada con cisticercos.",
+            "2. El escólex se evagina en el intestino, se fija a la mucosa.",
+            "3. CISTICERCOSIS: Ingestión accidental de huevos; la larva migra a tejidos."
+        ],
+        "diagnosticMethod": "Teniasis: Observación de proglótidos grávidos en heces (tinción con tinta china para contar ramas uterinas). Cisticercosis: TAC o Resonancia Magnética (SNC), Inmunotransferencia (Western Blot).",
+        "treatment": "Teniasis: Praziquantel o Niclosamida. Neurocisticercosis: Albendazol + Dexametasona (para controlar inflamación), antiepilépticos si hay convulsiones."
+    },
+    {
+        "id": "ascaris-lumbricoides",
+        "category": "Helmintos 🪱",
+        "scientificName": "Ascaris lumbricoides",
+        "commonName": "Lombriz intestinal",
+        "disease": "Ascariasis",
+        "transmission": "Fecal-oral (ingestión de huevos embrionados en suelo/alimentos). Geofagia.",
+        "infectiveStage": "Huevo embrionado (con larva L2/L3 en su interior).",
+        "diagnosticStage": "Huevos en heces o expulsión de gusanos adultos.",
+        "epidemiology": "La helmintiasis humana más común a nivel mundial. Predominante en zonas rurales tropicales.",
+        "lifecycleSummary": "Ingestión del huevo. La larva eclosiona, atraviesa la pared intestinal y realiza migración cardiopulmonar (ciclo de Loos).",
+        "lifecycleDiagram": "assets/img/ciclos/ascaris-lumbricoides-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Nematodo cilíndrico. Hembra: 20-35 cm, extremo posterior recto. Macho: 15-30 cm, extremo posterior curvado con espículas.",
+                "image": "assets/img/morfologia/ascaris-lumbricoides-adulto.webp"
+            },
+            {
+                "stage": "Huevo Fértil",
+                "text": "45-75 µm, ovalado, cubierta gruesa con capa externa mamelonada teñida por la bilis (color café).",
+                "image": "assets/img/morfologia/ascaris-lumbricoides-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados infectivos.",
+            "2. Eclosión en el intestino delgado; la larva atraviesa la mucosa.",
+            "3. Migración venosa hacia el corazón derecho y luego a los pulmones."
+        ],
+        "diagnosticMethod": "Coproparasitoscópico de concentración (Kato-Katz, Faust) para identificar huevos característicos. Imagenología (Rx con bario o ecografía) puede mostrar gusanos adultos en el intestino o vías biliares.",
+        "treatment": "Albendazol o Mebendazol. En caso de obstrucción intestinal por ovillos de Ascaris, manejo conservador o quirúrgico."
+    },
+    {
+        "id": "enterobius-vermicularis",
+        "category": "Helmintos 🪱",
+        "scientificName": "Enterobius vermicularis",
+        "commonName": "Oxiuro",
+        "disease": "Enterobiasis (Oxiuriasis)",
+        "transmission": "Fecal-oral (manos contaminadas tras rascado perianal), fómites (ropa de cama, juguetes) o inhalación de huevos aerolizados.",
+        "infectiveStage": "Huevo embrionado.",
+        "diagnosticStage": "Huevo en pliegues perianales (o visualización de adultos en heces).",
+        "epidemiology": "Cosmopolita. Es la infección por helmintos más común en países desarrollados, con alta prevalencia en niños en edad escolar, guarderías y ambientes de hacinamiento.",
+        "lifecycleSummary": "Se ingieren los huevos, los cuales eclosionan en el intestino delgado. Los adultos residen en el ciego y colon. Las hembras grávidas migran de noche a la región perianal para depositar sus huevos, causando prurito intenso.",
+        "lifecycleDiagram": "assets/img/ciclos/enterobius-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Nematodos pequeños y blanquecinos. La hembra (8-13 mm) tiene un extremo posterior muy afilado. El macho (2-5 mm) tiene la cola curvada. Ambos presentan expansiones cutáneas anteriores (aletas cervicales) y un prominente bulbo esofágico.",
+                "image": "assets/img/morfologia/enterobius-vermicularis-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "50-60 µm x 20-30 µm. Característica forma asimétrica de 'D' (un lado plano y otro convexo). Cáscara translúcida y gruesa, usualmente contiene una larva plegada parcialmente desarrollada en su interior.",
+                "image": "assets/img/morfologia/enterobius-vermicularis-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Ingestión de huevos embrionados procedentes del rascado perianal o contacto con fómites.",
+            "2. Las larvas eclosionan en el intestino delgado y maduran a la fase adulta en el ciego.",
+            "3. La hembra migra al ano durante la noche para ovipositar. Los huevos depositados se vuelven infectivos rápidamente en apenas 4 a 6 horas."
+        ],
+        "diagnosticMethod": "Test de Graham (técnica de la cinta adhesiva transparente) aplicada en los pliegues perianales a primera hora de la mañana, antes del aseo o de la defecación.",
+        "treatment": "Albendazol, Mebendazol o Pamoato de pirantel. Es fundamental e indispensable dar tratamiento simultáneo a todo el núcleo familiar o a los convivientes para evitar reinfecciones cruzadas."
     },
     {
         "id": "pediculus-humanus",
