@@ -1186,6 +1186,70 @@
         "treatment": "Triclabendazol (fármaco de elección en dosis única o doble, activo contra formas inmaduras y adultas). Nota clínica: A diferencia de otros trematodos, NO responde a Praziquantel; Nitazoxanida o Bithionol son alternativas."
     },
     {
+        "id": "glypthelmins",
+        "category": "Helmintos 🪱",
+        "scientificName": "Glypthelmins spp.",
+        "commonName": "Duela intestinal de los anfibios",
+        "disease": "Trematodiasis intestinal en anuros (ranas y sapos).",
+        "transmission": "Oral / Autoinfección trófica (ingestión de la propia muda epidérmica —dermatofagia— o de renacuajos y caracoles con metacercarias enquistadas).",
+        "infectiveStage": "Metacercaria enquistada en piel de anfibios.",
+        "diagnosticStage": "Huevos operculados embrionados en heces de anfibios o adultos en necropsia intestinal.",
+        "epidemiology": "Ampliamente distribuido en el continente americano (Norte, Centro y Sudamérica; ej. G. quieta, G. californiensis, G. parva). Parásito modelo clásico en prácticas de helmintología general y herpetología.",
+        "lifecycleSummary": "Los adultos habitan el intestino delgado de ranas y sapos (Lithobates, Rana, Rhinella). Los huevos salen en heces e infectan caracoles pulmonados acuáticos (Physa, Biomphalaria). Las cercarias xifidiocercarias emergen y se enquistan como metacercarias en la epidermis de renacuajos o ranas; cuando la rana muda de piel y se la come (dermatofagia), adquiere el parásito adulto.",
+        "lifecycleDiagram": "assets/img/ciclos/glypthelmins-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto",
+                "text": "Trematodo digeneo pequeño (1.5 a 4 mm de largo), de cuerpo ovalado a elongado y tegumento cubierto de pequeñas espinas cuticulares anteriores. Presenta ventosa oral subterminal mayor que el acetábulo (ventosa ventral), faringe musculosa con glándulas periesofágicas, dos testículos esféricos u ovalados dispuestos simétricamente u oblicuos detrás del acetábulo, ovario pretesticular y glándulas vitelógenas foliculares en los campos laterales.",
+                "image": "assets/img/morfologia/glypthelmins-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Pequeño (30-50 µm x 15-25 µm), ovalado, operculado, de cáscara delgada y color castaño claro-amarillento, que ya contiene un miracidio formado al ser excretado.",
+                "image": "assets/img/morfologia/glypthelmins-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos embrionados excretados en el agua por la rana son ingeridos por caracoles dulceacuícolas (Physa, Helisoma, Biomphalaria), donde se desarrollan esporoquistes madre e hijos.",
+            "2. Del caracol emergen cercarias armadas con estilete oral (xifidiocercarias) que nadan hacia renacuajos o ranas adultas y penetran su piel formando quistes metacercariales subepidérmicos.",
+            "3. Tras la metamorfosis, la rana adulta muda periódicamente su estrato córneo epidérmico y lo ingiere (dermatofagia), liberando las metacercarias en el duodeno donde maduran a adultos."
+        ],
+        "diagnosticMethod": "En herpetología y biología: Examen coproparasitoscópico por flotación/sedimentación en heces de anuros o disección del intestino delgado de ranas (ej. Lithobates montezumae / L. catesbeianus), fijación entre portaobjetos con formol-alcohol-ácido acético (FAA) y tinción con carmín de Semichon o hematoxilina de Ehrlich.",
+        "treatment": "Uso veterinario en anfibios de cautiverio/bioterio: Praziquantel (8-24 mg/kg vía oral, tópica o en baños medicados repetidos a los 14 días). Control de caracoles acuáticos en terrarios y estanques."
+    },
+    {
+        "id": "megalodiscus",
+        "category": "Helmintos 🪱",
+        "scientificName": "Megalodiscus spp.",
+        "commonName": "Duela anfistoma rectal de la rana (Megalodiscus temperatus)",
+        "disease": "Anfistomiasis rectal y cloacal de anfibios.",
+        "transmission": "Oral / Dermatofagia (ingestión de la propia piel mudada con metacercarias enquistadas, o canibalismo de renacuajos infectados).",
+        "infectiveStage": "Metacercaria enquistada en el estrato córneo de la piel de ranas.",
+        "diagnosticStage": "Adultos con enorme acetábulo posterior en recto/cloaca o huevos grandes operculados en heces.",
+        "epidemiology": "Común en Norteamérica y Mesoamérica (especialmente Megalodiscus temperatus en ranas toro y ranas leopardo). Es el ejemplo clásico de trematodo paramfistomoideo (anfistoma) estudiado en laboratorios de zoología y parasitología.",
+        "lifecycleSummary": "Los adultos viven adheridos a la mucosa del recto y la cloaca de ranas y salamandras. Los huevos eclosionan casi de inmediato en el agua liberando miracidios que infectan caracoles planorbídeos (Helisoma trivolvis). Las cercarias se enquistan en la piel pigmentada de las ranas y son ingeridas cuando el anfibio realiza dermatofagia de su muda.",
+        "lifecycleDiagram": "assets/img/ciclos/megalodiscus-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto (Morfología Anfistoma)",
+                "text": "Trematodo cónico o piriforme de 3 a 6 mm de longitud, grueso y carnoso. Su rasgo taxonómico patognomónico es su condición ANFISTOMA: la ventosa ventral (acetábulo) es gigantesca (iguala o supera el ancho del cuerpo) y está desplazada hasta el EXTREMO POSTERIOR terminal, mientras que en el polo anterior posee una ventosa oral con un par de divertículos o sacos faríngeos posteriores.",
+                "image": "assets/img/morfologia/megalodiscus-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Grande (115-135 µm x 55-70 µm), elipsoidal, operculado, de cubierta delgada e hialina/amarillenta tenue. A diferencia de otros trematodos, se excreta completamente embrionado con un miracidio maduro listo para eclosionar al contacto con el agua (ovoviviparismo funcional).",
+                "image": "assets/img/morfologia/megalodiscus-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos depositados en el agua eclosionan rápidamente; el miracidio penetra caracoles pulmonados del género Helisoma (Planorbidae), desarrollando esporoquistes y tres generaciones de redias.",
+            "2. Emergen cercarias oftalmocercarias (con manchas oculares pigmentadas) y anfistomas que son atraídas por las zonas oscuras de la piel de ranas adultas (o entran a la cámara branquial de renacuajos), donde se enquistan como metacercarias.",
+            "3. Cuando la rana muda la epidermis e ingiere su propia piel desprendida, las metacercarias desenquistan en el tubo digestivo y se fijan firmemente en el recto/cloaca mediante su gran acetábulo posterior."
+        ],
+        "diagnosticMethod": "En herpetología y prácticas de laboratorio: Inspección de la región cloacal y rectal durante la necropsia de anuros, montaje in toto teñido con carmín acético (identificando el enorme acetábulo posterior y los dos sacos de la ventosa oral) o sedimentación fecal.",
+        "treatment": "Uso veterinario en colecciones herpetológicas: Praziquantel (10-20 mg/kg vía oral o en baño medicado). Eliminación de caracoles intermediarios en acuaterrarios."
+    },
+    {
         "id": "paragonimus-mexicanus",
         "category": "Helmintos 🪱",
         "scientificName": "Paragonimus mexicanus",
@@ -1248,6 +1312,38 @@
         ],
         "diagnosticMethod": "Observación microscópica de huevos operculados en esputo (frecuente presencia de cristales de Charcot-Leyden) o en heces por sedimentación. Serología (ELISA/inmunoblot) y neuroimagen (TAC/RM con lesiones en 'pompas de jabón') en paragonimiasis cerebral.",
         "treatment": "Praziquantel (75 mg/kg/día dividido en 3 dosis por 2-3 días). En casos de afectación cerebral, se asocia con corticosteroides (Dexametasona) para evitar edema e hipertensión intracraneal."
+    },
+    {
+        "id": "paramphistomum-cervi",
+        "category": "Helmintos 🪱",
+        "scientificName": "Paramphistomum cervi",
+        "commonName": "Duela del rumen / Duela cónica del estómago",
+        "disease": "Paramfistomosis (Anfistomiasis gastrointestinal de rumiantes).",
+        "transmission": "Oral (ingestión de pasto o forraje de zonas inundables contaminado con metacercarias enquistadas).",
+        "infectiveStage": "Metacercaria enquistada en vegetación semiacuática.",
+        "diagnosticStage": "Huevos grandes operculados transparentes (color gris-verdoso/claro) en heces o adultos cónicos rosados entre las papilas del rumen.",
+        "epidemiology": "Cosmopolita en zonas ganaderas bajas, pantanosas o de riego (bovinos, ovinos, caprinos, búfalos y cérvidos). Mientras los adultos en el rumen suelen ser bien tolerados, la migración masiva de formas juveniles en el duodeno causa enteritis hemorrágica aguda de alta mortalidad.",
+        "lifecycleSummary": "Los adultos residen anclados entre las papilas del rumen y retículo. Los huevos salen en heces y en el agua liberan miracidios que infectan caracoles acuáticos (Planorbis, Bulinus, Lymnaea). Las cercarias se enquistan en el pasto; al ser ingeridas, los juveniles desenquistan en el duodeno (fase patógena) y luego migran de forma retrógrada hacia el rumen para madurar.",
+        "lifecycleDiagram": "assets/img/ciclos/paramphistomum-cervi-ciclo.webp",
+        "morphology": [
+            {
+                "stage": "Adulto (Anfistoma del Rumen)",
+                "text": "Trematodo grueso, carnoso, de cuerpo cónico o piriforme (5-13 mm de largo x 2-5 mm de diámetro) y color rosado o rojizo brillante en fresco (por hemoglobina propia). Carece de espinas y presenta morfología ANFISTOMA característica: una ventosa oral pequeña en el ápice anterior y un ACETÁBULO GIGANTE Y MUSCULOSO situado en el extremo posterior terminal con el que atrapa las papilas ruminales. Testículos lobulados en tándem anteriores al ovario.",
+                "image": "assets/img/morfologia/paramphistomum-cervi-adulto.webp"
+            },
+            {
+                "stage": "Huevo",
+                "text": "Muy grande (130-180 µm x 75-100 µm), elipsoidal, operculado y no embrionado al excretarse. Es muy similar en tamaño y forma al huevo de Fasciola hepatica, pero se diferencia en el laboratorio porque el de Paramphistomum cervi es TRANSPARENTE / INCOLORO (grisáceo-verdoso claro, sin tinción biliar amarilla), tiene un opérculo más visible y suele presentar una pequeña protuberancia o botón en el polo abopercular.",
+                "image": "assets/img/morfologia/paramphistomum-cervi-huevo.webp"
+            }
+        ],
+        "lifecycleDetails": [
+            "1. Los huevos eliminados en la bosta maduran en agua dulce en 2 a 4 semanas liberando un miracidio ciliado que penetra caracoles acuáticos (Planorbidae / Lymnaeidae), pasando por esporoquiste, redias y cercarias anfistomas con manchas oculares (cercaria pigmentata).",
+            "2. Las cercarias emergen del caracol y se enquistan como metacercarias resistentes sobre el pasto sumergido; el rumiante las ingiere al pastar.",
+            "3. FASE DUODENAL PATÓGENA Y MIGRACIÓN RETRÓGRADA: Las formas juveniles desenquistan en el duodeno y yeyuno superior, donde se incrustan profundamente en la submucosa alimentándose de tejido (causando diarrea fétida profusa, hipoproteinemia y edema submandibular); tras 3 a 6 semanas regresan contra corriente pasando por el abomaso hasta fijarse definitivamente en el rumen y retículo."
+        ],
+        "diagnosticMethod": "Uso veterinario: Técnica de sedimentación fecal cuantitativa (ej. método de Dennis, Stone y Swanson o sedimentación con azul de metileno) diferenciando sus huevos grandes incoloros/transparentes de los huevos amarillos/dorados de Fasciola hepatica. En casos agudos (paramfistomosis juvenil duodenal), aún no hay huevos en heces y el diagnóstico se hace identificando trematodos inmaduros (<2 mm) en el lavado diarreico o en raspado duodenal post-mortem.",
+        "treatment": "Uso veterinario: Oxiclozanida (15-18.7 mg/kg en dos dosis separadas por 3 días; es el fármaco de elección con alta eficacia tanto contra juveniles duodenales como adultos ruminales). Alternativas: Closantel, Hexaclorofeno o Niclosamida (Nota: el Triclabendazol y el Albendazol tienen baja o nula eficacia contra Paramphistomum)."
     },
     {
         "id": "schistosoma-haematobium",
